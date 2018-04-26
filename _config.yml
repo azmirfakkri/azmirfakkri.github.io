@@ -1,20 +1,20 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://azmirfakkri.github.io/"
-title: Azmir Fakkri # site's title
+title: "Azmir Fakkri" # site's title
 description: "Data Science, Dogs" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Data Science Blog # blog's title
+  title: "Data Science Blog" # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
-  header_text: Showcasing data science skills #two or three lines to describe your site
+  header_text: "Hope you'll learn something!" #two or three lines to describe your site
      <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: Copyright 2018
