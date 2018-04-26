@@ -8,7 +8,7 @@ description: "Data Science, Dogs" # used by search engines
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Data Science Blog # blog's title
+  title: "Data Science Blog" # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
