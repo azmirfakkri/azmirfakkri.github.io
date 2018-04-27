@@ -375,15 +375,15 @@ All hospitals associated with each group can be seen in the table above along wi
 Galway University Hospital has the highest number of patients in the waiting list in November 2017.  
 Five of the top 10 hospitals with highest number of waiting list cases are located in Dublin, including Beaumont Hospital, Mater Misericordiae University Hospital, St. James’s Hospital, Tallaght Hospital and Our Lady’s Children Hospital Crumlin.
 
-![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![]({{site_url}}/assets/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 The number of adult patients in the waiting list are almost 10 times higher than child patients. In both group of patients, the number of day case is higher than inpatient case.
 
-![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![]({{site_url}}/assets/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 In general, day case has more patients in the waiting list compared to inpatient case. There is a higher number of patients aged between 16 to 64 years old in the waiting list for both categories compared to the rest of the age profiles.
 
-![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![]({{site_url}}/assets/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 From January to November 2017, only a minimal reduction in the average number of patients in the waiting list across all hospital groups can be seen except for RCSI Hospitals Group.
 
@@ -392,7 +392,7 @@ From January to November 2017, only a minimal reduction in the average number of
 The top five specialties with the most patients in the waiting list are led by Orthopaedics, followed by Ophthalmology, Urology, General Surgery and Otolaryngology (ENT).  
 Orthopaedics has an almost balanced number of day case and inpatient case, however, Ophthalmology has a lot of day case patients compared to inpatient case in the waiting list.
 
-![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![]({{site_url}}/assets/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 Time bands are the range of times (in months) for patients to be seen in Irish public hospitals. There is a lot of adult patients in all time bands compared to child patients. Looking at Figure 9, 0 to 3 months has the highest number of patients and 15 to 18 months has the least number of patients.  
 
@@ -400,7 +400,7 @@ There are less number of patients as waiting time (time bands) gets longer, but 
 
 A patient in the time band of 0 to 3 month are scheduled to be seen within 3 months from November 2017. It is also important to note that when a patient is being put in a waiting list, many aspects have been considered especially the severity of the disease. As an example, a patient with hyperkalaemia will always be seen and treated immediately.
 
-![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![]({{site_url}}/assets/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 From the figure above, it can be seen that across all time bands, there is a lot more patient with day case than inpatient case in the waiting list.
 
