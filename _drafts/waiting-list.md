@@ -129,7 +129,7 @@ Azmir Fakkri
 
 As November is the most recent snapshot of the waiting list in Irish public hospitals, a subset of the data is created and analyses will be focused on that particular month.
 
-<img src="waiting-list_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 From the bar chart, it can be seen that there are seven hospital groups in Ireland. Every hospital group is associated with a few hospitals in Ireland. Saolta University Health Care Group recorded the highest number of patients in the waiting list.  
 
@@ -370,7 +370,7 @@ In November 2017, the total number of patients in the waiting list is 80595. Thi
 
 All hospitals associated with each group can be seen in the table above along with the total number of patients in the waiting list for November 2017.
 
-<img src="waiting-list_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto auto auto 0;" />
+![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 Galway University Hospital has the highest number of patients in the waiting list in November 2017.  
 Five of the top 10 hospitals with highest number of waiting list cases are located in Dublin, including Beaumont Hospital, Mater Misericordiae University Hospital, St. James’s Hospital, Tallaght Hospital and Our Lady’s Children Hospital Crumlin.
@@ -387,7 +387,7 @@ In general, day case has more patients in the waiting list compared to inpatient
 
 From January to November 2017, only a minimal reduction in the average number of patients in the waiting list across all hospital groups can be seen except for RCSI Hospitals Group.
 
-<img src="waiting-list_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
+![]({{site_url}}/img/blog_images/waiting-list_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 The top five specialties with the most patients in the waiting list are led by Orthopaedics, followed by Ophthalmology, Urology, General Surgery and Otolaryngology (ENT).  
 Orthopaedics has an almost balanced number of day case and inpatient case, however, Ophthalmology has a lot of day case patients compared to inpatient case in the waiting list.
