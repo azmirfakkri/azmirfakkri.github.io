@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo Which file do you want to post?
 read -e -p "Post:" file
 file="${file}.Rmd"
@@ -13,8 +13,8 @@ then
   cat $markdown >> temp_post.md
   mv temp_post.md $markdown
 fi
-perl -pi -e 's/..\/assets\/img\/blog_images\///g' $markdown
-perl -pi -e 's/!\[]\(/!\[]\(\{\{site_url\}\}\/assets\/img\/blog_images\//g' $markdown
+perl -pi -e 's/..\/img\/blog_images\///g' $markdown
+perl -pi -e 's/!\[]\(/!\[]\(\{\{site_url\}\}\/img\/blog_images\//g' $markdown
 post_files="${post}_files"
 date=`date +%Y-%m-%d`
 markdown_for_post="${date}-${markdown}"
@@ -27,7 +27,7 @@ fi
 cd $wd
 markdown_output="../_posts/${markdown_for_post}"
 cp $markdown $markdown_output
-cp -r $post_files ..assets/img/blog_images
+cp -r $post_files ..img/blog_images
 
 if diff $markdown_output $markdown >/dev/null; then
   echo "Your post was succesfully moved";
