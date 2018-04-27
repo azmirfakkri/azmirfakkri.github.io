@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo Which file do you want to post?
 read -e -p "Post:" file
 file="${file}.Rmd"
