@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/search/">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Azmir F" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+    
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Search | Azmir F</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Search" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Data Science" />
+<meta property="og:description" content="Data Science" />
+<link rel="canonical" href="http://localhost:4000/search/" />
+<meta property="og:url" content="http://localhost:4000/search/" />
+<meta property="og:site_name" content="Azmir F" />
+<script type="application/ld+json">
+{"headline":"Search","description":"Data Science","@type":"WebPage","url":"http://localhost:4000/search/","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Manual seo tags -->
+    <!--
+    <title>Search | Azmir F</title>
+    <meta name="description" content="">
+    -->
+</head>
+
+  <body>
+    <header class="site-header">
+    
+    <!-- Logo and title -->
+	<div class="branding">
+		<a href="/">
+			<img class="avatar" src="/assets/img/profile.png" alt=""/>
+		</a>
+
+		<h1 class="site-title">
+			<a href="/">Azmir F</a>
+		</h1>
+	</div>
+    
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+    
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/portfolio">
+                Portfolio
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+    </ul>
+        
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/assets/img/pexels/search-map.jpeg')">
+    <h1 id="Search" class="title">
+        Search
+    </h1>
+    
+    
+    <h2 class="subtitle">What are you looking for?</h2>
+    
+      
+  </header>
+  <section class="post-content"><!-- Html Elements for Search -->
+<input type="text" id="search-input" placeholder="Enter keywords..." class="search-bar">
+<br>
+<br>
+<ul id="results-container"></ul>
+
+<section>
+    <!-- Script pointing to jekyll-search.js -->
+    <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: [
+                    
+                     
+                        {
+                          "title"    : "Time Series Analysis and Forecasting",
+                          "category" : "",
+                          "tags"     : " R, Data Visualisation, Markdown, Portfolio",
+                          "url"      : "/2018/03/11/timeseries.html",
+                          "date"     : "March 11, 2018",
+                          "excerpt"  : "Time-Series Forecasting                      In&amp;nbsp;[3]:    # import packagesimport pandas as pdimport seaborn as snsimport matplotlib.pyplot as plt%matplotlib inlineimport datetime as dtimport numpy as npimport warningsfrom statsmodels.graph...",
+                          "content"  : "Time-Series Forecasting                      In&amp;nbsp;[3]:    # import packagesimport pandas as pdimport seaborn as snsimport matplotlib.pyplot as plt%matplotlib inlineimport datetime as dtimport numpy as npimport warningsfrom statsmodels.graphics.tsaplots import plot_acf, plot_pacfimport statsmodels.api as smnp.warnings.filterwarnings(&amp;#39;ignore&amp;#39;)In&amp;nbsp;[4]:    # read data and set date as indexcoins = pd.read_csv(&amp;quot;http://data.oscarsouth.com/coins/coins.csv&amp;quot;, index_col = &amp;#39;Date&amp;#39;)coins.index = pd.to_datetime(coins.index)In&amp;nbsp;[5]:    # view datacoins.info()&amp;lt;class &amp;#39;pandas.core.frame.DataFrame&amp;#39;&amp;gt;DatetimeIndex: 2287 entries, 2011-12-18 to 2018-03-22Data columns (total 21 columns):BTC_weighted_price    2287 non-null float64BTC_volume            2287 non-null float64BTC_open              2287 non-null float64BTC_high              2287 non-null float64BTC_low               2287 non-null float64BTC_close             2287 non-null float64BTC_pcnt_change       2287 non-null float64ETH_weighted_price    956 non-null float64ETH_volume            956 non-null float64ETH_open              956 non-null float64ETH_high              956 non-null float64ETH_low               956 non-null float64ETH_close             956 non-null float64ETH_pcnt_change       956 non-null float64LTC_weighted_price    1523 non-null float64LTC_volume            1523 non-null float64LTC_open              1523 non-null float64LTC_high              1523 non-null float64LTC_low               1523 non-null float64LTC_close             1523 non-null float64LTC_pcnt_change       1523 non-null float64dtypes: float64(21)memory usage: 393.1 KBIn&amp;nbsp;[6]:    coins.head()Out[6]:                  BTC_weighted_price      BTC_volume      BTC_open      BTC_high      BTC_low      BTC_close      BTC_pcnt_change      ETH_weighted_price      ETH_volume      ETH_open      ...      ETH_low      ETH_close      ETH_pcnt_change      LTC_weighted_price      LTC_volume      LTC_open      LTC_high      LTC_low      LTC_close      LTC_pcnt_change              Date                                                                                                                                                2011-12-18      3.397929      17.242857      3.25      3.50      3.25      3.50      7.692308      NaN      NaN      NaN      ...      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN              2011-12-19      3.809668      134.734292      3.50      3.98      3.50      3.85      10.000000      NaN      NaN      NaN      ...      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN              2011-12-20      4.570030      94.743353      4.75      4.75      4.53      4.55      -4.210526      NaN      NaN      NaN      ...      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN              2011-12-21      4.380000      20.899543      4.38      4.38      4.38      4.38      0.000000      NaN      NaN      NaN      ...      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN              2011-12-22      4.183819      8.535264      4.19      4.19      4.17      4.17      -0.477327      NaN      NaN      NaN      ...      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      5 rows × 21 columnsIn&amp;nbsp;[7]:    coins.tail()Out[7]:                  BTC_weighted_price      BTC_volume      BTC_open      BTC_high      BTC_low      BTC_close      BTC_pcnt_change      ETH_weighted_price      ETH_volume      ETH_open      ...      ETH_low      ETH_close      ETH_pcnt_change      LTC_weighted_price      LTC_volume      LTC_open      LTC_high      LTC_low      LTC_close      LTC_pcnt_change              Date                                                                                                                                                2018-03-18      7670.518666      17695.486956      7851.8800      8294.4275      7316.2200      8190.5225      4.312884      501.397260      4303.161798      549.121228      ...      452.386465      572.804191      28.535656      145.516719      705.795075      151.878758      163.287832      135.373116      158.429113      13.668707              2018-03-19      8383.159592      15669.313725      8194.8500      8745.4450      8101.6200      8597.9475      4.918912      541.675929      1790.971784      537.459237      ...      512.341345      563.896387      6.728342      156.570679      351.514465      153.643768      165.783378      149.879970      161.201370      -0.947385              2018-03-20      8687.915179      12356.075702      8594.9325      9043.6450      8315.0900      8916.1350      3.737115      547.002868      1216.876779      556.092047      ...      516.165864      576.873845      12.135824      164.045909      358.617035      161.334017      174.117116      154.619348      167.363254      -3.533202              2018-03-21      8965.557594      10624.202171      8917.4800      9181.2250      8754.9675      8893.9325      -0.264060      567.331788      1446.754033      558.457274      ...      542.807810      556.982612      0.130064      170.527774      290.808030      168.941659      176.695797      163.424513      168.495551      0.006967              2018-03-22      8752.489005      9798.694309      8891.8750      9096.8975      8486.3125      8706.0225      -2.090138      541.801213      1128.149649      559.610153      ...      515.641926      547.913526      -3.621886      165.638929      186.969877      168.500853      174.660432      158.701087      164.978952      -1.891697      5 rows × 21 columnsPlotting Time Series&amp;#182;Bitcoin, Ethereum and Litecoin Weighted PriceBitcoin Weighted PriceEthereum Weighted PriceLitecoin Weighted PriceIn&amp;nbsp;[8]:    coins.filter(regex = &amp;quot;weighted_price&amp;quot;).plot(figsize=(20,10), fontsize=20, title=&amp;#39;Weighted Price&amp;#39;)Out[8]:&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x1c16e64668&amp;gt;In&amp;nbsp;[9]:    coins.filter(regex = &amp;quot;weighted_price&amp;quot;).plot(figsize=(20,10), fontsize=20, logy=True)Out[9]:&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x1c1cc9ecc0&amp;gt;In&amp;nbsp;[10]:    coins.filter(regex = &amp;quot;BTC_weighted_price&amp;quot;).plot(figsize=(20,10), fontsize=20, logy=True).legend(loc = 2)Out[10]:&amp;lt;matplotlib.legend.Legend at 0x1c20528128&amp;gt;In&amp;nbsp;[11]:    coins.filter(regex = &amp;quot;ETH_weighted_price&amp;quot;).plot(figsize=(20,10), fontsize=20, color=&amp;quot;orange&amp;quot;, logy=True).legend(loc = 2)Out[11]:&amp;lt;matplotlib.legend.Legend at 0x1c20796ef0&amp;gt;In&amp;nbsp;[12]:    coins.filter(regex = &amp;quot;LTC_weighted_price&amp;quot;).plot(figsize=(20,10), fontsize=20, color=&amp;quot;green&amp;quot;, logy=True).legend(loc = 2)Out[12]:&amp;lt;matplotlib.legend.Legend at 0x1c20c960f0&amp;gt;Candlestick&amp;#182;BitcoinEthereumLitecoinIn&amp;nbsp;[13]:    from matplotlib import stylefrom matplotlib.finance import candlestick_ohlcimport matplotlib.dates as mdatesbtc_ohlc = coins[[&amp;#39;BTC_open&amp;#39;, &amp;#39;BTC_high&amp;#39;, &amp;#39;BTC_low&amp;#39;, &amp;#39;BTC_close&amp;#39;]]def cs_plot(btc_ohlc, title=&amp;#39;&amp;#39;):    btc_ohlc.reset_index(inplace=True)    btc_ohlc[&amp;quot;Date&amp;quot;] = btc_ohlc[&amp;quot;Date&amp;quot;].map(mdates.date2num)    fig = plt.figure(figsize=(20,10))    f1 = plt.subplot2grid((1, 1), (0, 0))    f1.xaxis_date()    candlestick_ohlc(f1, btc_ohlc.values, width=0.5, colorup=&amp;#39;g&amp;#39;, colordown=&amp;#39;#ff1717&amp;#39;)    plt.ylabel(&amp;#39;Price&amp;#39;)    plt.xlabel(&amp;#39;Date&amp;#39;)    plt.title(title)    returnIn&amp;nbsp;[14]:    btc_ohlc = coins[[&amp;#39;BTC_open&amp;#39;, &amp;#39;BTC_high&amp;#39;, &amp;#39;BTC_low&amp;#39;, &amp;#39;BTC_close&amp;#39;]]btc_ohlc = btc_ohlc.loc[&amp;#39;20171201&amp;#39;:&amp;#39;20180130&amp;#39;]cs_plot(btc_ohlc, title=&amp;#39;Bitcoin Candlestick&amp;#39;)In&amp;nbsp;[15]:    eth_ohlc = coins[[&amp;#39;ETH_open&amp;#39;, &amp;#39;ETH_high&amp;#39;, &amp;#39;ETH_low&amp;#39;, &amp;#39;ETH_close&amp;#39;]]eth_ohlc = eth_ohlc.loc[&amp;#39;20171101&amp;#39;:&amp;#39;20180101&amp;#39;]cs_plot(eth_ohlc, title=&amp;#39;Ethereum Candlestick&amp;#39;)In&amp;nbsp;[16]:    ltc_ohlc = coins[[&amp;#39;LTC_open&amp;#39;, &amp;#39;LTC_high&amp;#39;, &amp;#39;LTC_low&amp;#39;, &amp;#39;LTC_close&amp;#39;]]ltc_ohlc = ltc_ohlc.loc[&amp;#39;20171101&amp;#39;:&amp;#39;20180201&amp;#39;]cs_plot(ltc_ohlc, title=&amp;#39;Litecoin Candlestick&amp;#39;)Identifying Trend Pattern&amp;#182;Plotting 12 months rolling average:Bitcoin Rolling Mean &amp;amp; Standard DeviationEthereum Rolling Mean &amp;amp; Standard DeviationLitecoin Rolling Mean &amp;amp; Standard DeviationIn&amp;nbsp;[17]:    wp_btc = coins[&amp;#39;BTC_weighted_price&amp;#39;]wp_btc = wp_btc[&amp;#39;20170101&amp;#39;:]def plot_rolling_average(wp_btc, title=&amp;#39;Rolling Mean &amp;amp; Standard Deviation of Bitcoin&amp;#39;):    #calculate moving averages    rolling_mean = wp_btc.rolling(window=12,center=False).mean()    rolling_std = wp_btc.rolling(window=12,center=False).std()    #plot statistics    fig = plt.figure(figsize=(20,10))    plt.plot(wp_btc, label=&amp;#39;Original&amp;#39;)    plt.plot(rolling_mean, color=&amp;#39;crimson&amp;#39;, label=&amp;#39;Moving average mean&amp;#39;)    plt.plot(rolling_std, color=&amp;#39;darkslateblue&amp;#39;, label=&amp;#39;Moving average standard deviation&amp;#39;)    plt.legend(loc=&amp;#39;best&amp;#39;)    plt.title(title)plot_rolling_average(wp_btc)In&amp;nbsp;[18]:    wp_eth = coins[&amp;#39;ETH_weighted_price&amp;#39;]wp_eth = wp_eth[&amp;#39;20170101&amp;#39;:]plot_rolling_average(wp_eth, title=&amp;#39;Rolling Mean &amp;amp; Standard Deviation of Ethereum&amp;#39;)In&amp;nbsp;[19]:    wp_ltc = coins[&amp;#39;LTC_weighted_price&amp;#39;]wp_ltc = wp_ltc[&amp;#39;20170101&amp;#39;:]plot_rolling_average(wp_ltc, title=&amp;#39;Rolling Mean &amp;amp; Standard Deviation of Litecoin&amp;#39;)Stationarity&amp;#182;Augmented Dickey-Fuller Test will be used to check for stationarity of the time-seriesBitcoin Weighted Price&amp;#182;Hypothesis TestingH0: The time series is non-stationaryH1: The time series is stationaryIn&amp;nbsp;[20]:    from statsmodels.tsa.stattools import adfuller, kpssdef test_stationarity(wp_btc):    print (&amp;#39;Results of Dickey-Fuller Test:&amp;#39;)    dftest = adfuller(wp_btc, autolag=&amp;#39;AIC&amp;#39; )    dfoutput = pd.Series(dftest[0:4], index=[&amp;#39;Test Statistic&amp;#39;,&amp;#39;p-value&amp;#39;,&amp;#39;#Lags Used&amp;#39;,&amp;#39;Number of Observations Used&amp;#39;])    for key,value in dftest[4].items():        dfoutput[&amp;#39;Critical Value (%s)&amp;#39;%key] = value    print (dfoutput)test_stationarity(wp_btc)Results of Dickey-Fuller Test:Test Statistic                  -1.150957p-value                          0.694329#Lags Used                       1.000000Number of Observations Used    444.000000Critical Value (1%)             -3.445164Critical Value (5%)             -2.868072Critical Value (10%)            -2.570249dtype: float64As the p-value is greater than 0.05, we cannot reject null hypothesis, the series is not stationaryEthereum Weighted Price&amp;#182;In&amp;nbsp;[21]:    test_stationarity(wp_eth)Results of Dickey-Fuller Test:Test Statistic                  -1.066372p-value                          0.728294#Lags Used                      12.000000Number of Observations Used    433.000000Critical Value (1%)             -3.445543Critical Value (5%)             -2.868238Critical Value (10%)            -2.570338dtype: float64As the p-value is greater than 0.05, we cannot reject null hypothesis, the series is not stationaryLitecoin Weighted Price&amp;#182;In&amp;nbsp;[22]:    test_stationarity(wp_ltc)Results of Dickey-Fuller Test:Test Statistic                  -1.206902p-value                          0.670619#Lags Used                      18.000000Number of Observations Used    427.000000Critical Value (1%)             -3.445758Critical Value (5%)             -2.868333Critical Value (10%)            -2.570388dtype: float64As the p-value is greater than 0.05, we cannot reject null hypothesis, the series is not stationaryEliminating Trend and Seasonality&amp;#182;From the preliminary plots, an increasing trend can be seen for all cryptocurrencies especially starting in 2017.There are two methods that can be used to remove trend and seasonality:DifferencingDecompositionThese methods will be applied to Bitcoin, Ethereum and Litecoin.ts_diagnostics is a function created to monitor the progress in making the time-series stationary.In&amp;nbsp;[23]:    def ts_diagnostics(wp_btc, lags=None, title=&amp;#39;&amp;#39;):    if not isinstance(wp_btc, pd.Series):        wp_btc = pd.Series(wp_btc)    # weekly moving averages (5 day window because of workdays)    rolling_mean = wp_btc.rolling(window=12,center=False).mean()    rolling_std = wp_btc.rolling(window=12,center=False).std()    fig = plt.figure(figsize=(14, 12))    layout = (3, 2)    ts_ax = plt.subplot2grid(layout, (0, 0), colspan=2)    acf_ax = plt.subplot2grid(layout, (1, 0))    pacf_ax = plt.subplot2grid(layout, (1, 1))    qq_ax = plt.subplot2grid(layout, (2, 0))    hist_ax = plt.subplot2grid(layout, (2, 1))    # time series plot    wp_btc.plot(ax=ts_ax)    rolling_mean.plot(ax=ts_ax, color=&amp;#39;crimson&amp;#39;);    rolling_std.plot(ax=ts_ax, color=&amp;#39;darkslateblue&amp;#39;);    ts_ax.set_title(title, fontsize=24);    # acf and pacf    plot_acf(wp_btc, lags=lags, ax=acf_ax, alpha=0.5)    plot_pacf(wp_btc, lags=lags, ax=pacf_ax, alpha=0.5)    # qq plot    sm.qqplot(wp_btc, line=&amp;#39;s&amp;#39;, ax=qq_ax)    qq_ax.set_title(&amp;#39;QQ Plot&amp;#39;)    # hist plot    wp_btc.plot(ax=hist_ax, kind=&amp;#39;hist&amp;#39;, bins=25);    hist_ax.set_title(&amp;#39;Histogram&amp;#39;);    plt.tight_layout();    plt.show()    # perform Augmented Dickey Fuller test    print(&amp;#39;Results of Dickey-Fuller test:&amp;#39;)    dftest = adfuller(wp_btc, autolag=&amp;#39;AIC&amp;#39;)    dfoutput = pd.Series(dftest[0:4], index=[&amp;#39;test statistic&amp;#39;, &amp;#39;p-value&amp;#39;, &amp;#39;# of lags&amp;#39;, &amp;#39;# of observations&amp;#39;])    for key, value in dftest[4].items():        dfoutput[&amp;#39;Critical Value (%s)&amp;#39;%key] = value    print(dfoutput)    returnDifferencing&amp;#182;First-Order DifferenceStationary in VarianceLog-Transformed First-OrderSecond-Order DifferenceBitcoin: First-Order Difference&amp;#182;Removing the trend from time-series using first order differencing.In&amp;nbsp;[24]:    wp_btc_diff = np.diff(wp_btc)ts_diagnostics(wp_btc_diff, lags=30, title=&amp;#39;Bitcoin Weighted Price&amp;#39;)Results of Dickey-Fuller test:test statistic         -1.772602e+01p-value                 3.451501e-30# of lags               0.000000e+00# of observations       4.440000e+02Critical Value (1%)    -3.445164e+00Critical Value (5%)    -2.868072e+00Critical Value (10%)   -2.570249e+00dtype: float64Bitcoin: Stationary in Variance&amp;#182;Using log transformation to make the variance of the time-series stationary.In&amp;nbsp;[25]:    wp_btc_log = np.log(wp_btc)ts_diagnostics(wp_btc_log, lags=30, title=&amp;#39;Bitcoin Weighted Price Log&amp;#39;)Results of Dickey-Fuller test:test statistic           -0.931620p-value                   0.777381# of lags                 1.000000# of observations       444.000000Critical Value (1%)      -3.445164Critical Value (5%)      -2.868072Critical Value (10%)     -2.570249dtype: float64Bitcoin: Log-Transformed First-Order&amp;#182;Combining both techniquesIn&amp;nbsp;[26]:    wp_btc_log_diff = np.log(wp_btc).diff().dropna()ts_diagnostics(wp_btc_log_diff, lags=30, title=&amp;#39;Bitcoin Weighted Price Log Diff&amp;#39;)Results of Dickey-Fuller test:test statistic         -1.691738e+01p-value                 1.000031e-29# of lags               0.000000e+00# of observations       4.440000e+02Critical Value (1%)    -3.445164e+00Critical Value (5%)    -2.868072e+00Critical Value (10%)   -2.570249e+00dtype: float64Bitcoin: Second-Order Difference&amp;#182;In&amp;nbsp;[27]:    wp_btc_log_diff2 = np.log(wp_btc).diff().diff(12).dropna()ts_diagnostics(wp_btc_log_diff2, lags=30, title=&amp;#39;Bitcoin Weighted Price Log Diff 2&amp;#39;)Results of Dickey-Fuller test:test statistic         -8.571430e+00p-value                 8.177609e-14# of lags               1.200000e+01# of observations       4.200000e+02Critical Value (1%)    -3.446016e+00Critical Value (5%)    -2.868446e+00Critical Value (10%)   -2.570449e+00dtype: float64Decomposition&amp;#182;Both trend and seasonality are modelled separately.ts_decomposition function is created for this purpose.In&amp;nbsp;[28]:    from statsmodels.tsa.seasonal import seasonal_decomposedef ts_decomposition(wp_btc, title=&amp;#39;&amp;#39;):    decomposition = seasonal_decompose(wp_btc)    trend = decomposition.trend    seasonal = decomposition.seasonal    residual = decomposition.resid    fig = plt.figure(figsize=(14, 12))    layout = (4, 1)    #plot original    plt.subplot(411)    plt.plot(wp_btc, label=&amp;#39;Original&amp;#39;)    plt.legend(loc=&amp;#39;best&amp;#39;)    plt.title(title, fontsize=24)    #plot trend    plt.subplot(412)    plt.plot(trend, label=&amp;#39;Trend&amp;#39;)    plt.legend(loc=&amp;#39;best&amp;#39;)    #plot seasonality    plt.subplot(413)    plt.plot(seasonal,label=&amp;#39;Seasonality&amp;#39;)    plt.legend(loc=&amp;#39;best&amp;#39;)    #plot residuals    plt.subplot(414)    plt.plot(residual, label=&amp;#39;Residuals&amp;#39;)    plt.legend(loc=&amp;#39;best&amp;#39;)    plt.tight_layout()    returnBitcoin: Decomposition&amp;#182;In&amp;nbsp;[29]:    ts_decomposition(wp_btc_log, title=&amp;#39;Bitcoin&amp;#39;)Test of stationarity using time-series residualIn&amp;nbsp;[30]:    btc_decomposition = seasonal_decompose(wp_btc_log)btc_residual = btc_decomposition.residwp_btc_log_decompose = btc_residualwp_btc_log_decompose.dropna(inplace=True)test_stationarity(wp_btc_log_decompose)Results of Dickey-Fuller Test:Test Statistic                -9.099881e+00p-value                        3.629791e-15#Lags Used                     1.600000e+01Number of Observations Used    4.230000e+02Critical Value (1%)           -3.445904e+00Critical Value (5%)           -2.868397e+00Critical Value (10%)          -2.570423e+00dtype: float64Ethereum: First-Order Difference&amp;#182;Removing the trend from time-series using first order differencing.In&amp;nbsp;[31]:    wp_eth_diff = np.diff(wp_eth)ts_diagnostics(wp_eth_diff, lags=30, title=&amp;#39;Ethereum Weighted Price&amp;#39;)Results of Dickey-Fuller test:test statistic           -3.342815p-value                   0.013070# of lags                18.000000# of observations       426.000000Critical Value (1%)      -3.445794Critical Value (5%)      -2.868349Critical Value (10%)     -2.570397dtype: float64Ethereum: Stationary in Variance&amp;#182;Using log transformation to make the variance of the time-series stationary.In&amp;nbsp;[32]:    wp_eth_log = np.log(wp_eth)ts_diagnostics(wp_eth_log, lags=30, title=&amp;#39;Ethereum Weighted Price Log&amp;#39;)Results of Dickey-Fuller test:test statistic           -2.337641p-value                   0.160115# of lags                 1.000000# of observations       444.000000Critical Value (1%)      -3.445164Critical Value (5%)      -2.868072Critical Value (10%)     -2.570249dtype: float64Ethereum: Log-Transformed First-Order&amp;#182;Combining both techniquesIn&amp;nbsp;[33]:    wp_eth_log_diff = np.log(wp_eth).diff().dropna()ts_diagnostics(wp_eth_log_diff, lags=30, title=&amp;#39;Ethereum Weighted Price Log Diff&amp;#39;)Results of Dickey-Fuller test:test statistic         -1.749378e+01p-value                 4.422566e-30# of lags               0.000000e+00# of observations       4.440000e+02Critical Value (1%)    -3.445164e+00Critical Value (5%)    -2.868072e+00Critical Value (10%)   -2.570249e+00dtype: float64Ethereum: Second-Order Difference&amp;#182;In&amp;nbsp;[34]:    wp_eth_log_diff2 = np.log(wp_eth).diff().diff(12).dropna()ts_diagnostics(wp_eth_log_diff2, lags=30, title=&amp;#39;Ethereum Weighted Price Log Diff 2&amp;#39;)Results of Dickey-Fuller test:test statistic         -7.105903e+00p-value                 4.054526e-10# of lags               1.400000e+01# of observations       4.180000e+02Critical Value (1%)    -3.446091e+00Critical Value (5%)    -2.868479e+00Critical Value (10%)   -2.570466e+00dtype: float64Ethereum: Decomposition&amp;#182;In&amp;nbsp;[35]:    wp_eth_log = np.log(wp_eth)ts_decomposition(wp_eth_log, title=&amp;#39;Ethereum&amp;#39;)Test of stationarity using time-series residualIn&amp;nbsp;[36]:    eth_decomposition = seasonal_decompose(wp_eth_log)eth_residual = eth_decomposition.residwp_eth_log_decompose = eth_residualwp_eth_log_decompose.dropna(inplace=True)test_stationarity(wp_eth_log_decompose)Results of Dickey-Fuller Test:Test Statistic                -9.714631e+00p-value                        9.905086e-17#Lags Used                     1.600000e+01Number of Observations Used    4.230000e+02Critical Value (1%)           -3.445904e+00Critical Value (5%)           -2.868397e+00Critical Value (10%)          -2.570423e+00dtype: float64Litecoin: First-Order Difference&amp;#182;Removing the trend from time-series using first order differencing.In&amp;nbsp;[37]:    wp_ltc_diff = np.diff(wp_ltc)ts_diagnostics(wp_ltc_diff, lags=30, title=&amp;#39;Litecoin Weighted Price&amp;#39;)Results of Dickey-Fuller test:test statistic           -5.239203p-value                   0.000007# of lags                17.000000# of observations       427.000000Critical Value (1%)      -3.445758Critical Value (5%)      -2.868333Critical Value (10%)     -2.570388dtype: float64Litecoin: Decomposition&amp;#182;In&amp;nbsp;[38]:    wp_ltc_log = np.log(wp_ltc)ts_decomposition(wp_ltc_log, title=&amp;#39;Litecoin&amp;#39;)Test of stationarity using time-series residualIn&amp;nbsp;[39]:    ltc_decomposition = seasonal_decompose(wp_ltc_log)ltc_residual = ltc_decomposition.residwp_ltc_log_decompose = ltc_residualwp_ltc_log_decompose.dropna(inplace=True)test_stationarity(wp_ltc_log_decompose)Results of Dickey-Fuller Test:Test Statistic                -9.100540e+00p-value                        3.615751e-15#Lags Used                     1.400000e+01Number of Observations Used    4.250000e+02Critical Value (1%)           -3.445831e+00Critical Value (5%)           -2.868365e+00Critical Value (10%)          -2.570405e+00dtype: float64      "
+                        } ,
+                     
+                        {
+                          "title"    : "Irish Hospitals Waiting List",
+                          "category" : "",
+                          "tags"     : " R, Data Visualisation, Markdown, Portfolio",
+                          "url"      : "/2018/02/12/Waiting-List.html",
+                          "date"     : "February 12, 2018",
+                          "excerpt"  : "In the third quarter of 2017, major Irish news outlets reported that the waiting list in Irish public hospitals hit a new record at a staggering 589000 patients waiting for treatments. Resource is the main issue causing this problem other than pop...",
+                          "content"  : "In the third quarter of 2017, major Irish news outlets reported that the waiting list in Irish public hospitals hit a new record at a staggering 589000 patients waiting for treatments. Resource is the main issue causing this problem other than population growth and funding.Waiting list of this size is not an overnight result. It is a result of a cumulative funding cuts of almost €1.9 billion in the current Health capital plan for 2016 to 2021. With short-sighted decisions from politicians in Ireland and the top-heavy Health Service Executive management structure, it is almost difficult to see how this issue can be brought under control in the near future.#install and load packageslibrary(dplyr)library(stringr)library(tidyr)library(ggplot2)library(gridExtra)library(grid)library(knitr)library(kableExtra)# Load datawl_raw &amp;lt;- read.csv(&quot;https://raw.githubusercontent.com/azmirfakkri/datascience-projects/master/Datasets/IPDC%20Waiting%20List%20By%20Group%20Hospital%202017.csv&quot;,                     header = TRUE, sep = &quot;,&quot;)# View the whole data structureglimpse(wl_raw)## Observations: 49,739## Variables: 11## $ Archive.Date   &amp;lt;fctr&amp;gt; 2017-01-31, 2017-01-31, 2017-01-31, 2017-01-31...## $ Group          &amp;lt;fctr&amp;gt; Children&#39;s Hospital Group, Children&#39;s Hospital...## $ Hospital.HIPE  &amp;lt;int&amp;gt; 940, 940, 940, 940, 940, 940, 940, 940, 940, 94...## $ Hospital       &amp;lt;fctr&amp;gt; Childrens University Hospital Temple Street, C...## $ Specialty.HIPE &amp;lt;int&amp;gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 600, 600, 6...## $ Speciality     &amp;lt;fctr&amp;gt; Small Volume Specialities, Small Volume Specia...## $ Case.Type      &amp;lt;fctr&amp;gt; Day Case, Day Case, Day Case, Day Case, Day Ca...## $ Adult.Child    &amp;lt;fctr&amp;gt; Child, Child, Child, Child, Child, Child, Chil...## $ Age.Profile    &amp;lt;fctr&amp;gt; 0-15, 0-15, 0-15, 0-15, 0-15, 0-15, 16-64, 16-...## $ Time.Bands     &amp;lt;fctr&amp;gt;  0-3 Months,  3-6 Months,  6-9 Months,  9-12 M...## $ Total          &amp;lt;int&amp;gt; 3, 1, 1, 1, 2, 1, 1, 1, 2, 3, 1, 1, 26, 4, 2, 2...# Check for missing valuesany(is.na(wl_raw))## [1] FALSE# View headkable(head(wl_raw), &quot;html&quot;, caption = &quot;Irish Hospital Waiting List 2017&quot;) %&amp;gt;%  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;))Irish Hospital Waiting List 2017Archive.DateGroupHospital.HIPEHospitalSpecialty.HIPESpecialityCase.TypeAdult.ChildAge.ProfileTime.BandsTotal2017-01-31Children&#39;s Hospital Group940Childrens University Hospital Temple Street0Small Volume SpecialitiesDay CaseChild0-150-3 Months32017-01-31Children&#39;s Hospital Group940Childrens University Hospital Temple Street0Small Volume SpecialitiesDay CaseChild0-153-6 Months12017-01-31Children&#39;s Hospital Group940Childrens University Hospital Temple Street0Small Volume SpecialitiesDay CaseChild0-156-9 Months12017-01-31Children&#39;s Hospital Group940Childrens University Hospital Temple Street0Small Volume SpecialitiesDay CaseChild0-159-12 Months12017-01-31Children&#39;s Hospital Group940Childrens University Hospital Temple Street0Small Volume SpecialitiesDay CaseChild0-1512-15 Months22017-01-31Children&#39;s Hospital Group940Childrens University Hospital Temple Street0Small Volume SpecialitiesDay CaseChild0-1515-18 Months1Data AnalysisAs November is the most recent snapshot of the waiting list in Irish public hospitals, a subset of the data is created and analyses will be focused on that particular month.# November Caseswl_nov &amp;lt;- wl_raw %&amp;gt;% filter(Archive.Date == &quot;2017-11-30&quot;)# Plot 1: Total Cases by Hospital Group in Nov 2017wl_nov %&amp;gt;% group_by(Group, Hospital) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%ggplot(aes(x = Group, y = Total_Cases, fill = Group)) +  geom_bar(stat = &quot;identity&quot;) +  labs(title = &quot;Total Cases by Hospital Group in Nov 2017&quot;,       y = &quot;Total Cases&quot;) +  theme(axis.ticks.x = element_blank(),        axis.text.x = element_blank())From the bar chart, it can be seen that there are seven hospital groups in Ireland. Every hospital group is associated with a few hospitals in Ireland. Saolta University Health Care Group recorded the highest number of patients in the waiting list.In November 2017, the total number of patients in the waiting list is 80595. This is an interesting point as a number of major Irish newspapers are quoting a much higher number in, 687000 (RTE, August 2017) and 680000 (Irish Times, October 2017). From a quick research, the data used by Irish Times and RTE are also sourced from NTPF.# Hospitals by Grouphosp_group &amp;lt;- wl_nov %&amp;gt;% group_by(Group, Hospital) %&amp;gt;%  summarise(Total_Cases = sum(Total))kable(hosp_group, &quot;html&quot;, caption = &quot;Hospital Group and Total Cases&quot;) %&amp;gt;%  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;))Hospital Group and Total CasesGroupHospitalTotal\_CasesChildren&#39;s Hospital GroupChildrens University Hospital Temple Street1155Children&#39;s Hospital GroupOur Lady&#39;s Children&#39;s Hospital Crumlin2790Children&#39;s Hospital GroupTallaght Children&#39;s Hospital654Dublin Midlands Hospital GroupMidland Regional Hospital Portlaoise435Dublin Midlands Hospital GroupMidland Regional Hospital Tullamore2017Dublin Midlands Hospital GroupNaas General Hospital79Dublin Midlands Hospital GroupSt. James&#39;s Hospital5319Dublin Midlands Hospital GroupTallaght Hospital4325Ireland East Hospital GroupCappagh National Orthopaedic Hospital1786Ireland East Hospital GroupMater Misericordiae University Hospital6088Ireland East Hospital GroupMidland Regional Hospital Mullingar207Ireland East Hospital GroupOur Lady&#39;s Hospital Navan559Ireland East Hospital GroupRoyal Victoria Eye and Ear Hospital2426Ireland East Hospital GroupSt. Columcille&#39;s Hospital213Ireland East Hospital GroupSt. Luke&#39;s General Hospital Kilkenny681Ireland East Hospital GroupSt. Michael&#39;s Hospital Dun Laoghaire711Ireland East Hospital GroupSt. Vincent&#39;s University Hospital2182Ireland East Hospital GroupWexford General Hospital197RCSI Hospitals GroupBeaumont Hospital6200RCSI Hospitals GroupCavan General Hospital505RCSI Hospitals GroupConnolly Hospital1309RCSI Hospitals GroupLouth County Hospital524RCSI Hospitals GroupOur Lady of Lourdes Hospital Drogheda861Saolta University Health Care GroupGalway University Hospital11362Saolta University Health Care GroupLetterkenny General Hospital2642Saolta University Health Care GroupMayo General Hospital1632Saolta University Health Care GroupPortiuncula Hospital267Saolta University Health Care GroupRoscommon Hospital2073Saolta University Health Care GroupSligo Regional Hospital3205South/South West Hospital GroupBantry General Hospital22South/South West Hospital GroupCork University Hospital1431South/South West Hospital GroupCork University Maternity Hospital409South/South West Hospital GroupKerry General Hospital155South/South West Hospital GroupLourdes Orthopaedic Hospital Kilcreene325South/South West Hospital GroupMallow General Hospital162South/South West Hospital GroupMercy University Hospital1284South/South West Hospital GroupSouth Infirmary Victoria University Hospital2642South/South West Hospital GroupSouth Tipperary General Hospital215South/South West Hospital GroupUniversity Hospital Waterford5856University of Limerick Hospital GroupCroom Orthopaedic Hospital282University of Limerick Hospital GroupEnnis Hospital728University of Limerick Hospital GroupNenagh Hospital861University of Limerick Hospital GroupSt. John&#39;s Hospital Limerick1032University of Limerick Hospital GroupUniversity Hospital Limerick2787All hospitals associated with each group can be seen in the table above along with the total number of patients in the waiting list for November 2017.# Total Cases by Hospital in Nov 2017wl_nov %&amp;gt;% group_by(Group, Hospital) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%ggplot(aes(x = reorder(Hospital, Total_Cases),                          y = Total_Cases,                          fill = Total_Cases)) +  geom_bar(stat = &quot;identity&quot;) +  labs(title = &quot;Total Cases by Hospital in Nov 2017&quot;,       x = &quot;Hospital&quot;,       y = &quot;Total Cases&quot;) +  scale_fill_continuous(guide = &quot;none&quot;, low =&quot;blue&quot;, high =&quot;red&quot;) +  coord_flip()Galway University Hospital has the highest number of patients in the waiting list in November 2017.Five of the top 10 hospitals with highest number of waiting list cases are located in Dublin, including Beaumont Hospital, Mater Misericordiae University Hospital, St. James’s Hospital, Tallaght Hospital and Our Lady’s Children Hospital Crumlin.# Total Cases by Patient Type and Case Typewl_nov %&amp;gt;% group_by(Adult.Child, Case.Type) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%  ggplot(aes(x = Adult.Child, y = Total_Cases, fill = Case.Type)) +  geom_bar(stat = &quot;identity&quot;) +  labs(title = &quot;Cases by Patient Type and Case Type&quot;,       x = &quot;Patient Type&quot;,       y = &quot;Total Cases&quot;) +  geom_text(aes(label = Total_Cases), position = position_stack(vjust = 0.5),            colour = &quot;white&quot;, size = 3) +  scale_fill_discrete(name = &quot;Case Type&quot;) +  theme(axis.text.y = element_blank(),        axis.ticks.y = element_blank())The number of adult patients in the waiting list are almost 10 times higher than child patients. In both group of patients, the number of day case is higher than inpatient case.# Total Cases by Case Type and Age Profilewl_nov %&amp;gt;% group_by(Case.Type, Age.Profile) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%ggplot(aes(x = Case.Type, y = Total_Cases, fill = Age.Profile)) +  geom_bar(stat = &quot;identity&quot;) +  labs(title = &quot;Cases by Case Type and Age Profile&quot;,       x = &quot;Case Type&quot;,       y = &quot;Total Cases&quot;) +  geom_text(aes(label = Total_Cases), position = position_stack(vjust = 0.5),            colour = &quot;white&quot;, size = 3) +  scale_fill_discrete(name = &quot;Age Profile&quot;) +  theme(axis.text.y = element_blank(),        axis.ticks.y = element_blank())In general, day case has more patients in the waiting list compared to inpatient case. There is a higher number of patients aged between 16 to 64 years old in the waiting list for both categories compared to the rest of the age profiles.# Total Cases by Month by Hospital Grouptotal_bydate &amp;lt;- wl_raw %&amp;gt;% group_by(Archive.Date, Group) %&amp;gt;%  summarise(Average_Cases = mean(Total))total_bydate2 &amp;lt;- separate(total_bydate, &quot;Archive.Date&quot;, c(&quot;Year&quot;, &quot;Month&quot;, &quot;Day&quot;), sep = &quot;-&quot;)total_bymonth &amp;lt;- total_bydate2[ , c(-1, -3)]# Plot 5: Monthly Average Cases by Hospital Groupggplot(total_bymonth, aes(x = Month, y = Average_Cases, colour = Group, group = Group)) +  geom_point() +  geom_line() +  labs(title = &quot;Monthly Average Cases by Hospital Group&quot;,       y = &quot;Average Cases&quot;)From January to November 2017, only a minimal reduction in the average number of patients in the waiting list across all hospital groups can be seen except for RCSI Hospitals Group.# Total Cases by Speciality based on Case Type in Nov 2017wl_nov %&amp;gt;% group_by(Speciality, Case.Type) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%ggplot(aes(x = reorder(Speciality, -Total_Cases),                          y = Total_Cases,                          fill = Case.Type)) +  geom_bar(stat = &quot;identity&quot;) +  labs(title = &quot;Total Cases by Speciality based on Case Type in Nov 2017&quot;,       x = &quot;Speciality&quot;,       y = &quot;Total Cases&quot;) +  scale_fill_discrete(name = &quot;Case Type&quot;) +  theme(axis.ticks.y = element_blank(),        axis.text.y = element_blank(),        axis.text.x = element_text(angle = 90, hjust = 1))The top five specialties with the most patients in the waiting list are led by Orthopaedics, followed by Ophthalmology, Urology, General Surgery and Otolaryngology (ENT).Orthopaedics has an almost balanced number of day case and inpatient case, however, Ophthalmology has a lot of day case patients compared to inpatient case in the waiting list.# Total Cases by Time Bands based on Patient Type in Nov 2017wl_nov %&amp;gt;% group_by(Time.Bands, Adult.Child) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%ggplot(aes(Time.Bands, Total_Cases, fill = Adult.Child)) +  geom_bar(stat = &quot;identity&quot;, position = &quot;dodge&quot;) +  geom_text(aes(label = Total_Cases),size = 3, position = position_dodge(0.9),            vjust = 1.1, color = &quot;white&quot;) +  labs(title = &quot;Total Cases by Time Bands based on Patient Type in Nov 2017&quot;,       x = &quot;Time Bands&quot;,       y = &quot;Total Cases&quot;) +  scale_fill_discrete(name = &quot;Patient Type&quot;) +  theme(axis.ticks.y = element_blank(),        axis.text.y = element_blank())Time bands are the range of times (in months) for patients to be seen in Irish public hospitals. There is a lot of adult patients in all time bands compared to child patients. Looking at Figure 9, 0 to 3 months has the highest number of patients and 15 to 18 months has the least number of patients.There are less number of patients as waiting time (time bands) gets longer, but there is a slight increase in total cases for time band 18+ months. It could be inferred from Figure 24 that all hospitals are trying to see as many patients in the waiting list as soon as possible.A patient in the time band of 0 to 3 month are scheduled to be seen within 3 months from November 2017. It is also important to note that when a patient is being put in a waiting list, many aspects have been considered especially the severity of the disease. As an example, a patient with hyperkalaemia will always be seen and treated immediately.# Total Cases by Time Bands based on Case Type in Nov 2017wl_nov %&amp;gt;% group_by(Time.Bands, Case.Type) %&amp;gt;%  summarise(Total_Cases = sum(Total)) %&amp;gt;%  ggplot(aes(Time.Bands, Total_Cases, fill = Case.Type)) +  geom_bar(stat = &quot;identity&quot;, position = &quot;dodge&quot;) +  geom_text(aes(label = Total_Cases), size = 3, position = position_dodge(0.9),            vjust = 1.1, color = &quot;white&quot;) +  labs(title = &quot;Total Cases by Time Bands based on Case Type in Nov 2017&quot;,       x = &quot;Time Bands&quot;,       y = &quot;Total Cases&quot;) +  scale_fill_discrete(name = &quot;Case Type&quot;) +  theme(axis.ticks.y = element_blank(),        axis.text.y = element_blank())From the figure above, it can be seen that across all time bands, there is a lot more patient with day case than inpatient case in the waiting list.RecommendationsFrom this series of analyses, it is obvious that a big portion of cases in the waiting list are day cases. Strategies should be developed to allow patients to be seen quicker. More resources should be allocated to alleviate this problem.The top five hospitals with the highest number of patients in the waiting list are Galway University Hospital, Beaumont Hospital, Mater Misericordiae University Hospital, University Hospital Waterford and St. James’s Hospital.Based on specialties, the top five specialties with the highest number of patients in the waiting list are Orthopaedics, Ophthalmology, Urology, General Surgery and Otolaryngology (ENT). These hospitals and specialties will need special attention to deal with their waiting list. Further data and analysis are required to determine the factors causing this backlog in these specialties.ConclusionThe data analyses has provided some valuable information regarding the waiting list in Ireland. Most cases in the waiting list are day cases and the top five hospitals and specialties with the highest number of patients in the waiting list are now recognised and recommendations are made accordingly. Regarding the figures used in Irish Times and RTE, a small conclusion can be made that the numbers are misleading due to the way aggregated data were processed."
+                        } ,
+                     
+                        {
+                          "title"    : "Sample post",
+                          "category" : "",
+                          "tags"     : " Test, Lorem, Ipsum",
+                          "url"      : "/2014/11/30/sample-post.html",
+                          "date"     : "November 30, 2014",
+                          "excerpt"  : "Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincid...",
+                          "content"  : "Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.  Consectetur adipiscing elit  Donec a diam lectus  Sed sit amet ipsum maurisUt turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.  Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis nequeEtiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+                        } ,
+                     
+                        {
+                          "title"    : "Feature images",
+                          "category" : "",
+                          "tags"     : " Test, Lorem",
+                          "url"      : "/2014/11/29/feature-images.html",
+                          "date"     : "November 29, 2014",
+                          "excerpt"  : "This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.",
+                          "content"  : "This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages."
+                        } ,
+                     
+                        {
+                          "title"    : "Markdown and HTML",
+                          "category" : "",
+                          "tags"     : " Test, Markdown",
+                          "url"      : "/2014/11/28/markdown-and-html.html",
+                          "date"     : "November 28, 2014",
+                          "excerpt"  : "Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.Tables have also been extended from Mark...",
+                          "content"  : "Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.Tables have also been extended from Markdown:            First Header      Second Header                  Content Cell      Content Cell              Content Cell      Content Cell      Here’s an example of an image, which is included using Markdown:Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes use of Rouge by default.// count to tenfor (var i = 1; i &amp;lt;= 10; i++) {    console.log(i);}// count to twentyvar j = 0;while (j &amp;lt; 20) {    j++;    console.log(j);}Type on Strap uses KaTeX to display maths. Equations such as  can be displayed inline.Alternatively, they can be shown on a new line:"
+                        } ,
+                     
+                        {
+                          "title"    : "Markup: Syntax Highlighting",
+                          "category" : "",
+                          "tags"     : " code",
+                          "url"      : "/2014/08/08/Markup-Syntax-Highlighting.html",
+                          "date"     : "August 8, 2014",
+                          "excerpt"  : "From Michael’s Rose Minimal Mistakes.Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming lang...",
+                          "content"  : "From Michael’s Rose Minimal Mistakes.Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.GFM Code BlocksGitHub Flavored Markdown fenced code blocks are supported. To modify styling and highlight colors edit /_sass/syntax.scss.#container {  float: left;  margin: 0 -240px 0 0;  width: 100%;}1234567.highlight {  margin: 0;  padding: 1em;  font-family: $monospace;  font-size: $type-size-7;  line-height: 1.8;}&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;  {% if page.previous %}    &amp;lt;a href=&quot;{{ site.url }}{{ page.previous.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.previous.title }}&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;  {% endif %}  {% if page.next %}    &amp;lt;a href=&quot;{{ site.url }}{{ page.next.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.next.title }}&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;  {% endif %}&amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;module Jekyll  class TagIndex &amp;lt; Page    def initialize(site, base, dir, tag)      @site = site      @base = base      @dir = dir      @name = &#39;index.html&#39;      self.process(@name)      self.read_yaml(File.join(base, &#39;_layouts&#39;), &#39;tag_index.html&#39;)      self.data[&#39;tag&#39;] = tag      tag_title_prefix = site.config[&#39;tag_title_prefix&#39;] || &#39;Tagged: &#39;      tag_title_suffix = site.config[&#39;tag_title_suffix&#39;] || &#39;&amp;amp;#8211;&#39;      self.data[&#39;title&#39;] = &quot;#{tag_title_prefix}#{tag}&quot;      self.data[&#39;description&#39;] = &quot;An archive of posts tagged #{tag}.&quot;    end  endendCode Blocks in ListsIndentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., 1.). Usually this will mean indenting 3 spaces instead of 4.  Do step 1.      Now do this:    def print_hi(name)  puts &quot;Hi, #{name}&quot;endprint_hi(&#39;Tom&#39;)#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.        Now you can do this.GitHub Gist EmbedAn example of a Gist embed below.Source"
+                        } ,
+                     
+                        {
+                          "title"    : "Use toc.js for table of content",
+                          "category" : "",
+                          "tags"     : " Test, toc.js, Markdown, Customization",
+                          "url"      : "/2013/12/12/toc.js-for-table-of-content.html",
+                          "date"     : "December 12, 2013",
+                          "excerpt"  : "Test article, get the source on github.Demo display of jekyll-table-of-contents by ghiculescu.Customize with toc.jstoc.js stands for table of content, it is a js plugin that generates automatically a table of content of a post.Use with this jekyll...",
+                          "content"  : "Test article, get the source on github.Demo display of jekyll-table-of-contents by ghiculescu.Customize with toc.jstoc.js stands for table of content, it is a js plugin that generates automatically a table of content of a post.Use with this jekyll templateIf you want to customize the theme it is up to you, you can add the toc.js file into the asset &amp;gt; js and add it into the page.html layout with:&amp;lt;script src=&quot;/assets/js/toc.js&quot; &amp;gt;&amp;lt;/script&amp;gt;Then you can use it as it is said on the repository.Basic UsageThe script requires jQuery. First, reference toc.js in templates where you would like to add the table of content. Then, create an HTML element wherever you want your table of contents to appear:&amp;lt;div id=&quot;toc&quot;&amp;gt;&amp;lt;/div&amp;gt;Then you put your post with titles and all like:## Title## Mid title 1This is text on page one## Mid title 2This is text for page two### Sub title 2.aSome more textThen at the end of your post, you call the .toc() function using:&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;$(document).ready(function() {    $(&#39;#toc&#39;).toc();});&amp;lt;/script&amp;gt;How it would look like"
+                        } ,
+                     
+                        {
+                          "title"    : "Blogging with title",
+                          "category" : "",
+                          "tags"     : " Test, Ipsum, Markdown, Portfolio",
+                          "url"      : "/2013/11/18/blogging-with-title.html",
+                          "date"     : "November 18, 2013",
+                          "excerpt"  : "I am a BIG titleThis is a very tiny tiny post with less than 250 letters.Search should be working even for complicated escape symbolssed -i &#39;s/\&quot;hostname\&quot;\:.*$/\&quot;hostname\&quot;\: \&quot;&#39;$IPADDR&#39;\&quot;\,/g&#39; open-f...",
+                          "content"  : "I am a BIG titleThis is a very tiny tiny post with less than 250 letters.Search should be working even for complicated escape symbolssed -i &#39;s/\&quot;hostname\&quot;\:.*$/\&quot;hostname\&quot;\: \&quot;&#39;$IPADDR&#39;\&quot;\,/g&#39; open-falcon/agent/config/cfg.json"
+                        } 
+                     ,
+                     
+                       {
+                         
+                            "title"    : "Ninja",
+                            "category" : "",
+                            "tags"     : " Lorem",
+                            "url"      : "/portfolio/ninja",
+                            "date"     : "April 8, 2014",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Creative",
+                            "category" : "",
+                            "tags"     : " Ipsum",
+                            "url"      : "/portfolio/safe",
+                            "date"     : "August 16, 2014",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Circus",
+                            "category" : "",
+                            "tags"     : " Ipsum",
+                            "url"      : "/portfolio/circus",
+                            "date"     : "September 1, 2014",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Tower of Hanoi",
+                            "category" : "",
+                            "tags"     : " ",
+                            "url"      : "/portfolio/hanoi",
+                            "date"     : "September 1, 2014",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Tic tac toe",
+                            "category" : "",
+                            "tags"     : " ",
+                            "url"      : "/portfolio/tictactoe",
+                            "date"     : "September 1, 2014",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Cake",
+                            "category" : "",
+                            "tags"     : " Lorem, Ipsum, Portfolio",
+                            "url"      : "/portfolio/cake",
+                            "date"     : "September 27, 2015",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Jekyll",
+                            "category" : "",
+                            "tags"     : " ",
+                            "url"      : "/portfolio/jekyllblog",
+                            "date"     : "May 26, 2017",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Lorem Ipsum",
+                            "category" : "",
+                            "tags"     : " ",
+                            "url"      : "/portfolio/submarine",
+                            "date"     : "September 3, 2017",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Github",
+                            "category" : "",
+                            "tags"     : " Lorem, Portfolio",
+                            "url"      : "/portfolio/gitlecture",
+                            "date"     : "October 20, 2017",
+                            "excerpt"  : "",
+                            "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia..."
+                         
+                       } 
+                     
+                    
+                  ],
+            searchResultTemplate: '<div class="search-title"><a href="{url}"><h3> {title}</h3></a><div class="meta">{date} <div class="right"><i class="fa fa-tag"></i> {tags}</div></div><p>{excerpt}</p></div><hr> ',
+            noResultsText: 'No results found',
+            limit: 10,
+            fuzzy: false,
+            exclude: []
+        })
+    </script>
+</section>
+</section>
+    
+    
+  <!-- Tag list for portfolio -->
+  
+  
+
+
+<footer>
+  <div class="tag-list"></div>
+</footer>
+
+    
+</article>
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:azmirfakkri@gmail.com" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/azmirfakkri" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="​https://www.linkedin.com/in/azmir-fakkri-2523a7118/" title="Follow on LinkedIn">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+  </body>
+</html>
