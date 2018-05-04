@@ -19,8 +19,8 @@
     }
 
     .avatar {
-        height: 3em;
-        width: 3em;
+        height: 4em;
+        width: 4em;
         float: left;
         margin-top: -13px;
         border-radius: 0.2em;
@@ -33,7 +33,7 @@
         float: left;
         font-weight: bold;
         font-size: 1em;
-        line-height: 1.5;
+        line-height: 2.75;
     }
 
     nav {
@@ -44,7 +44,7 @@
             margin: 0;
             padding: 0;
             list-style: none;
-            line-height: 1.5;
+            line-height: 2.75;
             float: right;
             text-align: right;
         }
@@ -70,7 +70,7 @@
 }
 
 
-// To clear things when we float the element inisde nav and ul 
+// To clear things when we float the element inisde nav and ul
 .clear {
     *zoom: 1;
 

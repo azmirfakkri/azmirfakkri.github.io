@@ -1,21 +1,21 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://azmirfakkri.github.io/"
-title: Azmir F # site's title
-description: "Data Science" # used by search engines
+title: Azmir Fakkri # site's title
+description: "Data Science for Everyone" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Azmir F # blog's title
+  title: Azmir Fakkri # blog's title
   avatar: assets/img/profile.png
   favicon:
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p>LEARN | DISCUSS | SHARE</p>
+     <p>Data Science for Everyone</p>
   header_text_feature_image: assets/img/pexels/light.jpg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
@@ -49,9 +49,14 @@ theme_settings:
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname: datsci
   katex: true # Enable if using math markup
-  portfolio: true
-  search: true
-  tags: true
+
+  special_page:
+    search:
+      icon: "search" # Assuming page link and icon are the same
+      enabled: true
+    tags:
+      icon: "tags"
+      enabled: true
 
   # Localization strings
   str_follow_on: "Follow on"
