@@ -59,16 +59,6 @@
     </script>
     {% endif %}
 
-    <!-- Open Graph Metadata -->
-    {% if site.theme_settings.facebook_app_id %}
-    <meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
-    <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:description" content="{{ page.content | markdownify | strip_html | strip_newlines | truncate: 300 }}" />
-    <meta property="og:image" content="{{ site.url }}/{{ page.image }}" />
-
-
     <!-- seo tags -->
     {% seo %}
     <!-- Manual seo tags -->
