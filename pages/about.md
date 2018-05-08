@@ -14,16 +14,19 @@ tags: [About]
 I recently started my journey in data science in 2017. Prior to that, I attended one of the medical schools in Dublin, Ireland.   
 <br><br>
 This website is dedicated to my continuous learning in data science and a platform to show my skills and creativity. I hope you learn a thing or two from my posts.
-<br><br>
+<br>
 I am interested to learn and develop my skills in data visualisation and communication, machine learning and deep learning.
 <br><br>
 My posts will include numerous data science topics and tools but will be geared towards these three areas. So you can expect to see a lot of posts on Tableau and Tensorflow.
+<br>
+Occasionally, I like to dip my hands in design using Adobe Suite. So you will see my amateur designs throughout the website.
+<br>
 Coming from a non-technical or non-technology background, my blog posts will be written in plain English without too many technical jargons.
 <br><br>
 If I am not working on my projects, I am probably walking my two spaniels or arguing who gets more wine with my partner.
 <br><br>
 I would like to thank the contributors on pexels and Sylhare for the Jekyll theme.
-<br><br>
+<br>
 Please join me in the discussion. If you think I can help you or if you have any questions at all, for the love of dogs, I’m only an email away.
 </p>
 
