@@ -28,17 +28,17 @@ When I mentioned technology, I wasn't exactly referring to a scientific calculat
 
 To further discuss about technology in data science, let's divide it into four categories.
 
-**Programming Languages**
+**1. Programming Languages**
 
 There are many programming languages that can be used as an analytic language. The two most popular languages are R and Python. You can compare R and Python for data analysis from this [infographic](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis) published by DataCamp. Scala is another programming language that is used for [Apache Spark](https://spark.apache.org) but it is not an exclusive language for Apache Spark as you can write your codes using Python, [PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.html) and R, [SparkR](https://spark.apache.org/docs/latest/sparkr.html). MATLAB is a language that is very similar to R, if you know R, it is most likely you can learn and write in MATLAB within an hour.
 
 I think it is very useful to learn R and Python as they have many libraries that can assist you in your analysis. One thing to note, in some job descriptions, HR or recruiters will list the library or package names for example ggplot2 or SciKit-Learn. ggplot2 is a data visualisation package in R and it is very popular in creating stunning graphs and charts. SciKit-Learn on the other hand is a Python package for machine learning. So these are not something separate from R or Python, they are just packages written in R or Python.
 
-**Query Languages**
+**2. Query Languages**
 
 The most popular query language is Structured Query Language (SQL). A query language is used to query a database to retrieve information. SQL is used for relational database where data is stored in tabular format with row and columns. Database that is not relational is called NoSQL (Not Only SQL) database. An example of a NoSQL database is Neo4j, a graph based database and the its query language is called Cypher.
 
-**Data Science Tools**
+**3. Data Science Tools**
 
 As I mentioned before, there is a lot of data science tools available on the market, either open source or proprietary. The ones listed here are only a tiny fraction of what's available.
 
@@ -57,18 +57,18 @@ A graph based database, using Cypher as a query language. It is probably a great
 <span style="color:#2980B9">**Microsoft SQL Server Management Studio**</span>  
 Microsoft SQL Server Management Studio is an integrated environment which allows you to manage SQL infrastructure. Codes are written in SQL.
 
-**The Apaches**
+**4. The Apaches**
 
 The Apache Software Foundation's mission is to provide software for the public good. They have numerous open source projects. You might see some of Apache's open source projects in many job descriptions. The most commonly seen is Apache Hadoop. But let's sort these projects by two categories that are closely related to data science.
 
-1. For Big Data
+<span style="color:#2980B9">**For Big Data**</span>  
     * [Ambari](https://projects.apache.org/project.html?ambari)
     * [Kafka](https://projects.apache.org/project.html?kafka)
     * [Spark](https://projects.apache.org/project.html?spark)
     * [Sqoop](https://projects.apache.org/project.html?sqoop)
     * [Zeppelin](https://projects.apache.org/project.html?zeppelin)
 
-2. For Database  
+<span style="color:#2980B9">**For Databases**</span>  
     * [Cassandra](https://projects.apache.org/project.html?cassandra)
     * [Hadoop](https://projects.apache.org/project.html?hadoop)
     * [HBase](https://projects.apache.org/project.html?hbase)
