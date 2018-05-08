@@ -62,19 +62,19 @@ Microsoft SQL Server Management Studio is an integrated environment which allows
 The Apache Software Foundation's mission is to provide software for the public good. They have numerous open source projects. You might see some of Apache's open source projects in many job descriptions. The most commonly seen is Apache Hadoop. But let's sort these projects by two categories that are closely related to data science.
 
 <span style="color:#2980B9">**For Big Data**</span>  
-    * [Ambari](https://projects.apache.org/project.html?ambari)
-    * [Kafka](https://projects.apache.org/project.html?kafka)
-    * [Spark](https://projects.apache.org/project.html?spark)
-    * [Sqoop](https://projects.apache.org/project.html?sqoop)
-    * [Zeppelin](https://projects.apache.org/project.html?zeppelin)
+* [Ambari](https://projects.apache.org/project.html?ambari)
+* [Kafka](https://projects.apache.org/project.html?kafka)
+* [Spark](https://projects.apache.org/project.html?spark)
+* [Sqoop](https://projects.apache.org/project.html?sqoop)
+* [Zeppelin](https://projects.apache.org/project.html?zeppelin)
 
 <span style="color:#2980B9">**For Databases**</span>  
-    * [Cassandra](https://projects.apache.org/project.html?cassandra)
-    * [Hadoop](https://projects.apache.org/project.html?hadoop)
-    * [HBase](https://projects.apache.org/project.html?hbase)
-    * [Hive](https://projects.apache.org/project.html?hive)
-    * [Pig](https://projects.apache.org/project.html?pig)
-    * [ZooKeeper](https://projects.apache.org/project.html?zookeeper)
+* [Cassandra](https://projects.apache.org/project.html?cassandra)
+* [Hadoop](https://projects.apache.org/project.html?hadoop)
+* [HBase](https://projects.apache.org/project.html?hbase)
+* [Hive](https://projects.apache.org/project.html?hive)
+* [Pig](https://projects.apache.org/project.html?pig)
+* [ZooKeeper](https://projects.apache.org/project.html?zookeeper)
 
 You will probably use half of the tools listed here, so it is good to know what they are and their functions.
 
