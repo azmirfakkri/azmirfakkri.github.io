@@ -50,3 +50,5 @@ Please join me in the discussion. If you think I can help you or if you have any
     - [Introduction to Time Series Analysis in Python](https://www.datacamp.com/statement-of-accomplishment/course/f2461c099e1bc07ecba07aa482e46083aa56a03e)
 + MATLAB
     - [MATLAB Onramp](/assets/img/other/MATLAB Onramp.jpg)
++ SQL  
+    - [Intro to SQL for Data Science](https://www.datacamp.com/statement-of-accomplishment/course/c276f0f0b5380e6a7dfc5a1324de8cf5d6dae505)
