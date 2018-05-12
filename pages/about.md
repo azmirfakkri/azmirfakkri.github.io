@@ -11,7 +11,7 @@ tags: [About]
 </div>
 
 <p style="text-align: justify;">
-I recently started my journey in data science in 2017. Prior to that, I attended one of the medical schools in Dublin, Ireland.   
+I recently started my journey in data science in 2017. Prior to that, I attended one of the medical schools in Dublin, Ireland. I have written blog posts before and I have an experience in medical writing specifically for medical education in anatomy. 
 <br><br>
 This website is dedicated to my continuous learning in data science and a platform to show my skills and creativity. I hope you learn a thing or two from my posts.
 <br>

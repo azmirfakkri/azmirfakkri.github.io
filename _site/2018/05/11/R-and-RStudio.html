@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/2018/05/11/R-and-RStudio.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>R and RStudio | Azmir Fakkri</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="R and RStudio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="R is a programming language for statistical computing and graphics. R is free to download here and RStudio can be downloaded here, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible." />
+<meta property="og:description" content="R is a programming language for statistical computing and graphics. R is free to download here and RStudio can be downloaded here, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible." />
+<link rel="canonical" href="http://localhost:4000/2018/05/11/R-and-RStudio.html" />
+<meta property="og:url" content="http://localhost:4000/2018/05/11/R-and-RStudio.html" />
+<meta property="og:site_name" content="Azmir Fakkri" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-11T00:00:00+01:00" />
+<script type="application/ld+json">
+{"headline":"R and RStudio","dateModified":"2018-05-11T00:00:00+01:00","datePublished":"2018-05-11T00:00:00+01:00","description":"R is a programming language for statistical computing and graphics. R is free to download here and RStudio can be downloaded here, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.","@type":"BlogPosting","url":"http://localhost:4000/2018/05/11/R-and-RStudio.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/05/11/R-and-RStudio.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Manual seo tags -->
+    <!--
+    <title>R and RStudio | Azmir Fakkri</title>
+    <meta name="description" content="R is a programming language for statistical computing and graphics. R is free to download here and RStudio can be downloaded here, also for free. It is impor...">
+    -->
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+		<a href="/">
+			<img class="avatar" src="/assets/img/profile.png" alt=""/>
+		</a>
+
+		<h1 class="site-title">
+			<a href="/">Azmir Fakkri</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        <!-- Auto Generation of NORMAL pages in the navbar -->
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/">
+                Home
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/portfolio/">
+                Portfolio
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+
+        <!-- Auto Generation of SPECIAL pages in the navbar -->
+        
+          
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" href="http://localhost:4000/search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+          
+        
+          
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" href="http://localhost:4000/tags">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                </a>
+            </li>
+          
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="background-image: url('/')">
+    <h1 id="R+and+RStudio" class="title">R and RStudio</h1>
+    <p class="meta">
+    May 11, 2018
+    
+    </p>
+  </header>
+  <section class="post-content"><p>R is a programming language for statistical computing and graphics. R is free to download <a href="https://www.r-project.org">here</a> and RStudio can be downloaded <a href="https://www.rstudio.com">here</a>, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.</p>
+
+<p><img src="/assets/img/blog_images/R_series/R_RStudio.png" alt="R and RStudio" /></p>
+
+<p><br />
+So what is the difference?</p>
+
+<h1 id="r">R</h1>
+
+<p>When you open R, this is what you will see, an R Console.</p>
+
+<p><img src="/assets/img/blog_images/R_series/Rconsole.png" alt="R Console" /></p>
+
+<p>With R Console, you can straight away write your code and see the output, as easy as that. I personally does not use R Console as I prefer to use RStudio.</p>
+
+<h1 id="rstudio">RStudio</h1>
+
+<p>RStudio is an Integrated Development Environment (IDE) for R. You can look up what an IDE is and you can get a more comprehensive definition which can be quite technical, but don’t worry, all my posts will be written in a simple, easy-to-understand language, with less jargon. Let’s take a look at the following screenshot of RStudio for further explanation.</p>
+
+<p>To experience the power of RStudio, you will need to download R into your machine first.</p>
+
+<p><img src="/assets/img/blog_images/R_series/RStudio.png" alt="RStudio" /></p>
+
+<p>In RStudio, you will have four sections.</p>
+
+<p><strong>Top-left</strong>
+This is where you write your R script or Rmarkdown. It is best practice to comment on your codes, i.e. what the code chunk does, so this is where you write them all.</p>
+
+<p><strong>Bottom-left</strong>
+If you look carefully, there are two tabs shown in the picture, Console and Terminal. Whenever you run your code in the top-left section, the codes will run in the Console as well. Remember that we saw the R Console in R previously, so basically that R Console is now embedded as this bottom-left section in RStudio.</p>
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/e1DjV9t-g5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+</iframe>
+
+<p><br /></p>
+
+<p><strong>Top-right</strong>
+You can see that there are three tabs in this section, Environment, History and Connections. The tab that we are concerned about is Environment. This is where you can see all the variables that you have assigned in R. If you look at the previous video, when I run <code class="highlighter-rouge">x &lt;- c(1, 2, 3, 4)</code> , this also appeared in the Environment tab.</p>
+
+<p><strong>Bottom-right</strong>
+In this section, you will see a few more tabs, Files, Plots, Packages, Help and Viewer.</p>
+
+<ul>
+  <li><span style="color:#2980B9"><strong>Files</strong></span> - You can quickly access your file in this tab.</li>
+  <li><span style="color:#2980B9"><strong>Plots</strong></span> - This is where you can see your plots or graphs.</li>
+  <li><span style="color:#2980B9"><strong>Packages</strong></span> - All the packages installed in R and their versions.</li>
+  <li><span style="color:#2980B9"><strong>Help</strong></span> - The Viewer pane can be used to view local web content.</li>
+</ul>
+
+<p>RStudio is easy to use, I can navigate my way in RStudio quickly after a few weeks of using it. With the ability to write your Rmarkdown file and setting the output to html, pdf or word document, you can produce high quality and pretty content in just one software.</p>
+</section>
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#R">
+      <p><i class="fa fa-tag fa-fw"></i> R</p>
+    </a>
+    
+    <a class="button" href="/tags#RStudio">
+      <p><i class="fa fa-tag fa-fw"></i> RStudio</p>
+    </a>
+    
+  </div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'datsci';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2018/05/08/Data-Science-What-&-Why.html">
+        What is Data Science?
+      </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:azmirfakkri@gmail.com" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/azmirfakkri" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/azmirfakkri/" title="Follow on LinkedIn">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+  </body>
+</html>

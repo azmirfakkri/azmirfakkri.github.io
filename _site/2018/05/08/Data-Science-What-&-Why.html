@@ -23,7 +23,7 @@
     <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
 
     <!-- Font Awesome -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
@@ -188,17 +188,17 @@
 
 <p>To further discuss about technology in data science, let’s divide it into four categories.</p>
 
-<p><strong>Programming Languages</strong></p>
+<p><strong>1. Programming Languages</strong></p>
 
 <p>There are many programming languages that can be used as an analytic language. The two most popular languages are R and Python. You can compare R and Python for data analysis from this <a href="https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis">infographic</a> published by DataCamp. Scala is another programming language that is used for <a href="https://spark.apache.org">Apache Spark</a> but it is not an exclusive language for Apache Spark as you can write your codes using Python, <a href="https://spark.apache.org/docs/0.9.0/python-programming-guide.html">PySpark</a> and R, <a href="https://spark.apache.org/docs/latest/sparkr.html">SparkR</a>. MATLAB is a language that is very similar to R, if you know R, it is most likely you can learn and write in MATLAB within an hour.</p>
 
 <p>I think it is very useful to learn R and Python as they have many libraries that can assist you in your analysis. One thing to note, in some job descriptions, HR or recruiters will list the library or package names for example ggplot2 or SciKit-Learn. ggplot2 is a data visualisation package in R and it is very popular in creating stunning graphs and charts. SciKit-Learn on the other hand is a Python package for machine learning. So these are not something separate from R or Python, they are just packages written in R or Python.</p>
 
-<p><strong>Query Languages</strong></p>
+<p><strong>2. Query Languages</strong></p>
 
 <p>The most popular query language is Structured Query Language (SQL). A query language is used to query a database to retrieve information. SQL is used for relational database where data is stored in tabular format with row and columns. Database that is not relational is called NoSQL (Not Only SQL) database. An example of a NoSQL database is Neo4j, a graph based database and the its query language is called Cypher.</p>
 
-<p><strong>Data Science Tools</strong></p>
+<p><strong>3. Data Science Tools</strong></p>
 
 <p>As I mentioned before, there is a lot of data science tools available on the market, either open source or proprietary. The ones listed here are only a tiny fraction of what’s available.</p>
 
@@ -217,31 +217,28 @@ A graph based database, using Cypher as a query language. It is probably a great
 <p><span style="color:#2980B9"><strong>Microsoft SQL Server Management Studio</strong></span><br />
 Microsoft SQL Server Management Studio is an integrated environment which allows you to manage SQL infrastructure. Codes are written in SQL.</p>
 
-<p><strong>The Apaches</strong></p>
+<p><strong>4. The Apaches</strong></p>
 
 <p>The Apache Software Foundation’s mission is to provide software for the public good. They have numerous open source projects. You might see some of Apache’s open source projects in many job descriptions. The most commonly seen is Apache Hadoop. But let’s sort these projects by two categories that are closely related to data science.</p>
 
-<ol>
-  <li>For Big Data
-    <ul>
-      <li><a href="https://projects.apache.org/project.html?ambari">Ambari</a></li>
-      <li><a href="https://projects.apache.org/project.html?kafka">Kafka</a></li>
-      <li><a href="https://projects.apache.org/project.html?spark">Spark</a></li>
-      <li><a href="https://projects.apache.org/project.html?sqoop">Sqoop</a></li>
-      <li><a href="https://projects.apache.org/project.html?zeppelin">Zeppelin</a></li>
-    </ul>
-  </li>
-  <li>For Database
-    <ul>
-      <li><a href="https://projects.apache.org/project.html?cassandra">Cassandra</a></li>
-      <li><a href="https://projects.apache.org/project.html?hadoop">Hadoop</a></li>
-      <li><a href="https://projects.apache.org/project.html?hbase">HBase</a></li>
-      <li><a href="https://projects.apache.org/project.html?hive">Hive</a></li>
-      <li><a href="https://projects.apache.org/project.html?pig">Pig</a></li>
-      <li><a href="https://projects.apache.org/project.html?zookeeper">ZooKeeper</a></li>
-    </ul>
-  </li>
-</ol>
+<p><span style="color:#2980B9"><strong>For Big Data</strong></span></p>
+<ul>
+  <li><a href="https://projects.apache.org/project.html?ambari">Ambari</a></li>
+  <li><a href="https://projects.apache.org/project.html?kafka">Kafka</a></li>
+  <li><a href="https://projects.apache.org/project.html?spark">Spark</a></li>
+  <li><a href="https://projects.apache.org/project.html?sqoop">Sqoop</a></li>
+  <li><a href="https://projects.apache.org/project.html?zeppelin">Zeppelin</a></li>
+</ul>
+
+<p><span style="color:#2980B9"><strong>For Databases</strong></span></p>
+<ul>
+  <li><a href="https://projects.apache.org/project.html?cassandra">Cassandra</a></li>
+  <li><a href="https://projects.apache.org/project.html?hadoop">Hadoop</a></li>
+  <li><a href="https://projects.apache.org/project.html?hbase">HBase</a></li>
+  <li><a href="https://projects.apache.org/project.html?hive">Hive</a></li>
+  <li><a href="https://projects.apache.org/project.html?pig">Pig</a></li>
+  <li><a href="https://projects.apache.org/project.html?zookeeper">ZooKeeper</a></li>
+</ul>
 
 <p>You will probably use half of the tools listed here, so it is good to know what they are and their functions.</p>
 
@@ -279,44 +276,7 @@ Microsoft SQL Server Management Studio is an integrated environment which allows
   </div>
 </footer>
 
-  <div id="share-bar">
 
-    <h4>Share this:</h4>
-
-    <div class="share-buttons">
-        <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2018/05/08/Data-Science-What-&-Why.html"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on Facebook" >
-            <i class="fa fa-facebook-official share-button"> facebook</i>
-        </a>
-
-        <a  href="https://twitter.com/intent/tweet?text=What is Data Science?&url=http://localhost:4000/2018/05/08/Data-Science-What-&-Why.html"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on Twitter" >
-            <i class="fa fa-twitter share-button"> twitter</i>
-        </a>
-
-        <a  href="https://plus.google.com/share?url=http://localhost:4000/2018/05/08/Data-Science-What-&-Why.html"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on Google+" >
-            <i class="fa fa-google-plus share-button"> google</i>
-        </a>
-
-        <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2018/05/08/Data-Science-What-&-Why.html&title=What is Data Science?&summary=&source=Azmir Fakkri"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on LinkedIn" >
-            <i class="fa fa-linkedin share-button"> linkedin</i>
-        </a>
-
-        <a  href="mailto:?subject=What is Data Science?&amp;body=Check out this site http://localhost:4000/2018/05/08/Data-Science-What-&-Why.html"
-            title="Share via Email" >
-            <i class="fa fa-envelope share-button"> email</i>
-        </a>
-    </div>
-
-</div>
-
-  
 </article>
 
 <!-- Disqus -->
@@ -340,6 +300,13 @@ Microsoft SQL Server Management Studio is an integrated environment which allows
 
   <div id="post-nav">
   
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/2018/05/11/R-and-RStudio.html">
+        R and RStudio
+      </a>
+  </div>
   
 </div>
 

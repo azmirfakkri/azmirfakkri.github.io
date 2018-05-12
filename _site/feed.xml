@@ -5,7 +5,65 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description></description>
-        <pubDate>Tue, 08 May 2018 20:56:38 +0100</pubDate>
+        <pubDate>Sat, 12 May 2018 23:06:24 +0100</pubDate>
+        
+        <item>
+            <title>R and RStudio</title>
+            <link>/2018/05/11/R-and-RStudio.html</link>
+            <guid isPermaLink="true">/2018/05/11/R-and-RStudio.html</guid>
+            <description>&lt;p&gt;R is a programming language for statistical computing and graphics. R is free to download &lt;a href=&quot;https://www.r-project.org&quot;&gt;here&lt;/a&gt; and RStudio can be downloaded &lt;a href=&quot;https://www.rstudio.com&quot;&gt;here&lt;/a&gt;, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog_images/R_series/R_RStudio.png&quot; alt=&quot;R and RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+So what is the difference?&lt;/p&gt;
+
+&lt;h1 id=&quot;r&quot;&gt;R&lt;/h1&gt;
+
+&lt;p&gt;When you open R, this is what you will see, an R Console.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog_images/R_series/Rconsole.png&quot; alt=&quot;R Console&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With R Console, you can straight away write your code and see the output, as easy as that. I personally does not use R Console as I prefer to use RStudio.&lt;/p&gt;
+
+&lt;h1 id=&quot;rstudio&quot;&gt;RStudio&lt;/h1&gt;
+
+&lt;p&gt;RStudio is an Integrated Development Environment (IDE) for R. You can look up what an IDE is and you can get a more comprehensive definition which can be quite technical, but don’t worry, all my posts will be written in a simple, easy-to-understand language, with less jargon. Let’s take a look at the following screenshot of RStudio for further explanation.&lt;/p&gt;
+
+&lt;p&gt;To experience the power of RStudio, you will need to download R into your machine first.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog_images/R_series/RStudio.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In RStudio, you will have four sections.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Top-left&lt;/strong&gt;
+This is where you write your R script or Rmarkdown. It is best practice to comment on your codes, i.e. what the code chunk does, so this is where you write them all.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bottom-left&lt;/strong&gt;
+If you look carefully, there are two tabs shown in the picture, Console and Terminal. Whenever you run your code in the top-left section, the codes will run in the Console as well. Remember that we saw the R Console in R previously, so basically that R Console is now embedded as this bottom-left section in RStudio.&lt;/p&gt;
+
+&lt;iframe width=&quot;800&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/e1DjV9t-g5o&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Top-right&lt;/strong&gt;
+You can see that there are three tabs in this section, Environment, History and Connections. The tab that we are concerned about is Environment. This is where you can see all the variables that you have assigned in R. If you look at the previous video, when I run &lt;code class=&quot;highlighter-rouge&quot;&gt;x &amp;lt;- c(1, 2, 3, 4)&lt;/code&gt; , this also appeared in the Environment tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bottom-right&lt;/strong&gt;
+In this section, you will see a few more tabs, Files, Plots, Packages, Help and Viewer.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;Files&lt;/strong&gt;&lt;/span&gt; - You can quickly access your file in this tab.&lt;/li&gt;
+  &lt;li&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;Plots&lt;/strong&gt;&lt;/span&gt; - This is where you can see your plots or graphs.&lt;/li&gt;
+  &lt;li&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;Packages&lt;/strong&gt;&lt;/span&gt; - All the packages installed in R and their versions.&lt;/li&gt;
+  &lt;li&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;Help&lt;/strong&gt;&lt;/span&gt; - The Viewer pane can be used to view local web content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;RStudio is easy to use, I can navigate my way in RStudio quickly after a few weeks of using it. With the ability to write your Rmarkdown file and setting the output to html, pdf or word document, you can produce high quality and pretty content in just one software.&lt;/p&gt;
+</description>
+            <pubDate>Fri, 11 May 2018 00:00:00 +0100</pubDate>
+        </item>
         
         <item>
             <title>What is Data Science?</title>
@@ -36,17 +94,17 @@
 
 &lt;p&gt;To further discuss about technology in data science, let’s divide it into four categories.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Programming Languages&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Programming Languages&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;There are many programming languages that can be used as an analytic language. The two most popular languages are R and Python. You can compare R and Python for data analysis from this &lt;a href=&quot;https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis&quot;&gt;infographic&lt;/a&gt; published by DataCamp. Scala is another programming language that is used for &lt;a href=&quot;https://spark.apache.org&quot;&gt;Apache Spark&lt;/a&gt; but it is not an exclusive language for Apache Spark as you can write your codes using Python, &lt;a href=&quot;https://spark.apache.org/docs/0.9.0/python-programming-guide.html&quot;&gt;PySpark&lt;/a&gt; and R, &lt;a href=&quot;https://spark.apache.org/docs/latest/sparkr.html&quot;&gt;SparkR&lt;/a&gt;. MATLAB is a language that is very similar to R, if you know R, it is most likely you can learn and write in MATLAB within an hour.&lt;/p&gt;
 
 &lt;p&gt;I think it is very useful to learn R and Python as they have many libraries that can assist you in your analysis. One thing to note, in some job descriptions, HR or recruiters will list the library or package names for example ggplot2 or SciKit-Learn. ggplot2 is a data visualisation package in R and it is very popular in creating stunning graphs and charts. SciKit-Learn on the other hand is a Python package for machine learning. So these are not something separate from R or Python, they are just packages written in R or Python.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Query Languages&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Query Languages&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The most popular query language is Structured Query Language (SQL). A query language is used to query a database to retrieve information. SQL is used for relational database where data is stored in tabular format with row and columns. Database that is not relational is called NoSQL (Not Only SQL) database. An example of a NoSQL database is Neo4j, a graph based database and the its query language is called Cypher.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Data Science Tools&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Data Science Tools&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;As I mentioned before, there is a lot of data science tools available on the market, either open source or proprietary. The ones listed here are only a tiny fraction of what’s available.&lt;/p&gt;
 
@@ -65,31 +123,28 @@ A graph based database, using Cypher as a query language. It is probably a great
 &lt;p&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;Microsoft SQL Server Management Studio&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
 Microsoft SQL Server Management Studio is an integrated environment which allows you to manage SQL infrastructure. Codes are written in SQL.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The Apaches&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. The Apaches&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The Apache Software Foundation’s mission is to provide software for the public good. They have numerous open source projects. You might see some of Apache’s open source projects in many job descriptions. The most commonly seen is Apache Hadoop. But let’s sort these projects by two categories that are closely related to data science.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;For Big Data
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?ambari&quot;&gt;Ambari&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?kafka&quot;&gt;Kafka&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?spark&quot;&gt;Spark&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?sqoop&quot;&gt;Sqoop&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?zeppelin&quot;&gt;Zeppelin&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;For Database
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?cassandra&quot;&gt;Cassandra&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?hadoop&quot;&gt;Hadoop&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?hbase&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?hive&quot;&gt;Hive&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?pig&quot;&gt;Pig&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?zookeeper&quot;&gt;ZooKeeper&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;For Big Data&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?ambari&quot;&gt;Ambari&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?kafka&quot;&gt;Kafka&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?spark&quot;&gt;Spark&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?sqoop&quot;&gt;Sqoop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?zeppelin&quot;&gt;Zeppelin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#2980B9&quot;&gt;&lt;strong&gt;For Databases&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?cassandra&quot;&gt;Cassandra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?hadoop&quot;&gt;Hadoop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?hbase&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?hive&quot;&gt;Hive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?pig&quot;&gt;Pig&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projects.apache.org/project.html?zookeeper&quot;&gt;ZooKeeper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;You will probably use half of the tools listed here, so it is good to know what they are and their functions.&lt;/p&gt;
 
