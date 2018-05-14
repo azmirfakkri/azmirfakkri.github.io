@@ -4,12 +4,10 @@ title: R and RStudio
 tags: [R, RStudio]
 ---
 
-R is a programming language for statistical computing and graphics. R is free to download [here](https://www.r-project.org) and RStudio can be downloaded [here](https://www.rstudio.com), also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.
+R is a programming language for statistical computing and graphics. R is free to download [here](https://www.r-project.org) and RStudio can be downloaded [here](https://www.rstudio.com), also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.  
+So what is the difference?
 
 ![R and RStudio]({{ site.baseurl }}/assets/img/blog_images/R_series/R_RStudio.png)
-
-<br>
-So what is the difference?
 
 R
 =
