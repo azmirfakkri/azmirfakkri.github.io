@@ -5,7 +5,7 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description></description>
-        <pubDate>Mon, 14 May 2018 07:44:58 +0100</pubDate>
+        <pubDate>Tue, 15 May 2018 22:22:35 +0100</pubDate>
         
         <item>
             <title>R and RStudio</title>
@@ -14,7 +14,7 @@
             <description>&lt;p&gt;R is a programming language for statistical computing and graphics. R is free to download &lt;a href=&quot;https://www.r-project.org&quot;&gt;here&lt;/a&gt; and RStudio can be downloaded &lt;a href=&quot;https://www.rstudio.com&quot;&gt;here&lt;/a&gt;, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.&lt;br /&gt;
 So what is the difference?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog_images/R_series/R_RStudio.png&quot; alt=&quot;R and RStudio&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;/assets/img/blog_images/R_series/R_RStudio.png&quot; style=&quot;width:60.0%&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;r&quot;&gt;R&lt;/h1&gt;
 
@@ -40,8 +40,8 @@ This is where you write your R script or Rmarkdown. It is best practice to comme
 &lt;p&gt;&lt;strong&gt;Bottom-left&lt;/strong&gt;
 If you look carefully, there are two tabs shown in the picture, Console and Terminal. Whenever you run your code in the top-left section, the codes will run in the Console as well. Remember that we saw the R Console in R previously, so basically that R Console is now embedded as this bottom-left section in RStudio.&lt;/p&gt;
 
-&lt;iframe width=&quot;800&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/e1DjV9t-g5o&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
-&lt;/iframe&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;800&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/e1DjV9t-g5o&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
+&lt;/iframe&gt; &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 

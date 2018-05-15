@@ -7,7 +7,7 @@ tags: [R, RStudio]
 R is a programming language for statistical computing and graphics. R is free to download [here](https://www.r-project.org) and RStudio can be downloaded [here](https://www.rstudio.com), also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible.  
 So what is the difference?
 
-![R and RStudio]({{ site.baseurl }}/assets/img/blog_images/R_series/R_RStudio.png)
+<p style="text-align:center;"><img src="/assets/img/blog_images/R_series/R_RStudio.png" style="width:60.0%" /></p>
 
 R
 =
@@ -35,8 +35,8 @@ This is where you write your R script or Rmarkdown. It is best practice to comme
 **Bottom-left**
 If you look carefully, there are two tabs shown in the picture, Console and Terminal. Whenever you run your code in the top-left section, the codes will run in the Console as well. Remember that we saw the R Console in R previously, so basically that R Console is now embedded as this bottom-left section in RStudio.
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/e1DjV9t-g5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>  
+<p style="text-align:center;"><iframe width="800" height="400" src="https://www.youtube.com/embed/e1DjV9t-g5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe> </p> 
 
 <br>
 
