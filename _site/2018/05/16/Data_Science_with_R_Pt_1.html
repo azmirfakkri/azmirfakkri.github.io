@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/2018/05/16/Data_Science_with_R_Pt_1.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Data Science with R, Part 1: Introduction to R | Azmir Fakkri</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Data Science with R, Part 1: Introduction to R" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This post is the first part of Data Science with R series. All codes are implemented in RStudio. If you are not familiar with R and RStudio, I posted an article on R and RStudio." />
+<meta property="og:description" content="This post is the first part of Data Science with R series. All codes are implemented in RStudio. If you are not familiar with R and RStudio, I posted an article on R and RStudio." />
+<link rel="canonical" href="http://localhost:4000/2018/05/16/Data_Science_with_R_Pt_1.html" />
+<meta property="og:url" content="http://localhost:4000/2018/05/16/Data_Science_with_R_Pt_1.html" />
+<meta property="og:site_name" content="Azmir Fakkri" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-16T00:00:00+01:00" />
+<script type="application/ld+json">
+{"headline":"Data Science with R, Part 1: Introduction to R","dateModified":"2018-05-16T00:00:00+01:00","datePublished":"2018-05-16T00:00:00+01:00","description":"This post is the first part of Data Science with R series. All codes are implemented in RStudio. If you are not familiar with R and RStudio, I posted an article on R and RStudio.","@type":"BlogPosting","url":"http://localhost:4000/2018/05/16/Data_Science_with_R_Pt_1.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/05/16/Data_Science_with_R_Pt_1.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Manual seo tags -->
+    <!--
+    <title>Data Science with R, Part 1: Introduction to R | Azmir Fakkri</title>
+    <meta name="description" content="This post is the first part of Data Science with R series.All codes are implemented in RStudio. If you are not familiar with R and RStudio, I posted an artic...">
+    -->
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+		<a href="/">
+			<img class="avatar" src="/assets/img/profile.png" alt=""/>
+		</a>
+
+		<h1 class="site-title">
+			<a href="/">Azmir Fakkri</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        <!-- Auto Generation of NORMAL pages in the navbar -->
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/">
+                Home
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/portfolio/">
+                Portfolio
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+
+        <!-- Auto Generation of SPECIAL pages in the navbar -->
+        
+          
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" href="http://localhost:4000/search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+          
+        
+          
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" href="http://localhost:4000/tags">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                </a>
+            </li>
+          
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="background-image: url('/')">
+    <h1 id="Data+Science+with+R%2C+Part+1%3A+Introduction+to+R" class="title">Data Science with R, Part 1: Introduction to R</h1>
+    <p class="meta">
+    May 16, 2018
+    
+    </p>
+  </header>
+  <section class="post-content"><p>This post is the first part of Data Science with R series.<br />
+All codes are implemented in RStudio. If you are not familiar with R and RStudio, I posted an article on <a href="https://azmirfakkri.github.io/2018/05/11/R-and-RStudio.html">R and RStudio</a>.</p>
+
+<h1 id="introduction-to-basics">Introduction to Basics</h1>
+
+<p>At the most basic level, you can treat R like a calculator. Let’s do a few simple calculations.</p>
+
+<p><strong>Addition and Subtraction</strong></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Addition </span><span class="w">
+</span><span class="m">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 4
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Subtraction </span><span class="w">
+</span><span class="m">5</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 3
+</code></pre></div></div>
+
+<p>When you run the two lines, you will get an output for each. Easy. Now that we have touched on simple calculations, these are the operators for multiplication, division and exponentiation.</p>
+
+<p><strong>Multiplication - <code class="highlighter-rouge">*</code></strong></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example for multiplication</span><span class="w">
+</span><span class="m">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 15
+</code></pre></div></div>
+
+<p><strong>Division - <code class="highlighter-rouge">/</code></strong></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example for division</span><span class="w">
+</span><span class="m">10</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 2
+</code></pre></div></div>
+
+<p><strong>Exponentiation - <code class="highlighter-rouge">^</code> or <code class="highlighter-rouge">**</code></strong></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example for exponentiation</span><span class="w">
+</span><span class="m">2</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 4
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="m">2</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 4
+</code></pre></div></div>
+
+<p>Both operators for exponentiation gave us the same answer.</p>
+
+<p>However, R is more than just a simple calculator. You can assign this calculations to a variable. Let’s use the addition example and assign its value to a variable.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assigning a variable</span><span class="w">
+</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="w">
+
+</span><span class="c1"># Print value</span><span class="w">
+</span><span class="n">x</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 4
+</code></pre></div></div>
+
+<p>From this example <code class="highlighter-rouge">x</code> is a variable that contains the value of the addition which is 4. To print the value of x, simply type <code class="highlighter-rouge">x</code> in r and it will print the value for you.</p>
+
+<p>Please note that in R, to assign a variable, we use this sign <code class="highlighter-rouge">&lt;-</code>. You can also use <code class="highlighter-rouge">=</code>, but I always prefer to use <code class="highlighter-rouge">&lt;-</code> in R because when you learn another language like Python, assigning a variable uses <code class="highlighter-rouge">=</code>. This to me makes a clear distinction of what language I am writing in. But the preference is yours.<br />
+The name of variables can be almost anything but avoid variable names that are reserved for functions in R, to avoid confusion.</p>
+
+<p>You can also do operations on variables that you have saved. For example adding two variables together.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assigning variables</span><span class="w">
+</span><span class="n">car</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="n">bike</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span><span class="w">
+
+</span><span class="c1"># Adding variables </span><span class="w">
+</span><span class="n">transport</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bike</span><span class="w">
+
+</span><span class="c1"># Print value of transport</span><span class="w">
+</span><span class="n">transport</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 20
+</code></pre></div></div>
+
+<p>So far in our examples, we have only dealt with one type of data structure in R, called vectors. There are other types of data structures that R can handle. But first let’s learn a little bit more about vectors.</p>
+
+<h1 id="vectors">Vectors</h1>
+
+<h2 id="definition">Definition</h2>
+
+<p>Vector is a 1-dimensional array and it is the basic data structure in R. Vector allows you to store data in R and it can take data types including numerics, characters and logical. There are two types of vectors: atomic vectors and lists.</p>
+
+<h3 id="atomic-vectors">Atomic Vectors</h3>
+
+<p>There are four common data types of atomic vectors:</p>
+
+<ol>
+  <li><strong>Integers</strong> - e.g. 5, it is a whole number and not a fraction</li>
+  <li><strong>Numerics</strong> - e.g. 5.2, it is also known as double</li>
+  <li><strong>Characters</strong> - e.g. “eat”, it is referred to as string or text</li>
+  <li><strong>Logical</strong> - e.g. <code class="highlighter-rouge">TRUE</code> or <code class="highlighter-rouge">FALSE</code>, these are Boolean values</li>
+</ol>
+
+<p><span style="color:#FF0000">Important:</span> An atomic vector can only store one type of atomic vector. For example, if you create a vector consisting of numerics and characters, the numerics will be coerced into characters.</p>
+
+<p>Coercion changes the data types to the most flexible type in the vector created. Types from the least to the most flexible:<br />
+(least flexible) logical &lt; integer &lt; double &lt; character (most flexible)</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create vector with numerics and characters</span><span class="w">
+</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"dogs"</span><span class="p">,</span><span class="w"> </span><span class="s2">"spaniels"</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print vector</span><span class="w">
+</span><span class="n">a</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "dogs"     "spaniels" "1"        "2"
+</code></pre></div></div>
+
+<p>In vector <code class="highlighter-rouge">a</code>, dogs and spaniels are characters while 1 and 2 are integers. Since character is more flexible than integer, 1 and 2 are coerced into characters. We can confirm this by the quotation marks around 1 and 2 when we print vector <code class="highlighter-rouge">a</code> and by checking its class.</p>
+
+<p>Note that in R, characters are wrapped in <code class="highlighter-rouge">"quotation marks"</code> and R is case sensitive, so always spell your <code class="highlighter-rouge">TRUE</code> and <code class="highlighter-rouge">FALSE</code> in capital letters or just <code class="highlighter-rouge">T</code> or <code class="highlighter-rouge">F</code> and R will understand you.<br />
+To check data type in R, we use a function called <code class="highlighter-rouge">class()</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assigning variables</span><span class="w">
+</span><span class="n">intgr</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">5</span><span class="w">
+
+</span><span class="n">num</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">5.2</span><span class="w">
+
+</span><span class="n">chr</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"eat"</span><span class="w">
+
+</span><span class="n">lgcl</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">TRUE</span><span class="w">
+
+</span><span class="c1"># Check data types</span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">intgr</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "numeric"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">class</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "numeric"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">class</span><span class="p">(</span><span class="n">chr</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "character"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">class</span><span class="p">(</span><span class="n">lgcl</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "logical"
+</code></pre></div></div>
+
+<h3 id="lists">Lists</h3>
+
+<p>We will dicuss list in details in the next section.</p>
+
+<h2 id="creating-atomic-vector">Creating Atomic Vector</h2>
+
+<p><code class="highlighter-rouge">c()</code> is a function in R that combine values into a vector or list.<br />
+Let’s create a vector consisting of the month number from January to May.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create vector of month number</span><span class="w">
+</span><span class="n">month_num</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="name-a-vector">Name a Vector</h2>
+
+<p>Now, we want to name these months.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Naming a vector</span><span class="w">
+</span><span class="nf">names</span><span class="p">(</span><span class="n">month_num</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Jan"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Feb"</span><span class="p">,</span><span class="w"> </span><span class="s2">"March"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Apr"</span><span class="p">,</span><span class="w"> </span><span class="s2">"May"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print month_num</span><span class="w">
+</span><span class="n">month_num</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Jan   Feb March   Apr   May 
+##     1     2     3     4     5
+</code></pre></div></div>
+
+<h2 id="vector-selection">Vector Selection</h2>
+
+<p>Selecting element(s) in a vector is really simple, using a bracket <code class="highlighter-rouge">[]</code>. Let’s use the <code class="highlighter-rouge">month_num</code> vector that we have created earlier and we want to select the first element, Jan.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select the first element, Jan</span><span class="w">
+</span><span class="n">month_num</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Jan 
+##   1
+</code></pre></div></div>
+
+<p>In R, the first element starts at 1 and not 0 (like in Python).<br />
+We can also select more than one element at a time. To do this, we use <code class="highlighter-rouge">vector[start:end]</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select the first, second, third and fourth element</span><span class="w">
+</span><span class="n">month_num</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">4</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Jan   Feb March   Apr 
+##     1     2     3     4
+</code></pre></div></div>
+
+<h1 id="lists-1">Lists</h1>
+
+<h2 id="definition-1">Definition</h2>
+
+<p>Just like atomic vector, list is a 1-dimensional array. But unlike atomic vector, a list can contain element of different type i.e. a list can consist of numerics, logical and character at the same time.<br />
+A list is sometimes called a recursive vector because it can also store list!</p>
+
+<h2 id="create-a-list">Create a List</h2>
+
+<p>We will use the <code class="highlighter-rouge">list()</code> function to create a list.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create vector and matrix to make a list </span><span class="w">
+</span><span class="n">vect1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="w">
+</span><span class="n">mtrx1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span><span class="w"> </span><span class="s2">"b"</span><span class="p">,</span><span class="w"> </span><span class="s2">"c"</span><span class="p">,</span><span class="w"> </span><span class="s2">"d"</span><span class="p">,</span><span class="w"> </span><span class="s2">"e"</span><span class="p">,</span><span class="w"> </span><span class="s2">"f"</span><span class="p">,</span><span class="w"> </span><span class="s2">"g"</span><span class="p">,</span><span class="w"> </span><span class="s2">"h"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">),</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Create list</span><span class="w">
+</span><span class="n">list1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">vect1</span><span class="p">,</span><span class="w"> </span><span class="n">mtrx1</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># View list</span><span class="w">
+</span><span class="n">list1</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [[1]]
+##  [1]  1  2  3  4  5  6  7  8  9 10
+## 
+## [[2]]
+##      [,1] [,2] [,3]
+## [1,] "a"  "d"  "g" 
+## [2,] "b"  "e"  "h" 
+## [3,] "c"  "f"  "i"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Check structure of list </span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## List of 2
+##  $ : int [1:10] 1 2 3 4 5 6 7 8 9 10
+##  $ : chr [1:3, 1:3] "a" "b" "c" "d" ...
+</code></pre></div></div>
+
+<p>Always use <code class="highlighter-rouge">list()</code> to create a list even if the list contains another list. If you use <code class="highlighter-rouge">c()</code>, it will combine all the lists to become just one list.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create list using list() and c()</span><span class="w">
+</span><span class="n">list_using_list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">))</span><span class="w">
+</span><span class="n">list_using_c</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Check structure of list_using_list</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">list_using_list</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## List of 2
+##  $ :List of 2
+##   ..$ : num 1
+##   ..$ : num 2
+##  $ :List of 3
+##   ..$ : num 3
+##   ..$ : num 4
+##   ..$ : num 5
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Check structure of list_using_c</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">list_using_c</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## List of 5
+##  $ : num 1
+##  $ : num 2
+##  $ : num 3
+##  $ : num 4
+##  $ : num 5
+</code></pre></div></div>
+
+<h2 id="naming-a-list">Naming a List</h2>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Name a list </span><span class="w">
+</span><span class="n">list1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">number_vector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vect1</span><span class="p">,</span><span class="w"> </span><span class="n">alphabet_matrix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mtrx1</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># View list </span><span class="w">
+</span><span class="n">list1</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## $number_vector
+##  [1]  1  2  3  4  5  6  7  8  9 10
+## 
+## $alphabet_matrix
+##      [,1] [,2] [,3]
+## [1,] "a"  "d"  "g" 
+## [2,] "b"  "e"  "h" 
+## [3,] "c"  "f"  "i"
+</code></pre></div></div>
+
+<h2 id="selecting-elements-from-a-list">Selecting Elements from a List</h2>
+
+<p>To select element from a list we will use double bracket <code class="highlighter-rouge">[[]]</code>, unlike the single bracket <code class="highlighter-rouge">[]</code> used in selecting element in an atomic vector. When you use a single bracket in list, you are selecting the vector or the matrix that you store in the list instead of the elements in the vector or the matrix you selected.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the first component in the list</span><span class="w">
+</span><span class="n">list1</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## $number_vector
+##  [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the elements in the first component of the list </span><span class="w">
+</span><span class="n">list1</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the 5th element in the first component of the list</span><span class="w">
+</span><span class="n">list1</span><span class="p">[[</span><span class="m">1</span><span class="p">]][</span><span class="m">5</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 5
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the second component in the list</span><span class="w">
+</span><span class="n">list1</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## $alphabet_matrix
+##      [,1] [,2] [,3]
+## [1,] "a"  "d"  "g" 
+## [2,] "b"  "e"  "h" 
+## [3,] "c"  "f"  "i"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the 6th element in the second component of the list</span><span class="w">
+</span><span class="n">list1</span><span class="p">[[</span><span class="m">2</span><span class="p">]][</span><span class="m">6</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "f"
+</code></pre></div></div>
+
+<p>Another alternative to selecting element of a list is using the <code class="highlighter-rouge">$</code> sign.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the 5th element in the first component of the list</span><span class="w">
+</span><span class="n">list1</span><span class="o">$</span><span class="n">number_vector</span><span class="p">[</span><span class="m">5</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 5
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting the 6th element in the second component of the list</span><span class="w">
+</span><span class="n">list1</span><span class="o">$</span><span class="n">alphabet_matrix</span><span class="p">[</span><span class="m">6</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "f"
+</code></pre></div></div>
+
+<h1 id="matrices">Matrices</h1>
+
+<h2 id="definition-2">Definition</h2>
+
+<p>In vector, we are dealing with a 1-dimensional array. Let’s extend that into 2-dimensional array, consisting of rows and columns, what we get here is a matrix. Just like an atomic vector, a matrix can only consist of one data type. For example, a matrix consisting of numerics.</p>
+
+<h2 id="creating-a-matrix">Creating a Matrix</h2>
+
+<p>To create a matrix, we can simply use the <code class="highlighter-rouge">matrix()</code> function. Before we create our first matrix, let’s look at the arguments that can be passed in this function.</p>
+
+<p><code class="highlighter-rouge">matrix(data, nrow = 1, ncol = 1, byrow = FALSE)</code></p>
+
+<ul>
+  <li>The first argument is data, for example a vector of numerics from 1 to 9.</li>
+  <li>The second argument is nrow, which corresponds to the number of row in the matrix.</li>
+  <li>The third argument is ncol, which corresponds to the number of column in the matrix.</li>
+  <li>The fourth argument is byrow, which tells the function to put your data by row or not. The default setting is <code class="highlighter-rouge">FALSE</code> which means that if you do not specify it, R will insert the data into the matrix by column. So, if you set it to <code class="highlighter-rouge">byrow = TRUE</code>, only then R will do it by row.</li>
+</ul>
+
+<p>Now, let’s create a matrix.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create a matrix, fill by column</span><span class="w">
+</span><span class="n">first_matrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Create a matrix, fill by row</span><span class="w">
+</span><span class="n">second_matrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print matrices</span><span class="w">
+</span><span class="n">first_matrix</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##      [,1] [,2] [,3]
+## [1,]    1    4    7
+## [2,]    2    5    8
+## [3,]    3    6    9
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">second_matrix</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##      [,1] [,2] [,3]
+## [1,]    1    2    3
+## [2,]    4    5    6
+## [3,]    7    8    9
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">1:9</code> specify that we want number 1 to number 9. Notice the difference between the first and the second matrix.</p>
+
+<h2 id="naming-a-matrix">Naming a Matrix</h2>
+
+<p>Let’s take the <code class="highlighter-rouge">first_matrix</code> that we created above and name its columns and rows. To do this, we use a similar method as naming a vector, <code class="highlighter-rouge">names(vector) &lt;- c("a", "b", "c")</code>.</p>
+
+<p>But as we have discussed before, a vector is a 1-dimensional array and matrix is a 2-dimensional array. So, for a matrix, we want to name the columns and the rows.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Name the columns for first_matrix</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Col 1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Col 2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Col 3"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Name the rows for first_matrix</span><span class="w">
+</span><span class="n">rownames</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Row 1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 3"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print first_matrix</span><span class="w">
+</span><span class="n">first_matrix</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##       Col 1 Col 2 Col 3
+## Row 1     1     4     7
+## Row 2     2     5     8
+## Row 3     3     6     9
+</code></pre></div></div>
+
+<p>We can see that columns and rows of first_matrix are now labelled.</p>
+
+<h2 id="matrix-calculations">Matrix Calculations</h2>
+
+<p>Let’s say we want to calculate the sum of the matrix by rows and by columns. We can do this in R using these functions <code class="highlighter-rouge">colSums()</code> (for sum of each column) and <code class="highlighter-rouge">rowSums()</code> (for sum of each row).</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Calculate sum for each column</span><span class="w">
+</span><span class="n">colSums</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Col 1 Col 2 Col 3 
+##     6    15    24
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Calculate sum for each row</span><span class="w">
+</span><span class="n">rowSums</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Row 1 Row 2 Row 3 
+##    12    15    18
+</code></pre></div></div>
+
+<h2 id="adding-columns-and-rows">Adding Columns and Rows</h2>
+
+<p>Now that we have the sums for the columns and rows, we want to add these results to the <code class="highlighter-rouge">first_matrix</code>.<br />
+For this purpose, we use <code class="highlighter-rouge">cbind()</code> (add column) and <code class="highlighter-rouge">rbind()</code> (add row).</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assign variables</span><span class="w">
+</span><span class="n">column_sum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">colSums</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">)</span><span class="w">
+</span><span class="n">row_sum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rowSums</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Add column_sum as an extra row</span><span class="w">
+</span><span class="n">first_matrix_csum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">,</span><span class="w"> </span><span class="n">column_sum</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Add row_sum as an extra column</span><span class="w">
+</span><span class="n">first_matrix_rsum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">,</span><span class="w"> </span><span class="n">row_sum</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print first_matrix_csum</span><span class="w">
+</span><span class="n">first_matrix_csum</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##            Col 1 Col 2 Col 3
+## Row 1          1     4     7
+## Row 2          2     5     8
+## Row 3          3     6     9
+## column_sum     6    15    24
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Print first_matrix_rsum</span><span class="w">
+</span><span class="n">first_matrix_rsum</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##       Col 1 Col 2 Col 3 row_sum
+## Row 1     1     4     7      12
+## Row 2     2     5     8      15
+## Row 3     3     6     9      18
+</code></pre></div></div>
+
+<p>We can also join two matrices into one. Let’s use the original <code class="highlighter-rouge">first_matrix</code> and <code class="highlighter-rouge">second_matrix</code> as one matrix.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Add two matrices using cbind()</span><span class="w">
+</span><span class="n">cbind</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">,</span><span class="w"> </span><span class="n">second_matrix</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##       Col 1 Col 2 Col 3      
+## Row 1     1     4     7 1 2 3
+## Row 2     2     5     8 4 5 6
+## Row 3     3     6     9 7 8 9
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Add two matrices using rbind()</span><span class="w">
+</span><span class="n">rbind</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">,</span><span class="w"> </span><span class="n">second_matrix</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##       Col 1 Col 2 Col 3
+## Row 1     1     4     7
+## Row 2     2     5     8
+## Row 3     3     6     9
+##           1     2     3
+##           4     5     6
+##           7     8     9
+</code></pre></div></div>
+
+<h2 id="matrix-selection">Matrix Selection</h2>
+
+<p>Selecting element(s) in matrix is done similar to vector selection. And again, because matrix is a 2-dimensional array, we need to specify the row number and the column number <code class="highlighter-rouge">matrix[row number, column number]</code>.</p>
+
+<p>Let’s use a combined <code class="highlighter-rouge">first_matrix</code> and <code class="highlighter-rouge">second_matrix</code> as an example.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Add two matrices using rbind() and assign to a new variable</span><span class="w">
+</span><span class="n">joined_matrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">first_matrix</span><span class="p">,</span><span class="w"> </span><span class="n">second_matrix</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Name all rows in joined_matrix </span><span class="w">
+</span><span class="n">rownames</span><span class="p">(</span><span class="n">joined_matrix</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Row 1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 4"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 5"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Row 6"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print joined_matrix</span><span class="w">
+</span><span class="n">joined_matrix</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##       Col 1 Col 2 Col 3
+## Row 1     1     4     7
+## Row 2     2     5     8
+## Row 3     3     6     9
+## Row 4     1     2     3
+## Row 5     4     5     6
+## Row 6     7     8     9
+</code></pre></div></div>
+
+<p>This is how we do matrix selection, <code class="highlighter-rouge">matrix[row number, column number]</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select element in Row 3, Col 2</span><span class="w">
+</span><span class="n">joined_matrix</span><span class="p">[</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 6
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select element in Row 3, Col 1 and Col 2</span><span class="w">
+</span><span class="n">joined_matrix</span><span class="p">[</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">2</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Col 1 Col 2 
+##     3     6
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all elements in Row 3 (leave column empty)</span><span class="w">
+</span><span class="n">joined_matrix</span><span class="p">[</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Col 1 Col 2 Col 3 
+##     3     6     9
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all elements in Col 2 (leave row empty)</span><span class="w">
+</span><span class="n">joined_matrix</span><span class="p">[,</span><span class="w"> </span><span class="m">2</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Row 1 Row 2 Row 3 Row 4 Row 5 Row 6 
+##     4     5     6     2     5     8
+</code></pre></div></div>
+
+<h1 id="factor">Factor</h1>
+
+<h2 id="definition-3">Definition</h2>
+
+<p>A factor is a vector that has a limited set of values. It is used to store categorical data.<br />
+Two examples of categorical data:</p>
+<ol>
+  <li>Sex - “male” and “female”</li>
+  <li>Race - “Asian” and “African” or “Ginger” (joking!)</li>
+</ol>
+
+<p>Factor is developed on top of integer vector. What does this mean? It means that storing factor in R involves a vector of integer values and these integer values have an associated set of character values. These character values are used to display the factor.</p>
+
+<h2 id="creating-a-factor">Creating a Factor</h2>
+
+<p>The function that function that we will use to create a factor is <code class="highlighter-rouge">factor()</code>. Let’s create one.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create an education level vector</span><span class="w">
+</span><span class="n">edu_vector</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"degree"</span><span class="p">,</span><span class="w"> </span><span class="s2">"degree"</span><span class="p">,</span><span class="w"> </span><span class="s2">"degree"</span><span class="p">,</span><span class="w"> </span><span class="s2">"masters"</span><span class="p">,</span><span class="w"> </span><span class="s2">"phd"</span><span class="p">,</span><span class="w"> </span><span class="s2">"phd"</span><span class="p">,</span><span class="w"> </span><span class="s2">"diploma"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Create factor</span><span class="w">
+</span><span class="n">edu_factor</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">edu_vector</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print factor</span><span class="w">
+</span><span class="n">edu_factor</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] degree  degree  degree  masters phd     phd     diploma
+## Levels: degree diploma masters phd
+</code></pre></div></div>
+
+<p>Note that we have four levels in our factor, degree, diploma, masters and phd.</p>
+
+<p>I have mentioned about categorical data, let’s expand our understanding on it. Categorical data can be further divided into two sets:</p>
+
+<ul>
+  <li><strong>Nominal</strong> categorical data - it has no implied order, one value does not worth more or less than the other value.</li>
+  <li><strong>Ordinal</strong> categorical data - it has natural ordering</li>
+</ul>
+
+<h2 id="factor-levels-and-level-ordering">Factor Levels and Level Ordering</h2>
+
+<p>Using our <code class="highlighter-rouge">edu_factor</code> example, which type of categorical data will it be? Ordinal, because there is an order, a degree is a level higher than a diploma.<br />
+Let’s set the order of the levels in our factor. We need to specify <code class="highlighter-rouge">order = TRUE</code> and provide the vector for <code class="highlighter-rouge">levels</code> (the order is from lowest to highest), the order of this vector is important.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Set order for edu_factor</span><span class="w">
+</span><span class="n">edu_factor2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">edu_vector</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"diploma"</span><span class="p">,</span><span class="w"> </span><span class="s2">"degree"</span><span class="p">,</span><span class="w"> </span><span class="s2">"masters"</span><span class="p">,</span><span class="w"> </span><span class="s2">"phd"</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print edu_factor2</span><span class="w">
+</span><span class="n">edu_factor2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] degree  degree  degree  masters phd     phd     diploma
+## Levels: diploma &lt; degree &lt; masters &lt; phd
+</code></pre></div></div>
+
+<p>Note the difference of the levels between <code class="highlighter-rouge">edu_factor</code> and <code class="highlighter-rouge">edu_factor2</code>. We specified the order and levels for <code class="highlighter-rouge">edu_factor2</code> but not <code class="highlighter-rouge">edu_factor</code>.</p>
+
+<p>You can change the name of the levels.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Rename levels</span><span class="w">
+</span><span class="n">levels</span><span class="p">(</span><span class="n">edu_factor2</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"diploma"</span><span class="p">,</span><span class="w"> </span><span class="s2">"undergraduate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"masters"</span><span class="p">,</span><span class="w"> </span><span class="s2">"PhD"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Print edu_factor2 with new levels name</span><span class="w">
+</span><span class="n">edu_factor2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] undergraduate undergraduate undergraduate masters       PhD          
+## [6] PhD           diploma      
+## Levels: diploma &lt; undergraduate &lt; masters &lt; PhD
+</code></pre></div></div>
+
+<p>Note that when you change the name of factor levels, it will re-name the factor as well.</p>
+
+<h2 id="factor-summary">Factor Summary</h2>
+
+<p>To get an overview of the content of our <code class="highlighter-rouge">edu_factor2</code>, we can use the <code class="highlighter-rouge">summary()</code> function.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Summary of edu_factor2</span><span class="w">
+</span><span class="n">summary</span><span class="p">(</span><span class="n">edu_factor2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##       diploma undergraduate       masters           PhD 
+##             1             3             1             2
+</code></pre></div></div>
+
+<h1 id="data-frame">Data Frame</h1>
+
+<h2 id="definition-4">Definition</h2>
+
+<p>We now know that a matrix can consist only one data type, e.g. numerics or characters. However, in the real world, the type of data you want to store are of different types. We can store this information in a data frame.</p>
+
+<p>Just like a matrix, a data frame is 2-dimensional, it has a set of columns and rows are called observations. Data frame allows you to store data of different types. <span style="color:#FF0000">It is basically a list of vectors of equal lengths.</span> The previous sentence basically said that data frame can behave like a list (1-dimensional) or matix (2-dimensional).</p>
+
+<h2 id="quick-glance-of-data-frame">Quick Glance of Data Frame</h2>
+
+<p>After reading in your dataset in R, the first thing that you need to know is to understand your dataset, get a feel of what it is that you are dealing with. For that purpose, let me introduce you to three functions that will help you in the initial stages of your data analysis.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">str()</code> - show the structure of your data frame</li>
+  <li><code class="highlighter-rouge">head()</code> - show the first few rows in your data frame</li>
+  <li><code class="highlighter-rouge">tail()</code> - show the last few rows in your data frame</li>
+</ul>
+
+<p>Let’s use a built-in <code class="highlighter-rouge">Orange</code> dataset in R to demonstrate what these functions do.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># See the structure</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">Orange</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Classes 'nfnGroupedData', 'nfGroupedData', 'groupedData' and 'data.frame':	35 obs. of  3 variables:
+##  $ Tree         : Ord.factor w/ 5 levels "3"&lt;"1"&lt;"5"&lt;"2"&lt;..: 2 2 2 2 2 2 2 4 4 4 ...
+##  $ age          : num  118 484 664 1004 1231 ...
+##  $ circumference: num  30 58 87 115 120 142 145 33 69 111 ...
+##  - attr(*, "formula")=Class 'formula'  language circumference ~ age | Tree
+##   .. ..- attr(*, ".Environment")=&lt;environment: R_EmptyEnv&gt; 
+##  - attr(*, "labels")=List of 2
+##   ..$ x: chr "Time since December 31, 1968"
+##   ..$ y: chr "Trunk circumference"
+##  - attr(*, "units")=List of 2
+##   ..$ x: chr "(days)"
+##   ..$ y: chr "(mm)"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># See the first few rows</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">Orange</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Tree  age circumference
+## 1    1  118            30
+## 2    1  484            58
+## 3    1  664            87
+## 4    1 1004           115
+## 5    1 1231           120
+## 6    1 1372           142
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># See the last few rows</span><span class="w">
+</span><span class="n">tail</span><span class="p">(</span><span class="n">Orange</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    Tree  age circumference
+## 30    5  484            49
+## 31    5  664            81
+## 32    5 1004           125
+## 33    5 1231           142
+## 34    5 1372           174
+## 35    5 1582           177
+</code></pre></div></div>
+
+<p>By looking at the result from <code class="highlighter-rouge">str(Orange)</code>:</p>
+
+<ul>
+  <li>It has 35 observations (rows) with 3 variables (columns)</li>
+  <li>Variable <code class="highlighter-rouge">Tree</code> is an ordered factor with 5 levels, while <code class="highlighter-rouge">age</code> and <code class="highlighter-rouge">circumference</code> are numerics</li>
+</ul>
+
+<p>The default number of rows for <code class="highlighter-rouge">head()</code> and <code class="highlighter-rouge">tail()</code> is 6, but you can specify a different number like this.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Specify number of rows</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">Orange</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    Tree  age circumference
+## 1     1  118            30
+## 2     1  484            58
+## 3     1  664            87
+## 4     1 1004           115
+## 5     1 1231           120
+## 6     1 1372           142
+## 7     1 1582           145
+## 8     2  118            33
+## 9     2  484            69
+## 10    2  664           111
+</code></pre></div></div>
+
+<h2 id="creating-a-data-frame">Creating a Data Frame</h2>
+
+<p>Creating a data frame is really simple. We will use <code class="highlighter-rouge">data.frame()</code> function.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create numeric vector</span><span class="w">
+</span><span class="n">number</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Create character vector</span><span class="w">
+</span><span class="n">alphabet</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span><span class="w"> </span><span class="s2">"b"</span><span class="p">,</span><span class="w"> </span><span class="s2">"c"</span><span class="p">,</span><span class="w"> </span><span class="s2">"d"</span><span class="p">,</span><span class="w"> </span><span class="s2">"e"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Create data frame</span><span class="w">
+</span><span class="n">df1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">number</span><span class="p">,</span><span class="w"> </span><span class="n">alphabet</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># View data frame</span><span class="w">
+</span><span class="n">df1</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number alphabet
+## 1      1        a
+## 2      2        b
+## 3      3        c
+## 4      4        d
+## 5      5        e
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># View structure of data frame</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">df1</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	5 obs. of  2 variables:
+##  $ number  : num  1 2 3 4 5
+##  $ alphabet: Factor w/ 5 levels "a","b","c","d",..: 1 2 3 4 5
+</code></pre></div></div>
+
+<p>Take a closer look at the result <code class="highlighter-rouge">str(df1)</code>, alphabet is listed as a factor, but we created a character vector instead of a factor. This happens due to <code class="highlighter-rouge">data.frame()</code> behaviour, it turns character into factor. We can suppress this behaviour by passing this argument <code class="highlighter-rouge">stringsAsFactors = FALSE</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Specify stringsAsFactors = FALSE</span><span class="w">
+</span><span class="n">df2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">number</span><span class="p">,</span><span class="w"> </span><span class="n">alphabet</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># View structure of data frame</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">df2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	5 obs. of  2 variables:
+##  $ number  : num  1 2 3 4 5
+##  $ alphabet: chr  "a" "b" "c" "d" ...
+</code></pre></div></div>
+
+<p>We can see that alphabet is now a character instead of factor.</p>
+
+<p>One point to note in creating a data frame is, combining vectors using <code class="highlighter-rouge">cbind()</code> does not produce a data frame. Let’s see an example.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Combine vectors column-wise</span><span class="w">
+</span><span class="n">df3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">number</span><span class="p">,</span><span class="w"> </span><span class="n">alphabet</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Check class </span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">df3</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "matrix"
+</code></pre></div></div>
+
+<p>One quick way to transform this matrix into a data frame is by using <code class="highlighter-rouge">as.data.frame()</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Coerce matrix into a data frame</span><span class="w">
+</span><span class="n">df3_dataframed</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">df3</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Check class</span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">df3_dataframed</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "data.frame"
+</code></pre></div></div>
+
+<h2 id="combining-a-data-frame">Combining a Data Frame</h2>
+
+<p>We can combine data frames using <code class="highlighter-rouge">cbind()</code> and <code class="highlighter-rouge">rbind()</code>. Let’s use <code class="highlighter-rouge">df2</code> and create another data frame and combine them.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create data frame</span><span class="w">
+</span><span class="n">df4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">number2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">alphabet2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"f"</span><span class="p">,</span><span class="w"> </span><span class="s2">"g"</span><span class="p">,</span><span class="w"> </span><span class="s2">"h"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"j"</span><span class="p">),</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># View data frame</span><span class="w">
+</span><span class="n">df4</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number2 alphabet2
+## 1       6         f
+## 2       7         g
+## 3       8         h
+## 4       9         i
+## 5      10         j
+</code></pre></div></div>
+
+<p>First, let’s combine it column-wise using <code class="highlighter-rouge">cbind()</code>.<br />
+Note that in column-wise combination:</p>
+
+<ol>
+  <li>The number of rows must be the same between data frames, both <code class="highlighter-rouge">df2</code> and <code class="highlighter-rouge">df4</code> have 5 rows</li>
+  <li>Column names can be different</li>
+  <li>Row names are ignored</li>
+</ol>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cbind</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span><span class="w"> </span><span class="n">df4</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number alphabet number2 alphabet2
+## 1      1        a       6         f
+## 2      2        b       7         g
+## 3      3        c       8         h
+## 4      4        d       9         i
+## 5      5        e      10         j
+</code></pre></div></div>
+
+<p>Now, let’s combine it row-wise using <code class="highlighter-rouge">rbind()</code>.<br />
+Note that in row-wise combination:</p>
+
+<ol>
+  <li>The number of columns must be the same between data frames, both <code class="highlighter-rouge">df2</code> and <code class="highlighter-rouge">df4</code> have 2 columns</li>
+  <li>Column names must match</li>
+</ol>
+
+<p>Let’s fix <code class="highlighter-rouge">df4</code> and assign it to <code class="highlighter-rouge">df5</code> so we can combine it row-wise</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create df5</span><span class="w">
+</span><span class="n">df5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">alphabet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"f"</span><span class="p">,</span><span class="w"> </span><span class="s2">"g"</span><span class="p">,</span><span class="w"> </span><span class="s2">"h"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"j"</span><span class="p">),</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+</span><span class="n">rbind</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span><span class="w"> </span><span class="n">df5</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    number alphabet
+## 1       1        a
+## 2       2        b
+## 3       3        c
+## 4       4        d
+## 5       5        e
+## 6       6        f
+## 7       7        g
+## 8       8        h
+## 9       9        i
+## 10     10        j
+</code></pre></div></div>
+
+<h2 id="selecting-elements-in-a-data-frame">Selecting Elements in a Data Frame</h2>
+
+<p>Selecting element(s) in a data frame is similar to selecting elements in vector and matrix, using <code class="highlighter-rouge">[]</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create a data frame</span><span class="w">
+</span><span class="n">df6</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span><span class="w"> </span><span class="n">df4</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># View data frame</span><span class="w">
+</span><span class="n">df6</span><span class="w"> 
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number alphabet number2 alphabet2
+## 1      1        a       6         f
+## 2      2        b       7         g
+## 3      3        c       8         h
+## 4      4        d       9         i
+## 5      5        e      10         j
+</code></pre></div></div>
+
+<p>Let’s select some elements.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select element in the 2nd row, 3rd column</span><span class="w">
+</span><span class="n">df6</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 7
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select elements in the 4th row, from 1st to 3rd column</span><span class="w">
+</span><span class="n">df6</span><span class="p">[</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number alphabet number2
+## 4      4        d       9
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select elements in the 2nd to 4th row, 4th column</span><span class="w">
+</span><span class="n">df6</span><span class="p">[</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "g" "h" "i"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select elements in the 2nd to 4th row, from 1st to 3rd column</span><span class="w">
+</span><span class="n">df6</span><span class="p">[</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number alphabet number2
+## 2      2        b       7
+## 3      3        c       8
+## 4      4        d       9
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all elements in the 5th row (leave column empty)</span><span class="w">
+</span><span class="n">df6</span><span class="p">[</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   number alphabet number2 alphabet2
+## 5      5        e      10         j
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all elements in the 1st column (leave row empty)</span><span class="w">
+</span><span class="n">df6</span><span class="p">[,</span><span class="w"> </span><span class="m">1</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3 4 5
+</code></pre></div></div>
+
+<p>An alternative to column number, you can use column name to do the selection. This is useful when you have a dataset with many columns. Remember to wrap the column name with quotation marks.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all elements in the 1st column (leave row empty)</span><span class="w">
+</span><span class="n">df6</span><span class="p">[,</span><span class="w"> </span><span class="s2">"number"</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3 4 5
+</code></pre></div></div>
+
+<p>And there’s also a shortcut to the above code! You can use the <code class="highlighter-rouge">$</code> sign. This time, you don’t need to wrap it in quotation marks.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df6</span><span class="o">$</span><span class="n">number</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3 4 5
+</code></pre></div></div>
+
+<h2 id="subset-a-data-frame">Subset a Data Frame</h2>
+
+<p>Let’s say we want to get observations in our dataset that meets a certain condition, we can do this by using <code class="highlighter-rouge">subset()</code>. Let’s use <code class="highlighter-rouge">Orange</code> dataset in R to demonstrate this function, the syntax is like this <code class="highlighter-rouge">subset(dataframe, condition)</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all number 2 trees</span><span class="w">
+</span><span class="n">subset</span><span class="p">(</span><span class="n">Orange</span><span class="p">,</span><span class="w"> </span><span class="n">Tree</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    Tree  age circumference
+## 8     2  118            33
+## 9     2  484            69
+## 10    2  664           111
+## 11    2 1004           156
+## 12    2 1231           172
+## 13    2 1372           203
+## 14    2 1582           203
+</code></pre></div></div>
+
+<p>What if we only want Tree and circumference to be selected? We can pass <code class="highlighter-rouge">select</code> argument.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Select all number 2 trees, showing Tree and circumference columns only</span><span class="w">
+</span><span class="n">subset</span><span class="p">(</span><span class="n">Orange</span><span class="p">,</span><span class="w"> </span><span class="n">Tree</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">Tree</span><span class="p">,</span><span class="w"> </span><span class="n">circumference</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    Tree circumference
+## 8     2            33
+## 9     2            69
+## 10    2           111
+## 11    2           156
+## 12    2           172
+## 13    2           203
+## 14    2           203
+</code></pre></div></div>
+
+<h2 id="sorting">Sorting</h2>
+
+<p>Let’s focus on the circumference column of Orange dataset. We would like to see the circumference ordered from the smallest to the biggest circumference. This is how we do it in R, using <code class="highlighter-rouge">order()</code></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create circ vector</span><span class="w">
+</span><span class="n">circ</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Orange</span><span class="o">$</span><span class="n">circumference</span><span class="w">
+
+</span><span class="c1"># Find the new order of the elements</span><span class="w">
+</span><span class="n">order</span><span class="p">(</span><span class="n">circ</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  1 15 29 22  8 30 16  2 23  9 17 31  3 18 10 24  4 19  5 32 20 21  6
+## [24] 33  7 11 25 12 34 35 26 13 14 27 28
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Use the result above to find the new ordered circ</span><span class="w">
+</span><span class="n">circ</span><span class="p">[</span><span class="n">order</span><span class="p">(</span><span class="n">circ</span><span class="p">)]</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  30  30  30  32  33  49  51  58  62  69  75  81  87 108 111 112 115
+## [18] 115 120 125 139 140 142 142 145 156 167 172 174 177 179 203 203 209
+## [35] 214
+</code></pre></div></div>
+</section>
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list"></div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'datsci';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2018/05/11/R-and-RStudio.html">
+        R and RStudio
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/2018/05/16/Introduction-to-Basics.html">
+        Introduction to basics
+      </a>
+  </div>
+  
+</div>
+
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:azmirfakkri@gmail.com" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/azmirfakkri" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/azmirfakkri/" title="Follow on LinkedIn">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+  </body>
+</html>
