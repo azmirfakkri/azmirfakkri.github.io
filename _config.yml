@@ -53,8 +53,8 @@ theme_settings:
     tumblr:
     pinterest:
     pocket:
-    reddit: true
-    linkedin:
+    reddit:
+    linkedin: true
     wordpress:
     email: true
 
