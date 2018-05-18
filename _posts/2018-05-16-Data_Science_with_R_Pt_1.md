@@ -211,14 +211,9 @@ div.tocify {
 
 
 
-<div class="fluid-row" id="header">
+<div class="fluid-row" id="header"></div>
 
-
-
-
-</div>
-
-
+<br>
 <p>This post is the first part of Data Science with R series.<br />
 All codes are implemented in RStudio. If you are not familiar with R and RStudio, I posted an article on <a href="https://azmirfakkri.github.io/2018/05/11/R-and-RStudio.html">R and RStudio</a>.</p>
 <div id="introduction-to-basics" class="section level1">
