@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    
     <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
     <script defer=true src="/assets/js/main.min.js"></script>
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
@@ -20,26 +20,24 @@
     <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
 
     <!-- Font Awesome -->
-    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/font-awesome.min.css">
 
     <!-- Google Fonts -->
     
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
     
 
     <!-- KaTeX 0.8.3 -->
     
-    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
-    <script src="/assets/js/katex.min.js">
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/katex.min.css">
+    <script src="/assets/js/vendor/katex.min.js">
     </script>
     
 
     <!-- Google Analytics -->
     
-
+    
     <!-- seo tags -->
     <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>R and RStudio | Azmir Fakkri</title>
@@ -54,7 +52,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-05-11T00:00:00+01:00" />
 <script type="application/ld+json">
-{"headline":"R and RStudio","dateModified":"2018-05-11T00:00:00+01:00","datePublished":"2018-05-11T00:00:00+01:00","description":"R is a programming language for statistical computing and graphics. R is free to download here and RStudio can be downloaded here, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible. So what is the difference?","@type":"BlogPosting","url":"http://localhost:4000/2018/05/11/R-and-RStudio.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/05/11/R-and-RStudio.html"},"@context":"http://schema.org"}</script>
+{"headline":"R and RStudio","dateModified":"2018-05-11T00:00:00+01:00","datePublished":"2018-05-11T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/05/11/R-and-RStudio.html"},"description":"R is a programming language for statistical computing and graphics. R is free to download here and RStudio can be downloaded here, also for free. It is important to note that R is not only limited to statistical computing and graphics, you can even develop dashboards with R using Shiny (an R package), so it is highly extensible. So what is the difference?","@type":"BlogPosting","url":"http://localhost:4000/2018/05/11/R-and-RStudio.html","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Manual seo tags -->
@@ -66,7 +64,7 @@
 
   <body>
     <header class="site-header">
-
+    
     <!-- Logo and title -->
 	<div class="branding">
 		<a href="/">
@@ -77,16 +75,19 @@
 			<a href="/">Azmir Fakkri</a>
 		</h1>
 	</div>
-
+    
     <!-- Toggle menu -->
     <nav class="clear">
     <a id="pull" class="toggle" href="#">
     <i class="fa fa-bars fa-lg"></i>
     </a>
-
+    
     <!-- Menu -->
-    <ul>
+    <ul class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
+        
+        
+        
         
         
         
@@ -102,12 +103,20 @@
         
         
         
+        
+        
+        
+        
+        
         <li class="separator"> | </li>
         <li>
             <a class="clear" href="/">
                 Home
             </a>
         </li>
+        
+        
+        
         
         
         
@@ -125,7 +134,11 @@
         
         
         
-
+        
+        
+        
+         
+        
         <!-- Auto Generation of SPECIAL pages in the navbar -->
         
           
@@ -147,7 +160,7 @@
           
         
     </ul>
-
+        
 	</nav>
 </header>
 
@@ -209,7 +222,7 @@ In this section, you will see a few more tabs, Files, Plots, Packages, Help and 
 
 <p>RStudio is easy to use, I can navigate my way in RStudio quickly after a few weeks of using it. With the ability to write your Rmarkdown file and setting the output to html, pdf or word document, you can produce high quality and pretty content in just one software.</p>
 </section>
-
+  
   <!-- Social media shares -->
   <footer>
 <div class="share-buttons">
@@ -272,7 +285,7 @@ In this section, you will see a few more tabs, Files, Plots, Packages, Help and 
 </div>
 </footer>
 
-
+   
    <!-- Tag list -->
   
   
@@ -296,7 +309,7 @@ In this section, you will see a few more tabs, Files, Plots, Packages, Help and 
   </div>
 </footer>
 
-
+    
 </article>
 
 <!-- Disqus -->
@@ -331,12 +344,11 @@ In this section, you will see a few more tabs, Files, Plots, Packages, Help and 
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
       <a href="/2018/05/16/Data_Science_with_R_Pt_1.html">
-        Data Science with R, Part 1: Introduction to R
+        Data Science with R, Part 1&#58; Introduction to Basics
       </a>
   </div>
   
 </div>
-
 
     </div>
     
@@ -431,6 +443,8 @@ In this section, you will see a few more tabs, Files, Plots, Packages, Help and 
                 </ul>
             </div>
 </footer>
+
+
 
 
   </body>
