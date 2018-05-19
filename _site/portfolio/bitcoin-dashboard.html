@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/portfolio/bitcoin-dashboard">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+    
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/katex.min.css">
+    <script src="/assets/js/vendor/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Data Visualisation: Candlestick and Bollinger | Azmir Fakkri</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Data Visualisation: Candlestick and Bollinger" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We can create candlestick chart and plot the moving averages in Python and Tableau." />
+<meta property="og:description" content="We can create candlestick chart and plot the moving averages in Python and Tableau." />
+<link rel="canonical" href="http://localhost:4000/portfolio/bitcoin-dashboard" />
+<meta property="og:url" content="http://localhost:4000/portfolio/bitcoin-dashboard" />
+<meta property="og:site_name" content="Azmir Fakkri" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-19T00:00:00+01:00" />
+<script type="application/ld+json">
+{"headline":"Data Visualisation: Candlestick and Bollinger","dateModified":"2018-05-19T00:00:00+01:00","datePublished":"2018-05-19T00:00:00+01:00","description":"We can create candlestick chart and plot the moving averages in Python and Tableau.","@type":"BlogPosting","url":"http://localhost:4000/portfolio/bitcoin-dashboard","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/portfolio/bitcoin-dashboard"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Manual seo tags -->
+    <!--
+    <title>Data Visualisation&#58; Candlestick and Bollinger | Azmir Fakkri</title>
+    <meta name="description" content="We can create candlestick chart and plot the moving averages in Python and Tableau.">
+    -->
+</head>
+
+  <body>
+    <header class="site-header">
+    
+    <!-- Logo and title -->
+	<div class="branding">
+		<a href="/">
+			<img class="avatar" src="/assets/img/profile.png" alt=""/>
+		</a>
+
+		<h1 class="site-title">
+			<a href="/">Azmir Fakkri</a>
+		</h1>
+	</div>
+    
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+    
+    <!-- Menu -->
+    <ul class="hide">
+        <!-- Auto Generation of NORMAL pages in the navbar -->
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/">
+                Home
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="/portfolio/">
+                Portfolio
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+        <!-- Auto Generation of SPECIAL pages in the navbar -->
+        
+          
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" href="http://localhost:4000/search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+          
+        
+          
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" href="http://localhost:4000/tags">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                </a>
+            </li>
+          
+        
+    </ul>
+        
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/assets/img/portfolio/portfolio-title.jpg')">
+    <h1 id="Data+Visualisation%26%2358%3B+Candlestick+and+Bollinger" class="title">Data Visualisation&#58; Candlestick and Bollinger</h1>
+    <p class="meta">
+    May 19, 2018
+    
+    </p>
+  </header>
+  <section class="post-content"><p>We can create candlestick chart and plot the moving averages in Python and Tableau.</p>
+
+<h1 id="creating-candlestick-chart-in-python">Creating Candlestick Chart in Python</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Import packages</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">style</span>
+<span class="kn">from</span> <span class="nn">matplotlib.finance</span> <span class="kn">import</span> <span class="n">candlestick_ohlc</span>
+<span class="kn">import</span> <span class="nn">matplotlib.dates</span> <span class="k">as</span> <span class="n">mdates</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Read data and set date as index</span>
+<span class="n">bitcoin</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"https://raw.githubusercontent.com/azmirfakkri/datascience-projects/master/Datasets/coins.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="s">'Date'</span><span class="p">)</span>
+<span class="n">bitcoin</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">bitcoin</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Store Bitcoin open, high, low and close values</span>
+<span class="n">btc_ohlc</span> <span class="o">=</span> <span class="n">bitcoin</span><span class="p">[[</span><span class="s">'BTC_open'</span><span class="p">,</span> <span class="s">'BTC_high'</span><span class="p">,</span> <span class="s">'BTC_low'</span><span class="p">,</span> <span class="s">'BTC_close'</span><span class="p">]]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Define a function to create candlestick for other cryptocurrencies</span>
+
+<span class="k">def</span> <span class="nf">cs_plot</span><span class="p">(</span><span class="n">btc_ohlc</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">''</span><span class="p">):</span>
+    <span class="n">btc_ohlc</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">btc_ohlc</span><span class="p">[</span><span class="s">"Date"</span><span class="p">]</span> <span class="o">=</span> <span class="n">btc_ohlc</span><span class="p">[</span><span class="s">"Date"</span><span class="p">]</span><span class="o">.</span><span class="nb">map</span><span class="p">(</span><span class="n">mdates</span><span class="o">.</span><span class="n">date2num</span><span class="p">)</span>
+
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="n">f1</span><span class="o">.</span><span class="n">xaxis_date</span><span class="p">()</span>
+    <span class="n">candlestick_ohlc</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span> <span class="n">btc_ohlc</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">colorup</span><span class="o">=</span><span class="s">'g'</span><span class="p">,</span> <span class="n">colordown</span><span class="o">=</span><span class="s">'#ff1717'</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Price'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Date'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="k">return</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Specify the range of dates</span>
+<span class="n">btc_ohlc</span> <span class="o">=</span> <span class="n">btc_ohlc</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">'20171201'</span><span class="p">:</span><span class="s">'20180130'</span><span class="p">]</span>
+
+<span class="c"># Plot using the defined function, cs_plot</span>
+<span class="n">cs_plot</span><span class="p">(</span><span class="n">btc_ohlc</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">'Bitcoin Candlestick'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/portfolio/candlestick.png" alt="candlestick" /></p>
+
+<h1 id="plot-moving-average-in-python">Plot Moving Average in Python</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Store bitcoin weighted price as wp_btc and set the range of date</span>
+<span class="n">wp_btc</span> <span class="o">=</span> <span class="n">bitcoin</span><span class="p">[</span><span class="s">'BTC_weighted_price'</span><span class="p">]</span>
+<span class="n">wp_btc</span> <span class="o">=</span> <span class="n">wp_btc</span><span class="p">[</span><span class="s">'20170101'</span><span class="p">:]</span>
+
+<span class="c"># Define function plot_rolling average for other cryptocurrencies</span>
+<span class="k">def</span> <span class="nf">plot_rolling_average</span><span class="p">(</span><span class="n">wp_btc</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">'Rolling Mean &amp; Standard Deviation of Bitcoin'</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">12</span><span class="p">):</span>
+
+    <span class="c">#calculate moving averages</span>
+    <span class="n">rolling_mean</span> <span class="o">=</span> <span class="n">wp_btc</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span><span class="n">center</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="n">rolling_std</span> <span class="o">=</span> <span class="n">wp_btc</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span><span class="n">center</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+    <span class="c">#plot statistics</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wp_btc</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Original'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rolling_mean</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'crimson'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Moving average mean'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rolling_std</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'darkslateblue'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Moving average standard deviation'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">'best'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="k">return</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot_rolling_average</span><span class="p">(</span><span class="n">wp_btc</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">'Rolling Mean &amp; Standard Deviation of Bitcoin'</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/portfolio/ma.png" alt="moving average" /></p>
+
+<h1 id="create-candlestick-and-bollinger-charts-in-tableau">Create Candlestick and Bollinger Charts in Tableau</h1>
+
+<p>Let’s plot the same type of charts to see the power of dashboard interactivity in Tableau.</p>
+
+<iframe src="https://public.tableau.com/views/Bitcoin_7/Dashboard1?:showVizHome=no&amp;:embed=true" align="center" width="1000" height="800"></iframe>
+</section>
+  
+  <!-- Social media shares -->
+  <footer>
+<div class="share-buttons">
+<ul class="share-buttons">
+	
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/portfolio/bitcoin-dashboard&quote=Data Visualisation&#58; Candlestick and Bollinger%20%7C%20Azmir Fakkri" target="_blank" title="Share on Facebook">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Facebook</span>
+		</a>
+	</li>
+	
+
+	
+	<li>
+		<a href="https://twitter.com/intent/tweet?source=http://localhost:4000/portfolio/bitcoin-dashboard&text=Data Visualisation&#58; Candlestick and Bollinger%20%7C%20Azmir Fakkri:%20http://localhost:4000/portfolio/bitcoin-dashboard" target="_blank" title="Tweet">
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Tweet</span>
+		</a>
+	</li>
+	
+
+	
+	<li>
+		<a href="https://plus.google.com/share?url=http://localhost:4000/portfolio/bitcoin-dashboard" target="_blank" title="Share on Google+">
+			<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Google+</span>
+		</a>
+	</li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	<li>
+		<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/portfolio/bitcoin-dashboard&title=Data Visualisation&#58; Candlestick and Bollinger%20%7C%20Azmir Fakkri&summary=&source=http://localhost:4000/portfolio/bitcoin-dashboard" target="_blank" title="Share on LinkedIn">
+			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on LinkedIn</span>
+		</a>
+	</li>
+	
+
+	
+
+	
+	<li>
+		<a href="mailto:?subject=Data Visualisation&#58; Candlestick and Bollinger%20%7C%20Azmir Fakkri&body=:%20http://localhost:4000/portfolio/bitcoin-dashboard" target="_blank" title="Email">
+			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Email</span>
+		</a>
+	</li>
+	
+</ul>
+</div>
+</footer>
+
+   
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#Portfolio">
+      <p><i class="fa fa-tag fa-fw"></i> Portfolio</p>
+    </a>
+    
+    <a class="button" href="/tags#Python">
+      <p><i class="fa fa-tag fa-fw"></i> Python</p>
+    </a>
+    
+    <a class="button" href="/tags#Tableau">
+      <p><i class="fa fa-tag fa-fw"></i> Tableau</p>
+    </a>
+    
+  </div>
+</footer>
+
+    
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'datsci';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  
+</div>
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:azmirfakkri@gmail.com" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/azmirfakkri" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/azmirfakkri/" title="Follow on LinkedIn">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+
+  </body>
+</html>

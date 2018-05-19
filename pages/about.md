@@ -11,13 +11,13 @@ tags: [About]
 </div>
 
 <p style="text-align: justify;">
-I recently started my journey in data science in 2017. Prior to that, I attended one of the medical schools in Dublin, Ireland. I have written blog posts before and I have an experience in medical writing specifically for medical education in anatomy.
+I recently started my journey in data science in 2017. Prior to that, I attended one of the medical schools in Dublin, Ireland, through a scholarship I won in Malaysia. I have written blog posts before and I have an experience in medical writing specifically for medical education in anatomy.
 <br><br>
 This website is dedicated to my continuous learning in data science and a platform to show my skills and creativity. I hope you learn a thing or two from my posts.
 <br>
 I am interested to learn and develop my skills in data visualisation and communication, machine learning and deep learning.
 <br><br>
-My posts will include numerous data science topics and tools but will be geared towards these three areas. So you can expect to see a lot of posts on Tableau and Tensorflow.
+My posts will include numerous data science topics and tools but will be geared towards these three areas.
 <br>
 Occasionally, I like to dip my hands in design using Adobe Suite. So you will see my amateur designs throughout the website.
 <br>
@@ -41,6 +41,7 @@ Please join me in the discussion. If you think I can help you or if you have any
 + R
     - [Introduction to R](https://www.datacamp.com/statement-of-accomplishment/course/429c5263cb4959bb21af325cf7b8fa66e5892575)
     - [Intermediate R](https://www.datacamp.com/statement-of-accomplishment/course/f3aabb3493c51caf044c46c139110b1dccd58683)
+    - [Intermediate R - Practice](https://www.datacamp.com/statement-of-accomplishment/course/10ac915198b46e04543acd0d3df6eef3f92599c2)
     - [Working with Web Data in R](https://www.datacamp.com/statement-of-accomplishment/course/9f47b070138fb33bbff29f5ddf77ccd0849df70a)
     - [Cleaning Data in R](https://www.datacamp.com/statement-of-accomplishment/course/932d44ce48aa5ecf93add3e1e1f05818bc164f6d)
 + Python
@@ -52,3 +53,6 @@ Please join me in the discussion. If you think I can help you or if you have any
     - [MATLAB Onramp](/assets/img/other/MATLAB Onramp.jpg)
 + SQL  
     - [Intro to SQL for Data Science](https://www.datacamp.com/statement-of-accomplishment/course/c276f0f0b5380e6a7dfc5a1324de8cf5d6dae505)
+    - [Joining Data in PostgreSQL](https://www.datacamp.com/statement-of-accomplishment/course/dfdbe475460f0d3e83a7e3828df27d1e2c4731af)
++ Git
+    - [Introduction to Git for Data Science](https://www.datacamp.com/statement-of-accomplishment/course/a5eaa855ae4958f8e09979a578df42c5c0c5f685)
