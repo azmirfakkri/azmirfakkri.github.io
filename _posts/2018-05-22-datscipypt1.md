@@ -3,6 +3,7 @@ layout: custom
 title: Data Science with Python, Part 1&#58; Introduction to Basics
 tags: [Python, Data Science with Python]
 ---
+
 <html>
 <head><meta charset="utf-8" />
 <title></title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
@@ -11678,8 +11679,8 @@ ul.typeahead-list > li > a {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-.highlight .n { color: #0c0c0c } /* Name */
-.highlight .p { color: #0c0c0c } /* Brackets */
+.highlight .n { color: #0c0c0c } /* Variable Assigned */
+.highlight .o { color: #0c0c0c } /* Brackets */
     </style>
 <style type="text/css">
 
@@ -11781,10 +11782,45 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Contents:">Contents:<a class="anchor-link" href="#Contents:">&#182;</a></h2><ul>
+<li><a href="#first-bullet">Introduction</a></li>
+<li><a href="#second-bullet">Assigning Value to a Variable</a></li>
+<li><a href="#third-bullet">Python Data Types</a><ul>
+<li><a href="#third-one-bullet">Data Conversion</a></li>
+<li><a href="#third-two-bullet">List</a><ul>
+<li><a href="#third-two-one-bullet">Subsetting List</a></li>
+<li><a href="#third-two-two-bullet">Slicing List</a></li>
+<li><a href="#third-two-three-bullet">Changing Elements in List</a></li>
+<li><a href="#third-two-four-bullet">Adding and Deleting Elements in List</a></li>
+<li><a href="#third-two-five-bullet">Copying a List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#fourth-bullet">Functions and Methods</a><ul>
+<li><a href="#fourth-one-bullet">Difference between Function and Method</a></li>
+<li><a href="#fourth-two-bullet">Functions</a></li>
+<li><a href="#fourth-three-bullet">Methods</a><ul>
+<li><a href="#fourth-three-one-bullet">String Methods</a></li>
+<li><a href="#fourth-three-two-bullet">List Methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#fifth-bullet">Importing Packages</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>This is the first post for Data Science with Python series.</p>
 <p>Python 3 is used for all articles related to Python in my blog. Blog posts for this series are created using Jupyter Notebook.</p>
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><p>Just like R, you can use Python as a calculator. But Python is versatile programming language that it can do so much more!</p>
-<h1 id="Assigning-Value-to-a-Variable">Assigning Value to a Variable<a class="anchor-link" href="#Assigning-Value-to-a-Variable">&#182;</a></h1><p>In R, we usually use this sign to assign a value to a variable <code>&lt;-</code>, but in Python, it is simply this <code>=</code>.</p>
+<h1 id="Introduction-">Introduction <a class="anchor" id="first-bullet" /><a class="anchor-link" href="#Introduction-">&#182;</a></h1><p>Just like R, you can use Python as a calculator. But Python is versatile programming language that it can do so much more!</p>
+<h1 id="Assigning-Value-to-a-Variable-">Assigning Value to a Variable <a class="anchor" id="second-bullet" /><a class="anchor-link" href="#Assigning-Value-to-a-Variable-">&#182;</a></h1><p>In R, we usually use this sign to assign a value to a variable <code>&lt;-</code>, but in Python, it is simply this <code>=</code>.</p>
 
 </div>
 </div>
@@ -11830,7 +11866,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Data-Types">Python Data Types<a class="anchor-link" href="#Python-Data-Types">&#182;</a></h1><p>Let's learn about the data types in Python.</p>
+<h1 id="Python-Data-Types-">Python Data Types <a class="anchor" id="third-bullet" /><a class="anchor-link" href="#Python-Data-Types-">&#182;</a></h1><p>Let's learn about the data types in Python.</p>
 <ol>
 <li>Integer - for example 20, it has no fractional part </li>
 <li>Float - for example 20.50, it has an integer and fractional parts</li>
@@ -11987,7 +12023,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Conversion">Data Conversion<a class="anchor-link" href="#Data-Conversion">&#182;</a></h2><p>In Python, you can do data conversion easily by using these functions: <code>int()</code>, <code>float()</code>, <code>str()</code> and <code>bool()</code>.
+<h2 id="Data-Conversion-">Data Conversion <a class="anchor" id="third-one-bullet" /><a class="anchor-link" href="#Data-Conversion-">&#182;</a></h2><p>In Python, you can do data conversion easily by using these functions: <code>int()</code>, <code>float()</code>, <code>str()</code> and <code>bool()</code>.
 For example, when you want to print a message containing data of different types.</p>
 
 </div>
@@ -12075,7 +12111,7 @@ For example, when you want to print a message containing data of different types
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="List">List<a class="anchor-link" href="#List">&#182;</a></h2><p>List is another data type in Python. Just like R, list can store different types of data. A list can also contain lists.</p>
+<h2 id="List-">List <a class="anchor" id="third-two-bullet" /><a class="anchor-link" href="#List-">&#182;</a></h2><p>List is another data type in Python. Just like R, list can store different types of data. A list can also contain lists.</p>
 
 </div>
 </div>
@@ -12112,7 +12148,7 @@ For example, when you want to print a message containing data of different types
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Subsetting-List">Subsetting List<a class="anchor-link" href="#Subsetting-List">&#182;</a></h3><p>Different from R, in Python, the index starts at 0 and not 1.
+<h3 id="Subsetting-List-">Subsetting List <a class="anchor" id="third-two-one-bullet" /><a class="anchor-link" href="#Subsetting-List-">&#182;</a></h3><p>Different from R, in Python, the index starts at 0 and not 1.
 To access the element in the list, you use <code>[]</code>. In our doggies list, we have 5 sublists.</p>
 
 </div>
@@ -12190,7 +12226,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Slicing-List">Slicing List<a class="anchor-link" href="#Slicing-List">&#182;</a></h3><p>Let's say we want to get the first, second and third sublists. We can slice the list like this <code>list[start:end]</code>.<br>
+<h3 id="Slicing-List-">Slicing List <a class="anchor" id="third-two-two-bullet" /><a class="anchor-link" href="#Slicing-List-">&#182;</a></h3><p>Let's say we want to get the first, second and third sublists. We can slice the list like this <code>list[start:end]</code>.<br>
 <span style="color:#FF0000">Important:</span> In Python, the index specified for end is not inclusive.</p>
 
 </div>
@@ -12235,7 +12271,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Notice that index 3 refers to <code>['Pip', 2]</code>, but because the <code>end</code> index is not inclusive, it will not be included in the result.</p>
-<h3 id="Changing-Elements-in-List">Changing Elements in List<a class="anchor-link" href="#Changing-Elements-in-List">&#182;</a></h3><p>We noticed that we made an error with Pip's age, she's not 2 but she's 3 and she has an extra p in her name! Let's changes this in our list.</p>
+<h3 id="Changing-Elements-in-List-">Changing Elements in List <a class="anchor" id="third-two-three-bullet" /><a class="anchor-link" href="#Changing-Elements-in-List-">&#182;</a></h3><p>We noticed that we made an error with Pip's age, she's not 2 but she's 3 and she has an extra p in her name! Let's changes this in our list.</p>
 
 </div>
 </div>
@@ -12327,7 +12363,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Adding-and-Deleting-Elements-in-List">Adding and Deleting Elements in List<a class="anchor-link" href="#Adding-and-Deleting-Elements-in-List">&#182;</a></h3><p>We can easily add element to the list by using <code>+</code> sign.</p>
+<h3 id="Adding-and-Deleting-Elements-in-List-">Adding and Deleting Elements in List <a class="anchor" id="third-two-four-bullet" /><a class="anchor-link" href="#Adding-and-Deleting-Elements-in-List-">&#182;</a></h3><p>We can easily add element to the list by using <code>+</code> sign.</p>
 
 </div>
 </div>
@@ -12420,7 +12456,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Copying-a-List">Copying a List<a class="anchor-link" href="#Copying-a-List">&#182;</a></h3><p>To copy a list (its elements), we can do it in two ways.</p>
+<h3 id="Copying-a-List-">Copying a List <a class="anchor" id="third-two-five-bullet" /><a class="anchor-link" href="#Copying-a-List-">&#182;</a></h3><p>To copy a list (its elements), we can do it in two ways.</p>
 
 </div>
 </div>
@@ -12455,10 +12491,10 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Functions-and-Methods">Functions and Methods<a class="anchor-link" href="#Functions-and-Methods">&#182;</a></h1><h2 id="Difference-between-Function-and-Method">Difference between Function and Method<a class="anchor-link" href="#Difference-between-Function-and-Method">&#182;</a></h2><p>Function is a 'black box' of codes which will produce an output. In Python, everything is an object. Like string, integer and Boolean, they are objects. Function is independent of object. It can be called on different types of object in Python.</p>
+<h1 id="Functions-and-Methods-">Functions and Methods <a class="anchor" id="fourth-bullet" /><a class="anchor-link" href="#Functions-and-Methods-">&#182;</a></h1><h2 id="Difference-between-Function-and-Method-">Difference between Function and Method <a class="anchor" id="fourth-one-bullet" /><a class="anchor-link" href="#Difference-between-Function-and-Method-">&#182;</a></h2><p>Function is a 'black box' of codes which will produce an output. In Python, everything is an object. Like string, integer and Boolean, they are objects. Function is independent of object. It can be called on different types of object in Python.</p>
 <p>Unlike function, method is dependent on object. It can only be called on specific object. Different type of object will have different set of methods that can be used on the data passed in the method.</p>
 <p>Let's look at a few useful functions and methods for every data type in Python.</p>
-<h2 id="Functions">Functions<a class="anchor-link" href="#Functions">&#182;</a></h2><p><code>len()</code> - finding length</p>
+<h2 id="Functions-">Functions <a class="anchor" id="fourth-two-bullet" /><a class="anchor-link" href="#Functions-">&#182;</a></h2><p><code>len()</code> - finding length</p>
 
 </div>
 </div>
@@ -12545,7 +12581,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Methods">Methods<a class="anchor-link" href="#Methods">&#182;</a></h2><h3 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">&#182;</a></h3><ol>
+<h2 id="Methods-">Methods <a class="anchor" id="fourth-three-bullet" /><a class="anchor-link" href="#Methods-">&#182;</a></h2><h3 id="String-Methods-">String Methods <a class="anchor" id="fourth-three-one-bullet" /><a class="anchor-link" href="#String-Methods-">&#182;</a></h3><ol>
 <li><code>upper()</code> - capitalise letters</li>
 <li><code>count()</code> - count number of letters </li>
 </ol>
@@ -12629,7 +12665,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="List-Methods">List Methods<a class="anchor-link" href="#List-Methods">&#182;</a></h3><ol>
+<h3 id="List-Methods-">List Methods <a class="anchor" id="fourth-three-two-bullet" /><a class="anchor-link" href="#List-Methods-">&#182;</a></h3><ol>
 <li><code>index()</code> - find the index of the first matched element in the list </li>
 <li><code>count()</code> - find the number of appearance of an element in a list </li>
 <li><code>append()</code> - adds an element to a list </li>
@@ -12831,7 +12867,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Importing-Packages">Importing Packages<a class="anchor-link" href="#Importing-Packages">&#182;</a></h1><p>Python has a lot of useful packages that can help you with your data analysis. For example, the NumPy and pandas.
+<h1 id="Importing-Packages-">Importing Packages <a class="anchor" id="fifth-bullet" /><a class="anchor-link" href="#Importing-Packages-">&#182;</a></h1><p>Python has a lot of useful packages that can help you with your data analysis. For example, the NumPy and pandas.
 To be able to use these packages, you will need to import them.</p>
 <p>Three things to note when importing packages:</p>
 <ol>

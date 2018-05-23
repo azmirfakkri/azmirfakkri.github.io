@@ -5,7 +5,7 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description></description>
-        <pubDate>Wed, 23 May 2018 00:01:16 +0100</pubDate>
+        <pubDate>Wed, 23 May 2018 08:56:25 +0100</pubDate>
         
         <item>
             <title>Data Science with Python, Part 1&amp;#58; Introduction to Basics</title>
@@ -11686,8 +11686,8 @@ ul.typeahead-list &gt; li &gt; a {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-.highlight .n { color: #0c0c0c } /* Name */
-.highlight .p { color: #0c0c0c } /* Brackets */
+.highlight .n { color: #0c0c0c } /* Variable Assigned */
+.highlight .o { color: #0c0c0c } /* Brackets */
     &lt;/style&gt;
 &lt;style type=&quot;text/css&quot;&gt;
 
@@ -11789,10 +11789,45 @@ div#notebook {
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;h2 id=&quot;Contents:&quot;&gt;Contents:&lt;a class=&quot;anchor-link&quot; href=&quot;#Contents:&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#first-bullet&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#second-bullet&quot;&gt;Assigning Value to a Variable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#third-bullet&quot;&gt;Python Data Types&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#third-one-bullet&quot;&gt;Data Conversion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#third-two-bullet&quot;&gt;List&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#third-two-one-bullet&quot;&gt;Subsetting List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#third-two-two-bullet&quot;&gt;Slicing List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#third-two-three-bullet&quot;&gt;Changing Elements in List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#third-two-four-bullet&quot;&gt;Adding and Deleting Elements in List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#third-two-five-bullet&quot;&gt;Copying a List&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fourth-bullet&quot;&gt;Functions and Methods&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#fourth-one-bullet&quot;&gt;Difference between Function and Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fourth-two-bullet&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fourth-three-bullet&quot;&gt;Methods&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#fourth-three-one-bullet&quot;&gt;String Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fourth-three-two-bullet&quot;&gt;List Methods&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fifth-bullet&quot;&gt;Importing Packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;prompt input_prompt&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;p&gt;This is the first post for Data Science with Python series.&lt;/p&gt;
 &lt;p&gt;Python 3 is used for all articles related to Python in my blog. Blog posts for this series are created using Jupyter Notebook.&lt;/p&gt;
-&lt;h1 id=&quot;Introduction&quot;&gt;Introduction&lt;a class=&quot;anchor-link&quot; href=&quot;#Introduction&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Just like R, you can use Python as a calculator. But Python is versatile programming language that it can do so much more!&lt;/p&gt;
-&lt;h1 id=&quot;Assigning-Value-to-a-Variable&quot;&gt;Assigning Value to a Variable&lt;a class=&quot;anchor-link&quot; href=&quot;#Assigning-Value-to-a-Variable&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In R, we usually use this sign to assign a value to a variable &lt;code&gt;&amp;lt;-&lt;/code&gt;, but in Python, it is simply this &lt;code&gt;=&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;Introduction-&quot;&gt;Introduction &lt;a class=&quot;anchor&quot; id=&quot;first-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Introduction-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Just like R, you can use Python as a calculator. But Python is versatile programming language that it can do so much more!&lt;/p&gt;
+&lt;h1 id=&quot;Assigning-Value-to-a-Variable-&quot;&gt;Assigning Value to a Variable &lt;a class=&quot;anchor&quot; id=&quot;second-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Assigning-Value-to-a-Variable-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In R, we usually use this sign to assign a value to a variable &lt;code&gt;&amp;lt;-&lt;/code&gt;, but in Python, it is simply this &lt;code&gt;=&lt;/code&gt;.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -11838,7 +11873,7 @@ div#notebook {
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Python-Data-Types&quot;&gt;Python Data Types&lt;a class=&quot;anchor-link&quot; href=&quot;#Python-Data-Types&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Let's learn about the data types in Python.&lt;/p&gt;
+&lt;h1 id=&quot;Python-Data-Types-&quot;&gt;Python Data Types &lt;a class=&quot;anchor&quot; id=&quot;third-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Python-Data-Types-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Let's learn about the data types in Python.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Integer - for example 20, it has no fractional part &lt;/li&gt;
 &lt;li&gt;Float - for example 20.50, it has an integer and fractional parts&lt;/li&gt;
@@ -11995,7 +12030,7 @@ div#notebook {
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Data-Conversion&quot;&gt;Data Conversion&lt;a class=&quot;anchor-link&quot; href=&quot;#Data-Conversion&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In Python, you can do data conversion easily by using these functions: &lt;code&gt;int()&lt;/code&gt;, &lt;code&gt;float()&lt;/code&gt;, &lt;code&gt;str()&lt;/code&gt; and &lt;code&gt;bool()&lt;/code&gt;.
+&lt;h2 id=&quot;Data-Conversion-&quot;&gt;Data Conversion &lt;a class=&quot;anchor&quot; id=&quot;third-one-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Data-Conversion-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In Python, you can do data conversion easily by using these functions: &lt;code&gt;int()&lt;/code&gt;, &lt;code&gt;float()&lt;/code&gt;, &lt;code&gt;str()&lt;/code&gt; and &lt;code&gt;bool()&lt;/code&gt;.
 For example, when you want to print a message containing data of different types.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -12083,7 +12118,7 @@ For example, when you want to print a message containing data of different types
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;List&quot;&gt;List&lt;a class=&quot;anchor-link&quot; href=&quot;#List&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;List is another data type in Python. Just like R, list can store different types of data. A list can also contain lists.&lt;/p&gt;
+&lt;h2 id=&quot;List-&quot;&gt;List &lt;a class=&quot;anchor&quot; id=&quot;third-two-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#List-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;List is another data type in Python. Just like R, list can store different types of data. A list can also contain lists.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -12120,7 +12155,7 @@ For example, when you want to print a message containing data of different types
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Subsetting-List&quot;&gt;Subsetting List&lt;a class=&quot;anchor-link&quot; href=&quot;#Subsetting-List&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Different from R, in Python, the index starts at 0 and not 1.
+&lt;h3 id=&quot;Subsetting-List-&quot;&gt;Subsetting List &lt;a class=&quot;anchor&quot; id=&quot;third-two-one-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Subsetting-List-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Different from R, in Python, the index starts at 0 and not 1.
 To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our doggies list, we have 5 sublists.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -12198,7 +12233,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Slicing-List&quot;&gt;Slicing List&lt;a class=&quot;anchor-link&quot; href=&quot;#Slicing-List&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Let's say we want to get the first, second and third sublists. We can slice the list like this &lt;code&gt;list[start:end]&lt;/code&gt;.&lt;br /&gt;
+&lt;h3 id=&quot;Slicing-List-&quot;&gt;Slicing List &lt;a class=&quot;anchor&quot; id=&quot;third-two-two-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Slicing-List-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Let's say we want to get the first, second and third sublists. We can slice the list like this &lt;code&gt;list[start:end]&lt;/code&gt;.&lt;br /&gt;
 &lt;span style=&quot;color:#FF0000&quot;&gt;Important:&lt;/span&gt; In Python, the index specified for end is not inclusive.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -12243,7 +12278,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;p&gt;Notice that index 3 refers to &lt;code&gt;['Pip', 2]&lt;/code&gt;, but because the &lt;code&gt;end&lt;/code&gt; index is not inclusive, it will not be included in the result.&lt;/p&gt;
-&lt;h3 id=&quot;Changing-Elements-in-List&quot;&gt;Changing Elements in List&lt;a class=&quot;anchor-link&quot; href=&quot;#Changing-Elements-in-List&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We noticed that we made an error with Pip's age, she's not 2 but she's 3 and she has an extra p in her name! Let's changes this in our list.&lt;/p&gt;
+&lt;h3 id=&quot;Changing-Elements-in-List-&quot;&gt;Changing Elements in List &lt;a class=&quot;anchor&quot; id=&quot;third-two-three-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Changing-Elements-in-List-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We noticed that we made an error with Pip's age, she's not 2 but she's 3 and she has an extra p in her name! Let's changes this in our list.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -12335,7 +12370,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Adding-and-Deleting-Elements-in-List&quot;&gt;Adding and Deleting Elements in List&lt;a class=&quot;anchor-link&quot; href=&quot;#Adding-and-Deleting-Elements-in-List&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We can easily add element to the list by using &lt;code&gt;+&lt;/code&gt; sign.&lt;/p&gt;
+&lt;h3 id=&quot;Adding-and-Deleting-Elements-in-List-&quot;&gt;Adding and Deleting Elements in List &lt;a class=&quot;anchor&quot; id=&quot;third-two-four-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Adding-and-Deleting-Elements-in-List-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We can easily add element to the list by using &lt;code&gt;+&lt;/code&gt; sign.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -12428,7 +12463,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Copying-a-List&quot;&gt;Copying a List&lt;a class=&quot;anchor-link&quot; href=&quot;#Copying-a-List&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;To copy a list (its elements), we can do it in two ways.&lt;/p&gt;
+&lt;h3 id=&quot;Copying-a-List-&quot;&gt;Copying a List &lt;a class=&quot;anchor&quot; id=&quot;third-two-five-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Copying-a-List-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;To copy a list (its elements), we can do it in two ways.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -12463,10 +12498,10 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Functions-and-Methods&quot;&gt;Functions and Methods&lt;a class=&quot;anchor-link&quot; href=&quot;#Functions-and-Methods&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;Difference-between-Function-and-Method&quot;&gt;Difference between Function and Method&lt;a class=&quot;anchor-link&quot; href=&quot;#Difference-between-Function-and-Method&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Function is a 'black box' of codes which will produce an output. In Python, everything is an object. Like string, integer and Boolean, they are objects. Function is independent of object. It can be called on different types of object in Python.&lt;/p&gt;
+&lt;h1 id=&quot;Functions-and-Methods-&quot;&gt;Functions and Methods &lt;a class=&quot;anchor&quot; id=&quot;fourth-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Functions-and-Methods-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;Difference-between-Function-and-Method-&quot;&gt;Difference between Function and Method &lt;a class=&quot;anchor&quot; id=&quot;fourth-one-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Difference-between-Function-and-Method-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Function is a 'black box' of codes which will produce an output. In Python, everything is an object. Like string, integer and Boolean, they are objects. Function is independent of object. It can be called on different types of object in Python.&lt;/p&gt;
 &lt;p&gt;Unlike function, method is dependent on object. It can only be called on specific object. Different type of object will have different set of methods that can be used on the data passed in the method.&lt;/p&gt;
 &lt;p&gt;Let's look at a few useful functions and methods for every data type in Python.&lt;/p&gt;
-&lt;h2 id=&quot;Functions&quot;&gt;Functions&lt;a class=&quot;anchor-link&quot; href=&quot;#Functions&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;len()&lt;/code&gt; - finding length&lt;/p&gt;
+&lt;h2 id=&quot;Functions-&quot;&gt;Functions &lt;a class=&quot;anchor&quot; id=&quot;fourth-two-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Functions-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;len()&lt;/code&gt; - finding length&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -12553,7 +12588,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Methods&quot;&gt;Methods&lt;a class=&quot;anchor-link&quot; href=&quot;#Methods&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&quot;String-Methods&quot;&gt;String Methods&lt;a class=&quot;anchor-link&quot; href=&quot;#String-Methods&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;h2 id=&quot;Methods-&quot;&gt;Methods &lt;a class=&quot;anchor&quot; id=&quot;fourth-three-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Methods-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&quot;String-Methods-&quot;&gt;String Methods &lt;a class=&quot;anchor&quot; id=&quot;fourth-three-one-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#String-Methods-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;upper()&lt;/code&gt; - capitalise letters&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;count()&lt;/code&gt; - count number of letters &lt;/li&gt;
 &lt;/ol&gt;
@@ -12637,7 +12672,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;List-Methods&quot;&gt;List Methods&lt;a class=&quot;anchor-link&quot; href=&quot;#List-Methods&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;h3 id=&quot;List-Methods-&quot;&gt;List Methods &lt;a class=&quot;anchor&quot; id=&quot;fourth-three-two-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#List-Methods-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;index()&lt;/code&gt; - find the index of the first matched element in the list &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;count()&lt;/code&gt; - find the number of appearance of an element in a list &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;append()&lt;/code&gt; - adds an element to a list &lt;/li&gt;
@@ -12839,7 +12874,7 @@ To access the element in the list, you use &lt;code&gt;[]&lt;/code&gt;. In our d
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Importing-Packages&quot;&gt;Importing Packages&lt;a class=&quot;anchor-link&quot; href=&quot;#Importing-Packages&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Python has a lot of useful packages that can help you with your data analysis. For example, the NumPy and pandas.
+&lt;h1 id=&quot;Importing-Packages-&quot;&gt;Importing Packages &lt;a class=&quot;anchor&quot; id=&quot;fifth-bullet&quot; /&gt;&lt;a class=&quot;anchor-link&quot; href=&quot;#Importing-Packages-&quot;&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Python has a lot of useful packages that can help you with your data analysis. For example, the NumPy and pandas.
 To be able to use these packages, you will need to import them.&lt;/p&gt;
 &lt;p&gt;Three things to note when importing packages:&lt;/p&gt;
 &lt;ol&gt;
