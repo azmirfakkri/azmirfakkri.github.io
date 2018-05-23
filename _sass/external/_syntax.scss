@@ -2,7 +2,7 @@
 
 // ==========================================================================
 //   Syntax highlighting
-// ========================================================================== 
+// ==========================================================================
 
 div.highlighter-rouge,
 figure.highlight {
@@ -54,7 +54,7 @@ figure.highlight {
 .highlight pre{ width:100%}
 .highlight .hll{ background-color:$base06}
 
-.highlight{ 
+.highlight{
  .c{ /* Comment */ color:$base04}
  .err{ /* Error */ color:$base08}
  .k{ /* Keyword */ color:$base0e}
@@ -148,27 +148,27 @@ figure.highlight {
             text-align: center;
         }
     }
-    
-    
+
+
 }
 
 .dataframe thead tr {
     :nth-child(n+2) {
         color: black;
         //width: 100px;
-        
+
         font-size: 0.75em;
         text-align: center !important;
         border-top: 0;
         border-left: 0;
         border-right: 0;
     }
-    
+
     :first-child {
         border-top: 0;
         border-left: 0;
     }
-    
+
 }
 
 table.dataframe {
