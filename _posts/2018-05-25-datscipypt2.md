@@ -1,187 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
-    <script defer=true src="/assets/js/main.min.js"></script>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="/" type="image/x-icon">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="http://localhost:4000/2018/05/22/datscipypt1.html">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
-
-    <!-- Font Awesome -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/font-awesome.min.css">
-
-    <!-- Google Fonts -->
-    
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
-    
-
-    <!-- KaTeX 0.8.3 -->
-    
-    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/katex.min.css">
-    <script src="/assets/js/vendor/katex.min.js">
-    </script>
-    
-
-    <!-- Google Analytics -->
-    
-    
-    <!-- seo tags -->
-    <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Data Science with Python, Part 1: Introduction to Basics | Azmir Fakkri</title>
-<meta name="generator" content="Jekyll v3.8.0" />
-<meta property="og:title" content="Data Science with Python, Part 1: Introduction to Basics" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Data Science Simplified" />
-<meta property="og:description" content="Data Science Simplified" />
-<link rel="canonical" href="http://localhost:4000/2018/05/22/datscipypt1.html" />
-<meta property="og:url" content="http://localhost:4000/2018/05/22/datscipypt1.html" />
-<meta property="og:site_name" content="Azmir Fakkri" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-05-22T00:00:00+01:00" />
-<script type="application/ld+json">
-{"headline":"Data Science with Python, Part 1: Introduction to Basics","dateModified":"2018-05-22T00:00:00+01:00","datePublished":"2018-05-22T00:00:00+01:00","description":"Data Science Simplified","@type":"BlogPosting","url":"http://localhost:4000/2018/05/22/datscipypt1.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/05/22/datscipypt1.html"},"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <!-- Manual seo tags -->
-    <!--
-    <title>Data Science with Python, Part 1&#58; Introduction to Basics | Azmir Fakkri</title>
-    <meta name="description" content="">
-    -->
-</head>
-
-  <body>
-    <header class="site-header">
-    
-    <!-- Logo and title -->
-	<div class="branding">
-		<a href="/">
-			<img class="avatar" src="/assets/img/profile.png" alt=""/>
-		</a>
-
-		<h1 class="site-title">
-			<a href="/">Azmir Fakkri</a>
-		</h1>
-	</div>
-    
-    <!-- Toggle menu -->
-    <nav class="clear">
-    <a id="pull" class="toggle" href="#">
-    <i class="fa fa-bars fa-lg"></i>
-    </a>
-    
-    <!-- Menu -->
-    <ul class="hide">
-        <!-- Auto Generation of NORMAL pages in the navbar -->
-        
-        
-        
-        
-        
-        
-        
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="/about/">
-                About
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="/">
-                Home
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="/portfolio/">
-                Portfolio
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-         
-        
-        <!-- Auto Generation of SPECIAL pages in the navbar -->
-        
-          
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" href="http://localhost:4000/search">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
-            </li>
-          
-        
-          
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" href="http://localhost:4000/tags">
-                    <i class="fa fa-tags" aria-hidden="true"></i>
-                </a>
-            </li>
-          
-        
-    </ul>
-        
-	</nav>
-</header>
-
-    <div class="content">
-      <header id="main" style="background-image: url('/')">
-    <h1 id="Data+Science+with+Python%2C+Part+1%26%2358%3B+Introduction+to+Basics" style="text-align:center" class="title">Data Science with Python, Part 1&#58; Introduction to Basics</h1>
-    <p style="text-align:center" class="meta">
-    May 22, 2018
-    
-    </p>
-  </header>
+---
+layout: custom
+title: Data Science with Python, Part 2&#58; NumPy
+tags: [Python, Data Science with Python, NumPy]
+---
 
 <html>
 <head><meta charset="utf-8" />
-<title></title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Data Science with Python, Part 2 - NumPy</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11926,7 +11751,7 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css" />
+<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -11958,45 +11783,25 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Contents:">Contents:<a class="anchor-link" href="#Contents:">&#182;</a></h2><ul>
-<li><a href="#first-bullet">Introduction</a></li>
-<li><a href="#second-bullet">Assigning Value to a Variable</a></li>
-<li><a href="#third-bullet">Python Data Types</a><ul>
-<li><a href="#third-one-bullet">Data Conversion</a></li>
-<li><a href="#third-two-bullet">List</a><ul>
-<li><a href="#third-two-one-bullet">Subsetting List</a></li>
-<li><a href="#third-two-two-bullet">Slicing List</a></li>
-<li><a href="#third-two-three-bullet">Changing Elements in List</a></li>
-<li><a href="#third-two-four-bullet">Adding and Deleting Elements in List</a></li>
-<li><a href="#third-two-five-bullet">Copying a List</a></li>
+<h2 id="Contents">Contents<a class="anchor-link" href="#Contents">&#182;</a></h2><ul>
+<li><a href="#first-bullet">Introduction to NumPy</a></li>
+<li><a href="#second-bullet">Creating a NumPy Array</a></li>
+<li><a href="#third-bullet">Numpy Attributes</a></li>
+<li><a href="#fourth-bullet">NumPy Basic Operations</a></li>
+<li><a href="#fifth-bullet">Indexing and Slicing in NumPy</a></li>
+<li><a href="#sixth-bullet">Manipulating NumPy Shape</a><ul>
+<li><a href="#sixth-one-bullet">Changing Array Shape</a></li>
+<li><a href="#sixth-two-bullet">Stacking Arrays</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li><a href="#fourth-bullet">Functions and Methods</a><ul>
-<li><a href="#fourth-one-bullet">Difference between Function and Method</a></li>
-<li><a href="#fourth-two-bullet">Functions</a></li>
-<li><a href="#fourth-three-bullet">Methods</a><ul>
-<li><a href="#fourth-three-one-bullet">String Methods</a></li>
-<li><a href="#fourth-three-two-bullet">List Methods</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#fifth-bullet">Importing Packages</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This is the first post for Data Science with Python series.</p>
-<p>Python 3 is used for all articles related to Python in my blog. Blog posts for this series are created using Jupyter Notebook.</p>
-<h1 id="Introduction-">Introduction <a class="anchor" id="first-bullet" /><a class="anchor-link" href="#Introduction-">&#182;</a></h1><p>Just like R, you can use Python as a calculator. But Python is versatile programming language that it can do so much more!</p>
-<h1 id="Assigning-Value-to-a-Variable-">Assigning Value to a Variable <a class="anchor" id="second-bullet" /><a class="anchor-link" href="#Assigning-Value-to-a-Variable-">&#182;</a></h1><p>In R, we usually use this sign to assign a value to a variable <code>&lt;-</code>, but in Python, it is simply this <code>=</code>.</p>
+<p>This is the second post in the Data Science with Python series.
+Read the first post here:</p>
+<ol>
+<li><a href="https://azmirfakkri.github.io/2018/05/22/datscipypt1.html">Data Science with Python, Part 1: Introduction to Basics</a></li>
+</ol>
+<h1 id="Introduction-to-NumPy-">Introduction to NumPy <a class="anchor" id="first-bullet" /><a class="anchor-link" href="#Introduction-to-NumPy-">&#182;</a></h1><p>NumPy stands for Numerical Python. This is one of the most common used packages in Python. So why do we need NumPy?<br>
+Let's see an example. Suppose you have two list that you want to divide and you want results for each elements.</p>
 
 </div>
 </div>
@@ -12006,211 +11811,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Assign 20 to x</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
-
-<span class="c1"># Print x</span>
-<span class="n">x</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>20</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Data-Types-">Python Data Types <a class="anchor" id="third-bullet" /><a class="anchor-link" href="#Python-Data-Types-">&#182;</a></h1><p>Let's learn about the data types in Python.</p>
-<ol>
-<li>Integer - for example 20, it has no fractional part </li>
-<li>Float - for example 20.50, it has an integer and fractional parts</li>
-<li>String - for example 'my dogs', they are texts and need to be wrapped in a single or double quotation marks (also known as character in R)</li>
-<li>Boolean - <code>True</code> or <code>False</code> (in R, these are spelled with all capital letters)</li>
-<li>List</li>
-</ol>
-<p>To see the data types you can simply use this function <code>type()</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">20.50</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;my dogs&#39;</span>
-<span class="n">c</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="c1"># Check data type of x</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>int</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check data type of a</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>float</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check data type of b</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>str</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check data type of c</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>bool</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Conversion-">Data Conversion <a class="anchor" id="third-one-bullet" /><a class="anchor-link" href="#Data-Conversion-">&#182;</a></h2><p>In Python, you can do data conversion easily by using these functions: <code>int()</code>, <code>float()</code>, <code>str()</code> and <code>bool()</code>.
-For example, when you want to print a message containing data of different types.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;A trip to the vet with my dog will cost me &#39;</span> <span class="o">+</span> <span class="mf">20.50</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a list</span>
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># Divide list by 2</span>
+<span class="n">list1</span> <span class="o">/</span> <span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -12230,10 +11835,12 @@ For example, when you want to print a message containing data of different types
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-6-37f83bf7fc93&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-blue-fg">&#39;A trip to the vet with my dog will cost me &#39;</span> <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">20.50</span>
+<span class="ansi-green-fg">&lt;ipython-input-1-7a23a9964c02&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># Divide list by 2</span>
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>list1 <span class="ansi-blue-fg">/</span> <span class="ansi-cyan-fg">2</span>
 
-<span class="ansi-red-fg">TypeError</span>: must be str, not float</pre>
+<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for /: &#39;list&#39; and &#39;int&#39;</pre>
 </div>
 </div>
 
@@ -12245,7 +11852,255 @@ For example, when you want to print a message containing data of different types
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I can easily fix this error by converting the float into string.</p>
+<p>Python threw an error in this example. And note what the error said, Python does not know how to handle operation involving list and integer. Let's fix this using NumPy.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import package </span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Create numpy array </span>
+<span class="n">np_list1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
+
+<span class="c1"># Divide np_list1</span>
+<span class="n">np_list1</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 0.5,  1. ,  1.5,  2. ,  2.5])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This time, Python did not throw us an error and it gives us the results of the division element-wise!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Creating-a-NumPy-Array-">Creating a NumPy Array <a class="anchor" id="second-bullet" /><a class="anchor-link" href="#Creating-a-NumPy-Array-">&#182;</a></h1><p>Remember that we have learnt a few Python data types in the first post of this series, so NumPy is another data type in Python. Let's dissect what it means by this sentence, "NumPy’s main object is the homogeneous multidimensional array".</p>
+<ul>
+<li><strong>Homogenous</strong> - NumPy can only contain one type of data, for example strings or integers. If there are multiple data types, it will be converted to a single data type.</li>
+<li><strong>Multidimensional array</strong> - it can have more than 1 dimension. Dimensions are called axes in NumPy. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a NumPy array</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span>
+
+<span class="c1"># View x</span>
+<span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One note in creating a NumPy array, you need to provide a single list.
+What we essentially did in creating x is that we have 3 sublists in a list. So, we need that extra bracket to make sure that it is one list and not 3 lists.</p>
+<p>We can also specify dtype as the second argument.</p>
+<h1 id="Numpy-Attributes--">Numpy Attributes  <a class="anchor" id="third-bullet" /><a class="anchor-link" href="#Numpy-Attributes--">&#182;</a></h1><p>NumPy has attributes associated with them. We will look at these in further details using the example we created earlier.</p>
+<p><strong>First attribute</strong> <code>ndarray.ndim</code>
+By calling this on the array, it will tell us the number of axes or dimensions of the array</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are two axes in x.</p>
+<p><span style="color:#FF0000">Important:</span> There is no parentheses <code>()</code> after attribute, unlike methods, <code>example.method()</code></p>
+<p><strong>Second attribute</strong> <code>ndarray.shape</code>
+It tells us the length of the axes (or dimensions) of the array, the result of shape will be in <code>(n, m)</code>, where n is the number of rows and m is the number of columns</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(3, 5)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we found out from the first attribute, this array has two axes. The first axis has 3 rows and the second axis has 5 columns.</p>
+<p><strong>Third attribute</strong> <code>ndarray.size</code>
+It tells us the total number of elements in the array</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">size</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>15</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are 15 elements in the array.</p>
+<p><strong>Fourth attribute</strong> <code>ndarray.dtype</code>
+It describes the type of the elements in the array</p>
 
 </div>
 </div>
@@ -12255,7 +12110,7 @@ For example, when you want to print a message containing data of different types
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;A trip to the vet with my dog will cost me €&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mf">20.50</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">dtype</span>
 </pre></div>
 
 </div>
@@ -12274,7 +12129,7 @@ For example, when you want to print a message containing data of different types
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;A trip to the vet with my dog will cost me €20.5&#39;</pre>
+<pre>dtype(&#39;int16&#39;)</pre>
 </div>
 
 </div>
@@ -12287,7 +12142,9 @@ For example, when you want to print a message containing data of different types
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="List-">List <a class="anchor" id="third-two-bullet" /><a class="anchor-link" href="#List-">&#182;</a></h2><p>List is another data type in Python. Just like R, list can store different types of data. A list can also contain lists.</p>
+<p>Our elements are of integer type.</p>
+<p><strong>Fifth attribute</strong> <code>ndarray.itemsize</code>
+It tells us the bytes size of the elements in the array</p>
 
 </div>
 </div>
@@ -12297,25 +12154,30 @@ For example, when you want to print a message containing data of different types
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a list</span>
-<span class="n">doggies</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Jodi&#39;</span><span class="p">,</span> <span class="s1">&#39;Loki&#39;</span><span class="p">,</span> <span class="s1">&#39;Ru&#39;</span><span class="p">,</span> <span class="s1">&#39;Pip&#39;</span><span class="p">,</span> <span class="s1">&#39;Bear&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">itemsize</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2</pre>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create sublists in list</span>
-<span class="n">doggies</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;Jodi&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Loki&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Ru&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Pip&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Bear&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
-</pre></div>
 
 </div>
+
 </div>
 </div>
 
@@ -12324,8 +12186,66 @@ For example, when you want to print a message containing data of different types
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Subsetting-List-">Subsetting List <a class="anchor" id="third-two-one-bullet" /><a class="anchor-link" href="#Subsetting-List-">&#182;</a></h3><p>Different from R, in Python, the index starts at 0 and not 1.
-To access the element in the list, you use <code>[]</code>. In our doggies list, we have 5 sublists.</p>
+<p>How did we get 2? When you look at our result for <code>x.dtype</code>, it has 16 at the end of it. Divide it with 8, you will get 2.
+If your element type is <code>int64</code>, the itemsize is 32/8 = 8.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="NumPy-Basic-Operations-">NumPy Basic Operations <a class="anchor" id="fourth-bullet" /><a class="anchor-link" href="#NumPy-Basic-Operations-">&#182;</a></h1><p>As mentioned in the introduction of this post, using NumPy will allow you to do element-wise operations on the arrays.
+Let's see the difference from using NumPy and not using NumPy in Python when we do addition.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create lists</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># Addition</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 3, 1, 2, 3]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>From the example above, we are not using NumPy array. What happened is, the addition symbol just paste the two lists together.</p>
+<p>Let's see what happened when we use NumPy array.</p>
 
 </div>
 </div>
@@ -12335,8 +12255,12 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Access first sublist</span>
-<span class="n">doggies</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create NumPy array</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Addition</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </pre></div>
 
 </div>
@@ -12355,7 +12279,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;Jodi&#39;, 3]</pre>
+<pre>array([2, 4, 6])</pre>
 </div>
 
 </div>
@@ -12363,14 +12287,31 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, the elements are added element-wise. This is also true for subtraction.</p>
+<p>The next operation that I want to describe is multiplication <code>*</code>.
+Let's create two NumPy arrays to demonstrate this.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Access second element in the first sublist</span>
-<span class="n">doggies</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create NumPy arrays</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+
+<span class="c1"># Element-wise multiplication </span>
+<span class="n">c</span><span class="o">*</span><span class="n">d</span>
 </pre></div>
 
 </div>
@@ -12389,7 +12330,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>3</pre>
+<pre>array([[ 5, 12],
+       [21, 32]])</pre>
 </div>
 
 </div>
@@ -12402,8 +12344,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Slicing-List-">Slicing List <a class="anchor" id="third-two-two-bullet" /><a class="anchor-link" href="#Slicing-List-">&#182;</a></h3><p>Let's say we want to get the first, second and third sublists. We can slice the list like this <code>list[start:end]</code>.<br />
-<span style="color:#FF0000">Important:</span> In Python, the index specified for end is not inclusive.</p>
+<p>As mentioned earlier, this is how we expect NumPy to behave, but what if instead of element-wise, we want a matrix product?
+We can do that using <code>dot</code>. <code>dot</code> is a function and also a method. For that reason, we can use <code>dot</code> in two ways.</p>
 
 </div>
 </div>
@@ -12413,8 +12355,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get first to third sublist </span>
-<span class="n">doggies</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using dot as a method to get matrix product </span>
+<span class="n">c</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12433,7 +12375,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;Jodi&#39;, 3], [&#39;Loki&#39;, 2], [&#39;Ru&#39;, 1]]</pre>
+<pre>array([[19, 22],
+       [43, 50]])</pre>
 </div>
 
 </div>
@@ -12441,27 +12384,14 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Notice that index 3 refers to <code>['Pip', 2]</code>, but because the <code>end</code> index is not inclusive, it will not be included in the result.</p>
-<h3 id="Changing-Elements-in-List-">Changing Elements in List <a class="anchor" id="third-two-three-bullet" /><a class="anchor-link" href="#Changing-Elements-in-List-">&#182;</a></h3><p>We noticed that we made an error with Pip's age, she's not 2 but she's 3 and she has an extra p in her name! Let's changes this in our list.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Change Pip&#39;s age </span>
-<span class="n">doggies</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Pipp&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-
-<span class="c1"># View updated doggies list</span>
-<span class="n">doggies</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using dot as a function to get matrix product </span>
+<span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12480,7 +12410,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;Jodi&#39;, 3], [&#39;Loki&#39;, 2], [&#39;Ru&#39;, 1], [&#39;Pipp&#39;, 3], [&#39;Bear&#39;, 4]]</pre>
+<pre>array([[19, 22],
+       [43, 50]])</pre>
 </div>
 
 </div>
@@ -12493,7 +12424,17 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And we also noticed Bear is 4, when he is only a pupper!</p>
+<p>We can see that we have the same results, eventhough we tell Python in a slightly different manner.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Unary operations are operations that produce a single output. Many of these operations are implemented as methods, which means you need to put a parentheses like this <code>example.method()</code>.
+Let's use our x.</p>
 
 </div>
 </div>
@@ -12503,11 +12444,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Change Bear&#39;s age</span>
-<span class="n">doggies</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="c1"># View updated doggies list</span>
-<span class="n">doggies</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get sum of x</span>
+<span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12526,7 +12464,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;Jodi&#39;, 3], [&#39;Loki&#39;, 2], [&#39;Ru&#39;, 1], [&#39;Pipp&#39;, 3], [&#39;Bear&#39;, 1]]</pre>
+<pre>105</pre>
 </div>
 
 </div>
@@ -12534,26 +12472,14 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Adding-and-Deleting-Elements-in-List-">Adding and Deleting Elements in List <a class="anchor" id="third-two-four-bullet" /><a class="anchor-link" href="#Adding-and-Deleting-Elements-in-List-">&#182;</a></h3><p>We can easily add element to the list by using <code>+</code> sign.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add another doggo into the list as a sublist (double bracket)</span>
-<span class="n">doggies</span> <span class="o">=</span> <span class="n">doggies</span> <span class="o">+</span> <span class="p">[[</span><span class="s1">&#39;Fudge&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
-
-<span class="c1"># View updated doggies list</span>
-<span class="n">doggies</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the maximum number in x</span>
+<span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12572,7 +12498,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;Jodi&#39;, 3], [&#39;Loki&#39;, 2], [&#39;Ru&#39;, 1], [&#39;Pipp&#39;, 3], [&#39;Bear&#39;, 1], [&#39;Fudge&#39;, 2]]</pre>
+<pre>14</pre>
 </div>
 
 </div>
@@ -12580,27 +12506,14 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that as we are adding another sublist, we need to use double brackets instead of single.</p>
-<p>If we want to remove one of the sublist, we do this using <code>del()</code>.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove Pipp</span>
-<span class="k">del</span><span class="p">(</span><span class="n">doggies</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-
-<span class="c1"># View updated doggies list</span>
-<span class="n">doggies</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the minimum number in x</span>
+<span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12619,7 +12532,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;Jodi&#39;, 3], [&#39;Loki&#39;, 2], [&#39;Ru&#39;, 1], [&#39;Bear&#39;, 1], [&#39;Fudge&#39;, 2]]</pre>
+<pre>0</pre>
 </div>
 
 </div>
@@ -12632,7 +12545,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Copying-a-List-">Copying a List <a class="anchor" id="third-two-five-bullet" /><a class="anchor-link" href="#Copying-a-List-">&#182;</a></h3><p>To copy a list (its elements), we can do it in two ways.</p>
+<p>We can also do operations across rows and columns in NumPy. Let's have a look at x again.</p>
 
 </div>
 </div>
@@ -12642,35 +12555,42 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using list()</span>
-<span class="n">doggies_copy1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">doggies</span><span class="p">)</span>
-
-<span class="c1"># Using :</span>
-<span class="n">doggies_copy2</span> <span class="o">=</span> <span class="n">doggies</span><span class="p">[:]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View x</span>
+<span class="n">x</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]], dtype=int16)</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:#FF0000">Important:</span> Do not copy a list like this <code>doggies_copy1 = doggies</code> as this is only copying the reference of the location of the list in your machine.</p>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Functions-and-Methods-">Functions and Methods <a class="anchor" id="fourth-bullet" /><a class="anchor-link" href="#Functions-and-Methods-">&#182;</a></h1><h2 id="Difference-between-Function-and-Method-">Difference between Function and Method <a class="anchor" id="fourth-one-bullet" /><a class="anchor-link" href="#Difference-between-Function-and-Method-">&#182;</a></h2><p>Function is a 'black box' of codes which will produce an output. In Python, everything is an object. Like string, integer and Boolean, they are objects. Function is independent of object. It can be called on different types of object in Python.</p>
-<p>Unlike function, method is dependent on object. It can only be called on specific object. Different type of object will have different set of methods that can be used on the data passed in the method.</p>
-<p>Let's look at a few useful functions and methods for every data type in Python.</p>
-<h2 id="Functions-">Functions <a class="anchor" id="fourth-two-bullet" /><a class="anchor-link" href="#Functions-">&#182;</a></h2><p><code>len()</code> - finding length</p>
+<p>To do this we need to specify the axis parameter.</p>
 
 </div>
 </div>
@@ -12680,8 +12600,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find length of doggies</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">doggies</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sum of each columns, axis=0</span>
+<span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12700,7 +12620,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>5</pre>
+<pre>array([15, 18, 21, 24, 27])</pre>
 </div>
 
 </div>
@@ -12708,24 +12628,14 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>?</code> - To get help with any function in Python, use <code>?</code> before the function name like this <code>?type</code></p>
-<p><code>sorted()</code> - sort data</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sort data alphabetically</span>
-<span class="nb">sorted</span><span class="p">(</span><span class="n">doggies</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sum of each rows, axis=1</span>
+<span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12744,7 +12654,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;Bear&#39;, 1], [&#39;Fudge&#39;, 2], [&#39;Jodi&#39;, 3], [&#39;Loki&#39;, 2], [&#39;Ru&#39;, 1]]</pre>
+<pre>array([10, 35, 60])</pre>
 </div>
 
 </div>
@@ -12752,30 +12662,14 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Methods-">Methods <a class="anchor" id="fourth-three-bullet" /><a class="anchor-link" href="#Methods-">&#182;</a></h2><h3 id="String-Methods-">String Methods <a class="anchor" id="fourth-three-one-bullet" /><a class="anchor-link" href="#String-Methods-">&#182;</a></h3><ol>
-<li><code>upper()</code> - capitalise letters</li>
-<li><code>count()</code> - count number of letters </li>
-</ol>
-<p>When you want to use methods, the syntax is just very slighty different from functions. Instead of passing the object in the bracket, you do it like this, <code>object.method()</code>.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a variable containing string</span>
-<span class="n">wine</span> <span class="o">=</span> <span class="s1">&#39;pinot noir&#39;</span>
-
-<span class="c1"># Capitalise letters</span>
-<span class="n">wine</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cumulative sum across columns</span>
+<span class="n">x</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12794,7 +12688,9 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;PINOT NOIR&#39;</pre>
+<pre>array([[ 0,  1,  2,  3,  4],
+       [ 5,  7,  9, 11, 13],
+       [15, 18, 21, 24, 27]])</pre>
 </div>
 
 </div>
@@ -12808,8 +12704,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Count number of n </span>
-<span class="n">wine</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cumulative sum across rows</span>
+<span class="n">x</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12828,7 +12724,9 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
+<pre>array([[ 0,  1,  3,  6, 10],
+       [ 5, 11, 18, 26, 35],
+       [10, 21, 33, 46, 60]])</pre>
 </div>
 
 </div>
@@ -12841,13 +12739,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="List-Methods-">List Methods <a class="anchor" id="fourth-three-two-bullet" /><a class="anchor-link" href="#List-Methods-">&#182;</a></h3><ol>
-<li><code>index()</code> - find the index of the first matched element in the list </li>
-<li><code>count()</code> - find the number of appearance of an element in a list </li>
-<li><code>append()</code> - adds an element to a list </li>
-<li><code>remove()</code> - delete the first element that matches the input </li>
-<li><code>reverse()</code> - reverse the order of elements in the list</li>
-</ol>
+<h1 id="Indexing-and-Slicing-in-NumPy-">Indexing and Slicing in NumPy <a class="anchor" id="fifth-bullet" /><a class="anchor-link" href="#Indexing-and-Slicing-in-NumPy-">&#182;</a></h1><p>We can use bracket to index and slice NumPy arrays. Let's look at some examples for 1-dimensional array and multidimensional array.</p>
 
 </div>
 </div>
@@ -12857,11 +12749,11 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a list containing strings</span>
-<span class="n">wine_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pinot noir&#39;</span><span class="p">,</span> <span class="s1">&#39;cabernet sauvignon&#39;</span><span class="p">,</span> <span class="s1">&#39;prosecco&#39;</span><span class="p">,</span> <span class="s1">&#39;malbec&#39;</span><span class="p">,</span> <span class="s1">&#39;cabernet sauvignon&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Indexing one-dimensional array </span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
 
-<span class="c1"># Find the index of the first cabernet sauvignon</span>
-<span class="n">wine_list</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;cabernet sauvignon&#39;</span><span class="p">)</span>
+<span class="c1"># Get the third element from e</span>
+<span class="n">e</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12880,7 +12772,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>1</pre>
+<pre>6</pre>
 </div>
 
 </div>
@@ -12894,8 +12786,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Count number cabernet sauvignon in the list</span>
-<span class="n">wine_list</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;cabernet sauvignon&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get the 1st to 3rd elements</span>
+<span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12914,7 +12806,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
+<pre>array([2, 4, 6])</pre>
 </div>
 
 </div>
@@ -12928,11 +12820,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add sauvignon blanc</span>
-<span class="n">wine_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sauvignon blanc&#39;</span><span class="p">)</span>
-
-<span class="c1"># View updated wine_list</span>
-<span class="n">wine_list</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s use our x</span>
+<span class="n">x</span>
 </pre></div>
 
 </div>
@@ -12951,12 +12840,9 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;pinot noir&#39;,
- &#39;cabernet sauvignon&#39;,
- &#39;prosecco&#39;,
- &#39;malbec&#39;,
- &#39;cabernet sauvignon&#39;,
- &#39;sauvignon blanc&#39;]</pre>
+<pre>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]], dtype=int16)</pre>
 </div>
 
 </div>
@@ -12970,11 +12856,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Delete first matched element: cabernet sauvignon</span>
-<span class="n">wine_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;cabernet sauvignon&#39;</span><span class="p">)</span>
-
-<span class="c1"># View updated wine_list</span>
-<span class="n">wine_list</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get element in the 2nd row, 4th column</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12993,7 +12876,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;pinot noir&#39;, &#39;prosecco&#39;, &#39;malbec&#39;, &#39;cabernet sauvignon&#39;, &#39;sauvignon blanc&#39;]</pre>
+<pre>8</pre>
 </div>
 
 </div>
@@ -13007,11 +12890,8 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Reverse order</span>
-<span class="n">wine_list</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-
-<span class="c1"># View updated wine_list</span>
-<span class="n">wine_list</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get elements in the 3rd row, 2nd to 4th columns</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -13030,7 +12910,7 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;sauvignon blanc&#39;, &#39;cabernet sauvignon&#39;, &#39;malbec&#39;, &#39;prosecco&#39;, &#39;pinot noir&#39;]</pre>
+<pre>array([11, 12, 13], dtype=int16)</pre>
 </div>
 
 </div>
@@ -13038,36 +12918,71 @@ To access the element in the list, you use <code>[]</code>. In our doggies list,
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Importing-Packages-">Importing Packages <a class="anchor" id="fifth-bullet" /><a class="anchor-link" href="#Importing-Packages-">&#182;</a></h1><p>Python has a lot of useful packages that can help you with your data analysis. For example, the NumPy and pandas.
-To be able to use these packages, you will need to import them.</p>
-<p>Three things to note when importing packages:</p>
-<ol>
-<li>You can import the whole package or import parts of the package </li>
-<li>You can abbreviate the name of the packages</li>
-</ol>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import whole packages and abbreviate</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Import part of a package</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">style</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get all elements in the 1st row </span>
+<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[27]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0, 1, 2, 3, 4], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get all elements in the 2nd column </span>
+<span class="n">x</span><span class="p">[</span> <span class="p">:</span> <span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[28]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 1,  6, 11], dtype=int16)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13076,7 +12991,366 @@ To be able to use these packages, you will need to import them.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the second part of Data Science with Python series, we will learn two packages in detail, NumPy and Pandas.</p>
+<h1 id="Manipulating-NumPy-Shape-">Manipulating NumPy Shape <a class="anchor" id="sixth-bullet" /><a class="anchor-link" href="#Manipulating-NumPy-Shape-">&#182;</a></h1><p>We will go through a few commands in manipulating shape in NumPy.</p>
+<h2 id="Changing-Array-Shape-">Changing Array Shape <a class="anchor" id="sixth-one-bullet" /><a class="anchor-link" href="#Changing-Array-Shape-">&#182;</a></h2><p>The following three commands will return a modified array but they do not change the original array. I will demonstrate this in the examples. We will use our x.</p>
+<p><code>ndarray.ravel()</code> - it will return a flattened array</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View x</span>
+<span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[29]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flattened x</span>
+<span class="n">x</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>ndarray.reshape()</code> - it will return an array with a different shape as specified</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Change shape of x from (3, 5) to (5, 3)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[31]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  1,  2],
+       [ 3,  4,  5],
+       [ 6,  7,  8],
+       [ 9, 10, 11],
+       [12, 13, 14]], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>ndarray.T</code> - it will return a transposed array, meaning each row and column are interchanged correspondingly</p>
+<p>Note that there is no parentheses for <code>ndarray.T</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Transpose</span>
+<span class="n">x</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[32]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  5, 10],
+       [ 1,  6, 11],
+       [ 2,  7, 12],
+       [ 3,  8, 13],
+       [ 4,  9, 14]], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's checked our x again and see if we have actually changed the original array.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View x</span>
+<span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[34]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nope, we haven't! We still have the original array intact.
+The next method however will change the original array.</p>
+<p><code>ndarray.resize()</code> - it will return a modified array with the original array changed</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Resize array</span>
+<span class="n">x</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="c1"># View updated x</span>
+<span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[38]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0,  1,  2],
+       [ 3,  4,  5],
+       [ 6,  7,  8],
+       [ 9, 10, 11],
+       [12, 13, 14]], dtype=int16)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Stacking-Arrays-">Stacking Arrays <a class="anchor" id="sixth-two-bullet" /><a class="anchor-link" href="#Stacking-Arrays-">&#182;</a></h2><p>We can stack arrays together in NumPy along different axes.</p>
+<p>Let's create new array to demonstrate this.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create arrays</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]])</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">],</span> <span class="p">[</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">]])</span>
+
+<span class="c1"># Stack vertically</span>
+<span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[41]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[10, 20],
+       [30, 40],
+       [50, 60],
+       [70, 80]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Stack horizontally</span>
+<span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[42]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[10, 20, 50, 60],
+       [30, 40, 70, 80]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the next post of this series, we will have a look at pandas. It is a package that helps you deal with data frames.</p>
 
 </div>
 </div>
@@ -13088,231 +13362,4 @@ To be able to use these packages, you will need to import them.</p>
 
 
 
-</html>
-
-
-  <!-- Social media shares -->
-  <footer>
-<div class="share-buttons">
-<ul class="share-buttons">
-	
-	<li>
-		<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2018/05/22/datscipypt1.html&quote=Data Science with Python, Part 1&#58; Introduction to Basics%20%7C%20Azmir Fakkri" target="_blank" title="Share on Facebook">
-			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Share on Facebook</span>
-		</a>
-	</li>
-	
-
-	
-	<li>
-		<a href="https://twitter.com/intent/tweet?source=http://localhost:4000/2018/05/22/datscipypt1.html&text=Data Science with Python, Part 1&#58; Introduction to Basics%20%7C%20Azmir Fakkri:%20http://localhost:4000/2018/05/22/datscipypt1.html" target="_blank" title="Tweet">
-			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Tweet</span>
-		</a>
-	</li>
-	
-
-	
-	<li>
-		<a href="https://plus.google.com/share?url=http://localhost:4000/2018/05/22/datscipypt1.html" target="_blank" title="Share on Google+">
-			<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Share on Google+</span>
-		</a>
-	</li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	<li>
-		<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2018/05/22/datscipypt1.html&title=Data Science with Python, Part 1&#58; Introduction to Basics%20%7C%20Azmir Fakkri&summary=&source=http://localhost:4000/2018/05/22/datscipypt1.html" target="_blank" title="Share on LinkedIn">
-			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Share on LinkedIn</span>
-		</a>
-	</li>
-	
-
-	
-
-	
-	<li>
-		<a href="mailto:?subject=Data Science with Python, Part 1&#58; Introduction to Basics%20%7C%20Azmir Fakkri&body=:%20http://localhost:4000/2018/05/22/datscipypt1.html" target="_blank" title="Email">
-			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Email</span>
-		</a>
-	</li>
-	
-</ul>
-</div>
-</footer>
-
-
-   <!-- Tag list -->
-  
-  
-
-
-<footer>
-  <div class="tag-list">
-    
-      <div class="meta">Tags</div>
-    
-
-    
-    <a class="button" href="/tags#Data Science with Python">
-      <p><i class="fa fa-tag fa-fw"></i> Data Science with Python</p>
-    </a>
-    
-    <a class="button" href="/tags#Python">
-      <p><i class="fa fa-tag fa-fw"></i> Python</p>
-    </a>
-    
-  </div>
-</footer>
-
-
-<!-- Disqus -->
-
-<div class="comments">
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-	var disqus_shortname = 'datsci';
-	(function() {
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
-</script>
-<noscript>Please enable JavaScript to view comments.</noscript>
-
-</div>
-
-
-<!-- Post navigation -->
-
-  <div id="post-nav">
-  
-  <div id="previous-post" class="post-nav-post">
-      <p>Previous post</p>
-      <a href="/2018/05/21/datscirpt2.html">
-        Data Science with R, Part 2&#58; Beyond Basics
-      </a>
-  </div>
-  
-  
-  <div id="next-post" class="post-nav-post">
-      <p>Next post</p>
-      <a href="/2018/05/25/datscipypt2.html">
-        Data Science with Python, Part 2&#58; NumPy
-      </a>
-  </div>
-  
-</div>
-
-
-    </div>
-    
-<footer class="site-footer">
-    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
-</p>
-            <div class="footer-icons">
-                <ul>
-                <!-- Social icons from Font Awesome, if enabled -->
-                
-<li>
-	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-<li>
-	<a href="mailto:azmirfakkri@gmail.com" title="Email">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://github.com/azmirfakkri" title="Follow on GitHub">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://www.linkedin.com/in/azmirfakkri/" title="Follow on LinkedIn">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </ul>
-            </div>
-</footer>
-
-
-
-
-  </body>
 </html>
