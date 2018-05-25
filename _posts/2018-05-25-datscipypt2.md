@@ -6,7 +6,7 @@ tags: [Python, Data Science with Python, NumPy]
 
 <html>
 <head><meta charset="utf-8" />
-<title>Data Science with Python, Part 2 - NumPy</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title></title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
