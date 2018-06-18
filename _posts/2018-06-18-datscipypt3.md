@@ -1,183 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
-    <script defer=true src="/assets/js/main.min.js"></script>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="/" type="image/x-icon">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="http://localhost:4000/2018/05/25/datscipypt2.html">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Azmir Fakkri" href="http://localhost:4000///feed.xml"/>
-
-    <!-- Font Awesome -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/font-awesome.min.css">
-
-    <!-- Google Fonts -->
-    
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
-    
-
-    <!-- KaTeX 0.8.3 -->
-    
-    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/katex.min.css">
-    <script src="/assets/js/vendor/katex.min.js">
-    </script>
-    
-
-    <!-- Google Analytics -->
-    
-    
-    <!-- seo tags -->
-    <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Data Science with Python, Part 2: NumPy | Azmir Fakkri</title>
-<meta name="generator" content="Jekyll v3.8.0" />
-<meta property="og:title" content="Data Science with Python, Part 2: NumPy" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Data Science Simplified" />
-<meta property="og:description" content="Data Science Simplified" />
-<link rel="canonical" href="http://localhost:4000/2018/05/25/datscipypt2.html" />
-<meta property="og:url" content="http://localhost:4000/2018/05/25/datscipypt2.html" />
-<meta property="og:site_name" content="Azmir Fakkri" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-05-25T00:00:00+01:00" />
-<script type="application/ld+json">
-{"headline":"Data Science with Python, Part 2: NumPy","dateModified":"2018-05-25T00:00:00+01:00","datePublished":"2018-05-25T00:00:00+01:00","description":"Data Science Simplified","@type":"BlogPosting","url":"http://localhost:4000/2018/05/25/datscipypt2.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/05/25/datscipypt2.html"},"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <!-- Manual seo tags -->
-    <!--
-    <title>Data Science with Python, Part 2&#58; NumPy | Azmir Fakkri</title>
-    <meta name="description" content="">
-    -->
-</head>
-
-  <body>
-    <header class="site-header">
-    
-    <!-- Logo and title -->
-	<div class="branding">
-		<a href="/">
-			<img class="avatar" src="/assets/img/profile.png" alt=""/>
-		</a>
-
-		<h1 class="site-title">
-			<a href="/">Azmir Fakkri</a>
-		</h1>
-	</div>
-    
-    <!-- Toggle menu -->
-    <nav class="clear">
-    <a id="pull" class="toggle" href="#">
-    <i class="fa fa-bars fa-lg"></i>
-    </a>
-    
-    <!-- Menu -->
-    <ul class="hide">
-        <!-- Auto Generation of NORMAL pages in the navbar -->
-        
-        
-        
-        
-        
-        
-        
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="/about/">
-                About
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="/">
-                Home
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="/portfolio/">
-                Portfolio
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-         
-        
-        <!-- Auto Generation of SPECIAL pages in the navbar -->
-        
-          
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" href="http://localhost:4000/search">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
-            </li>
-          
-        
-          
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" href="http://localhost:4000/tags">
-                    <i class="fa fa-tags" aria-hidden="true"></i>
-                </a>
-            </li>
-          
-        
-    </ul>
-        
-	</nav>
-</header>
-
-    <div class="content">
-      <header id="main" style="background-image: url('/')">
-    <h1 id="Data+Science+with+Python%2C+Part+2%26%2358%3B+NumPy" style="text-align:center" class="title">Data Science with Python, Part 2&#58; NumPy</h1>
-    <p style="text-align:center" class="meta">
-    May 25, 2018
-    
-    </p>
-  </header>
+---
+layout: custom
+title: Data Science with Python, Part 3&#58; pandas
+tags: [Python, Data Science with Python, pandas]
+---
 
 <html>
 <head><meta charset="utf-8" />
@@ -11926,7 +11751,7 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css" />
+<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -11959,24 +11784,27 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Contents">Contents<a class="anchor-link" href="#Contents">&#182;</a></h2><ul>
-<li><a href="#first-bullet">Introduction to NumPy</a></li>
-<li><a href="#second-bullet">Creating a NumPy Array</a></li>
-<li><a href="#third-bullet">Numpy Attributes</a></li>
-<li><a href="#fourth-bullet">NumPy Basic Operations</a></li>
-<li><a href="#fifth-bullet">Indexing and Slicing in NumPy</a></li>
-<li><a href="#sixth-bullet">Manipulating NumPy Shape</a><ul>
-<li><a href="#sixth-one-bullet">Changing Array Shape</a></li>
-<li><a href="#sixth-two-bullet">Stacking Arrays</a></li>
+<li><a href="#first-bullet">Introduction to pandas</a></li>
+<li><a href="#second-bullet">Import Packages</a></li>
+<li><a href="#third-bullet">Reading in Data Set</a></li>
+<li><a href="#fourth-bullet">Understanding the Data Set</a></li>
+<li><a href="#fifth-bullet">Conversion of Column Data Types</a></li>
+<li><a href="#sixth-bullet">Creating A Data Frame</a></li>
+<li><a href="#seventh-bullet">Naming and Re-naming Columns</a></li>
+<li><a href="#eighth-bullet">Delete or Remove Columns</a></li>
+<li><a href="#ninth-bullet">Re-arrange Columns</a></li>
+<li><a href="#tenth-bullet">Slicing using loc and iloc</a></li>
 </ul>
-</li>
-</ul>
-<p>This is the second post in the Data Science with Python series.
-Read the first post here:</p>
+<p>This is the third post in Data Science with Python series. Read previous posts here:</p>
 <ol>
 <li><a href="https://azmirfakkri.github.io/2018/05/22/datscipypt1.html">Data Science with Python, Part 1: Introduction to Basics</a></li>
+<li><a href="https://azmirfakkri.github.io/2018/05/25/datscipypt2.html">Data Science with Python, Part 2: NumPy</a></li>
 </ol>
-<h1 id="Introduction-to-NumPy-">Introduction to NumPy <a class="anchor" id="first-bullet" /><a class="anchor-link" href="#Introduction-to-NumPy-">&#182;</a></h1><p>NumPy stands for Numerical Python. This is one of the most common used packages in Python. So why do we need NumPy?<br />
-Let's see an example. Suppose you have two list that you want to divide and you want results for each elements.</p>
+<h1 id="Introduction-to-pandas-">Introduction to pandas <a class="anchor" id="first-bullet" /><a class="anchor-link" href="#Introduction-to-pandas-">&#182;</a></h1><p>pandas is a package in Python that can help you prepare your data for further analysis. It is a great package for data munging. Let's say you want to implement a machine learning technique and requires the data to be in a certain format, with no missing values et cetera, pandas is your friend.</p>
+<p>For this tutorial, we will use <a href="https://archive.ics.uci.edu/ml/datasets/echocardiogram">Echocardiogram Data Set</a> from UCI Machine Learning Repository. The file is in a csv format.
+Without rambling any further, let's dig in.</p>
+<h1 id="Import-Packages-">Import Packages <a class="anchor" id="second-bullet" /><a class="anchor-link" href="#Import-Packages-">&#182;</a></h1><p>First and foremost, we need to import the package. We will also import numpy and matplotlib packages.
+It is common for pandas to be abbreviated as pd. Less typing, shorter codes and neat.</p>
 
 </div>
 </div>
@@ -11986,39 +11814,13 @@ Let's see an example. Suppose you have two list that you want to divide and you 
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a list</span>
-<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-
-<span class="c1"># Divide list by 2</span>
-<span class="n">list1</span> <span class="o">/</span> <span class="mi">2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import packages</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-1-7a23a9964c02&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># Divide list by 2</span>
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>list1 <span class="ansi-blue-fg">/</span> <span class="ansi-cyan-fg">2</span>
-
-<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for /: &#39;list&#39; and &#39;int&#39;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12027,7 +11829,7 @@ Let's see an example. Suppose you have two list that you want to divide and you 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Python threw an error in this example. And note what the error said, Python does not know how to handle operation involving list and integer. Let's fix this using NumPy.</p>
+<h1 id="Reading-in-Data-Set-">Reading in Data Set <a class="anchor" id="third-bullet" /><a class="anchor-link" href="#Reading-in-Data-Set-">&#182;</a></h1><p>To read in data set, we will use <code>pd.read_csv</code>.</p>
 
 </div>
 </div>
@@ -12037,59 +11839,20 @@ Let's see an example. Suppose you have two list that you want to divide and you 
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import package </span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Create numpy array </span>
-<span class="n">np_list1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
-
-<span class="c1"># Divide np_list1</span>
-<span class="n">np_list1</span> <span class="o">/</span> <span class="mi">2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read in data set</span>
+<span class="n">echo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/Users/azmirfakkri/Downloads/echocardiogram.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 0.5,  1. ,  1.5,  2. ,  2.5])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This time, Python did not throw us an error and it gives us the results of the division element-wise!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Creating-a-NumPy-Array-">Creating a NumPy Array <a class="anchor" id="second-bullet" /><a class="anchor-link" href="#Creating-a-NumPy-Array-">&#182;</a></h1><p>Remember that we have learnt a few Python data types in the first post of this series, so NumPy is another data type in Python. Let's dissect what it means by this sentence, "NumPy’s main object is the homogeneous multidimensional array".</p>
-<ul>
-<li><strong>Homogenous</strong> - NumPy can only contain one type of data, for example strings or integers. If there are multiple data types, it will be converted to a single data type.</li>
-<li><strong>Multidimensional array</strong> - it can have more than 1 dimension. Dimensions are called axes in NumPy. </li>
-</ul>
+<h1 id="Understanding-the-Data-Set-">Understanding the Data Set <a class="anchor" id="fourth-bullet" /><a class="anchor-link" href="#Understanding-the-Data-Set-">&#182;</a></h1><p>Once you read in your data, you need to get a feel of the data, see what columns it has, are the are any missing values etc.</p>
 
 </div>
 </div>
@@ -12099,11 +11862,8 @@ Let's see an example. Suppose you have two list that you want to divide and you 
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a NumPy array</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span>
-
-<span class="c1"># View x</span>
-<span class="n">x</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View head</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12120,11 +11880,204 @@ Let's see an example. Suppose you have two list that you want to divide and you 
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2,  3,  4],
-       [ 5,  6,  7,  8,  9],
-       [10, 11, 12, 13, 14]], dtype=int16)</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>survival</th>
+      <th>alive</th>
+      <th>age</th>
+      <th>pericardialeffusion</th>
+      <th>fractionalshortening</th>
+      <th>epss</th>
+      <th>lvdd</th>
+      <th>wallmotion-score</th>
+      <th>wallmotion-index</th>
+      <th>mult</th>
+      <th>name</th>
+      <th>group</th>
+      <th>aliveat1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>71.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>9.000</td>
+      <td>4.600</td>
+      <td>14.0</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>72.0</td>
+      <td>0.0</td>
+      <td>0.380</td>
+      <td>6.000</td>
+      <td>4.100</td>
+      <td>14.0</td>
+      <td>1.700</td>
+      <td>0.588</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16.0</td>
+      <td>0.0</td>
+      <td>55.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>4.000</td>
+      <td>3.420</td>
+      <td>14.0</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>60.0</td>
+      <td>0.0</td>
+      <td>0.253</td>
+      <td>12.062</td>
+      <td>4.603</td>
+      <td>16.0</td>
+      <td>1.450</td>
+      <td>0.788</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19.0</td>
+      <td>1.0</td>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>0.160</td>
+      <td>22.000</td>
+      <td>5.750</td>
+      <td>18.0</td>
+      <td>2.250</td>
+      <td>0.571</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>26.0</td>
+      <td>0.0</td>
+      <td>68.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>5.000</td>
+      <td>4.310</td>
+      <td>12.0</td>
+      <td>1.000</td>
+      <td>0.857</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>62.0</td>
+      <td>0.0</td>
+      <td>0.230</td>
+      <td>31.000</td>
+      <td>5.430</td>
+      <td>22.5</td>
+      <td>1.875</td>
+      <td>0.857</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>50.0</td>
+      <td>0.0</td>
+      <td>60.0</td>
+      <td>0.0</td>
+      <td>0.330</td>
+      <td>8.000</td>
+      <td>5.250</td>
+      <td>14.0</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>46.0</td>
+      <td>0.0</td>
+      <td>0.340</td>
+      <td>0.000</td>
+      <td>5.090</td>
+      <td>16.0</td>
+      <td>1.140</td>
+      <td>1.003</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>54.0</td>
+      <td>0.0</td>
+      <td>0.140</td>
+      <td>13.000</td>
+      <td>4.490</td>
+      <td>15.5</td>
+      <td>1.190</td>
+      <td>0.930</td>
+      <td>name</td>
+      <td>1</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12132,27 +12085,14 @@ Let's see an example. Suppose you have two list that you want to divide and you 
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>One note in creating a NumPy array, you need to provide a single list.
-What we essentially did in creating x is that we have 3 sublists in a list. So, we need that extra bracket to make sure that it is one list and not 3 lists.</p>
-<p>We can also specify dtype as the second argument.</p>
-<h1 id="Numpy-Attributes--">Numpy Attributes  <a class="anchor" id="third-bullet" /><a class="anchor-link" href="#Numpy-Attributes--">&#182;</a></h1><p>NumPy has attributes associated with them. We will look at these in further details using the example we created earlier.</p>
-<p><strong>First attribute</strong> <code>ndarray.ndim</code>
-By calling this on the array, it will tell us the number of axes or dimensions of the array</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View tail</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12169,9 +12109,204 @@ By calling this on the array, it will tell us the number of axes or dimensions o
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>survival</th>
+      <th>alive</th>
+      <th>age</th>
+      <th>pericardialeffusion</th>
+      <th>fractionalshortening</th>
+      <th>epss</th>
+      <th>lvdd</th>
+      <th>wallmotion-score</th>
+      <th>wallmotion-index</th>
+      <th>mult</th>
+      <th>name</th>
+      <th>group</th>
+      <th>aliveat1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>123</th>
+      <td>31.0</td>
+      <td>0.0</td>
+      <td>61.0</td>
+      <td>0.0</td>
+      <td>0.18</td>
+      <td>0.0</td>
+      <td>4.48</td>
+      <td>11.0</td>
+      <td>1.375</td>
+      <td>0.570</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>12.0</td>
+      <td>0.0</td>
+      <td>61.0</td>
+      <td>1.0</td>
+      <td>0.19</td>
+      <td>13.2</td>
+      <td>5.04</td>
+      <td>19.0</td>
+      <td>1.730</td>
+      <td>0.786</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>36.0</td>
+      <td>0.0</td>
+      <td>48.0</td>
+      <td>0.0</td>
+      <td>0.15</td>
+      <td>12.0</td>
+      <td>3.66</td>
+      <td>10.0</td>
+      <td>1.000</td>
+      <td>0.714</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>17.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.09</td>
+      <td>6.8</td>
+      <td>4.96</td>
+      <td>13.0</td>
+      <td>1.080</td>
+      <td>0.857</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>21.0</td>
+      <td>0.0</td>
+      <td>61.0</td>
+      <td>0.0</td>
+      <td>0.14</td>
+      <td>25.5</td>
+      <td>5.16</td>
+      <td>14.0</td>
+      <td>1.270</td>
+      <td>0.786</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>7.5</td>
+      <td>1.0</td>
+      <td>64.0</td>
+      <td>0.0</td>
+      <td>0.24</td>
+      <td>12.9</td>
+      <td>4.72</td>
+      <td>12.0</td>
+      <td>1.000</td>
+      <td>0.857</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>41.0</td>
+      <td>0.0</td>
+      <td>64.0</td>
+      <td>0.0</td>
+      <td>0.28</td>
+      <td>5.4</td>
+      <td>5.47</td>
+      <td>11.0</td>
+      <td>1.100</td>
+      <td>0.714</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>36.0</td>
+      <td>0.0</td>
+      <td>69.0</td>
+      <td>0.0</td>
+      <td>0.20</td>
+      <td>7.0</td>
+      <td>5.05</td>
+      <td>14.5</td>
+      <td>1.210</td>
+      <td>0.857</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>22.0</td>
+      <td>0.0</td>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>0.14</td>
+      <td>16.1</td>
+      <td>4.36</td>
+      <td>15.0</td>
+      <td>1.360</td>
+      <td>0.786</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>20.0</td>
+      <td>0.0</td>
+      <td>62.0</td>
+      <td>0.0</td>
+      <td>0.15</td>
+      <td>0.0</td>
+      <td>4.51</td>
+      <td>15.5</td>
+      <td>1.409</td>
+      <td>0.786</td>
+      <td>name</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12184,10 +12319,7 @@ By calling this on the array, it will tell us the number of axes or dimensions o
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are two axes in x.</p>
-<p><span style="color:#FF0000">Important:</span> There is no parentheses <code>()</code> after attribute, unlike methods, <code>example.method()</code></p>
-<p><strong>Second attribute</strong> <code>ndarray.shape</code>
-It tells us the length of the axes (or dimensions) of the array, the result of shape will be in <code>(n, m)</code>, where n is the number of rows and m is the number of columns</p>
+<p>To quickly view the shape of the data set, the data set has a shape attribute. As mentioned in a previous post, an attribute does not require a bracket <code>()</code>.</p>
 
 </div>
 </div>
@@ -12197,7 +12329,8 @@ It tells us the length of the axes (or dimensions) of the array, the result of s
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View shape</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
 </div>
@@ -12216,7 +12349,7 @@ It tells us the length of the axes (or dimensions) of the array, the result of s
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(3, 5)</pre>
+<pre>(133, 13)</pre>
 </div>
 
 </div>
@@ -12229,9 +12362,30 @@ It tells us the length of the axes (or dimensions) of the array, the result of s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we found out from the first attribute, this array has two axes. The first axis has 3 rows and the second axis has 5 columns.</p>
-<p><strong>Third attribute</strong> <code>ndarray.size</code>
-It tells us the total number of elements in the array</p>
+<p>At this point we have gained a few information about our data set:</p>
+<ol>
+<li>We now know that there are 133 rows or observations and 13 columns in this data set</li>
+<li>There are missing values </li>
+<li>The name of the columns</li>
+</ol>
+<p>I always stress to myself the importance of knowing the meaning of every columns in the data set as this will help you to really understand what you are dealing with. For this data set, a description of the columns are given.</p>
+<p><strong><span style="color:#0000ff">Attribute Information:</span></strong></p>
+<ol>
+<li><strong>survival</strong> -- the number of months patient survived (has survived, if patient is still alive). Because all the patients had their heart attacks at different times, it is possible that some patients have survived less than one year but they are still alive. Check the second variable to confirm this. Such patients cannot be used for the prediction task mentioned above. </li>
+<li><strong>alive</strong> -- a binary variable. 0=dead at end of survival period, 1 means still alive </li>
+<li><strong>age</strong> -- age in years when heart attack occurred </li>
+<li><strong>pericardialeffusion</strong> -- binary. Pericardial effusion is fluid around the heart. 0=no fluid, 1=fluid </li>
+<li><strong>fractionalshortening</strong> -- a measure of contracility around the heart lower numbers are increasingly abnormal </li>
+<li><strong>epss</strong> -- E-point septal separation, another measure of contractility. Larger numbers are increasingly abnormal. </li>
+<li><strong>lvdd</strong> -- left ventricular end-diastolic dimension. This is a measure of the size of the heart at end-diastole. Large hearts tend to be sick hearts. </li>
+<li><strong>wallmotion-score</strong> -- a measure of how the segments of the left ventricle are moving </li>
+<li><strong>wallmotion-index</strong> -- equals wall-motion-score divided by number of segments seen. Usually 12-13 segments are seen in an echocardiogram. Use this variable INSTEAD of the wall motion score. </li>
+<li><strong>mult</strong> -- a derivate var which can be ignored </li>
+<li><strong>name</strong> -- the name of the patient (I have replaced them with "name") </li>
+<li><strong>group</strong> -- meaningless, ignore it </li>
+<li><strong>aliveat1</strong> -- Boolean-valued. Derived from the first two attributes. 0 means patient was either dead after 1 year or had been followed for less than 1 year. 1 means patient was alive at 1 year.</li>
+</ol>
+<p>To get a complete picture of the data set, we can use <code>echo.info()</code>.</p>
 
 </div>
 </div>
@@ -12241,7 +12395,8 @@ It tells us the total number of elements in the array</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">size</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Info of data set</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12254,15 +12409,30 @@ It tells us the total number of elements in the array</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>15</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 133 entries, 0 to 132
+Data columns (total 13 columns):
+survival                130 non-null float64
+alive                   131 non-null float64
+age                     126 non-null float64
+pericardialeffusion     132 non-null float64
+fractionalshortening    124 non-null float64
+epss                    117 non-null float64
+lvdd                    121 non-null float64
+wallmotion-score        128 non-null float64
+wallmotion-index        130 non-null float64
+mult                    129 non-null float64
+name                    131 non-null object
+group                   110 non-null object
+aliveat1                75 non-null float64
+dtypes: float64(11), object(2)
+memory usage: 13.6+ KB
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -12273,9 +12443,24 @@ It tells us the total number of elements in the array</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are 15 elements in the array.</p>
-<p><strong>Fourth attribute</strong> <code>ndarray.dtype</code>
-It describes the type of the elements in the array</p>
+<p>Using <code>echo.info()</code> we can see that all columns contain at least one missing value.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Conversion-of-Column-Data-Types-">Conversion of Column Data Types <a class="anchor" id="fifth-bullet" /><a class="anchor-link" href="#Conversion-of-Column-Data-Types-">&#182;</a></h1><p>Based on the description, we know that there are three columns with categorical data: <strong>alive</strong>, <strong>pericardialeffusion</strong>, <strong>aliveat1</strong>.
+We are going to change the data types of these columns into <code>dtype="category"</code>. There is a few reasons why we want to do this:</p>
+<ol>
+<li>It will save memory</li>
+<li>It will make it easier to sort the data</li>
+<li>It will signal other libraries in Python to treat these columns as categorical data</li>
+</ol>
+<p>We will use <code>.astype()</code> for this purpose. In this function, we need to specify the data type that we intend to change into, in this case it will be <code>category</code>. <code>.astype()</code> can also take <code>ordered=True</code> argument to create an ordered categorical data.
+However, in these three columns, order is not necessary and meaningless. For example, for column pericardial effusion, having fluid (=1) is not better than not having fluid (=0) and vice versa.</p>
 
 </div>
 </div>
@@ -12285,7 +12470,13 @@ It describes the type of the elements in the array</p>
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">dtype</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Convert column data type</span>
+<span class="n">echo</span><span class="p">[</span><span class="s2">&quot;alive&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">echo</span><span class="p">[</span><span class="s2">&quot;alive&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">echo</span><span class="p">[</span><span class="s2">&quot;pericardialeffusion&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">echo</span><span class="p">[</span><span class="s2">&quot;pericardialeffusion&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">echo</span><span class="p">[</span><span class="s2">&quot;aliveat1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">echo</span><span class="p">[</span><span class="s2">&quot;aliveat1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="c1"># View info</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12298,15 +12489,30 @@ It describes the type of the elements in the array</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dtype(&#39;int16&#39;)</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 133 entries, 0 to 132
+Data columns (total 13 columns):
+survival                130 non-null float64
+alive                   131 non-null category
+age                     126 non-null float64
+pericardialeffusion     132 non-null category
+fractionalshortening    124 non-null float64
+epss                    117 non-null float64
+lvdd                    121 non-null float64
+wallmotion-score        128 non-null float64
+wallmotion-index        130 non-null float64
+mult                    129 non-null float64
+name                    131 non-null object
+group                   110 non-null object
+aliveat1                75 non-null category
+dtypes: category(3), float64(8), object(2)
+memory usage: 11.2+ KB
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -12317,9 +12523,19 @@ It describes the type of the elements in the array</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Our elements are of integer type.</p>
-<p><strong>Fifth attribute</strong> <code>ndarray.itemsize</code>
-It tells us the bytes size of the elements in the array</p>
+<p>We can now see that the data types of the three columns have been changed to category.
+Note that our memory usage is now 11.2+ KB instead of 13.6+ KB.</p>
+<p>Also note that, currently it is not possible to make the conversion of more than one column in one go. So it has to be done column by column.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Creating-A-Data-Frame-">Creating A Data Frame <a class="anchor" id="sixth-bullet" /><a class="anchor-link" href="#Creating-A-Data-Frame-">&#182;</a></h1><p>I am now going to slightly diverge from this topic. At this point, we have learnt how to read in a csv data set. I'm gonna show how you can create your own data frame from lists.</p>
+<p>For this purpose, let's extract all the values in the survival and age columns. Dataframe has another attribute called <code>.values</code>. We transform the resulting values into a list using <code>list()</code>.</p>
 
 </div>
 </div>
@@ -12329,50 +12545,31 @@ It tells us the bytes size of the elements in the array</p>
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">itemsize</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Extract values from survival column and transform it into a list</span>
+<span class="n">surv_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">echo</span><span class="p">[</span><span class="s1">&#39;survival&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+<span class="c1"># Extract values from age column and transform it into a list</span>
+<span class="n">age_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">echo</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+<span class="c1"># Save the lists in one variable</span>
+<span class="n">values_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">surv_list</span><span class="p">,</span> <span class="n">age_list</span><span class="p">]</span>
+
+<span class="c1"># Create list of column names</span>
+<span class="n">colnames_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;survival&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>How did we get 2? When you look at our result for <code>x.dtype</code>, it has 16 at the end of it. Divide it with 8, you will get 2.
-If your element type is <code>int64</code>, the itemsize is 32/8 = 8.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="NumPy-Basic-Operations-">NumPy Basic Operations <a class="anchor" id="fourth-bullet" /><a class="anchor-link" href="#NumPy-Basic-Operations-">&#182;</a></h1><p>As mentioned in the introduction of this post, using NumPy will allow you to do element-wise operations on the arrays.
-Let's see the difference from using NumPy and not using NumPy in Python when we do addition.</p>
+<p>We have two lists, <code>values_list</code> containing 2 lists of values extracted from the original data set, and <code>colnames_list</code> containing the column names for our new data set. We will use these lists to create our data frame using <code>pd.DataFrame()</code>.</p>
+<p>We will zip these lists using a built-in function in Python called <code>zip()</code>. This function will return an iterator of tuples (zip object) from any number of iterables.</p>
+<p>When you zip lists using <code>zip()</code>, the result has to be unpacked using <code>list()</code> before you can print it. Otherwise, it will not return the value.</p>
 
 </div>
 </div>
@@ -12382,12 +12579,11 @@ Let's see the difference from using NumPy and not using NumPy in Python when we 
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create lists</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Zip lists</span>
+<span class="n">lists_zipped</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">colnames_list</span><span class="p">,</span> <span class="n">values_list</span><span class="p">)</span>
 
-<span class="c1"># Addition</span>
-<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="c1"># Print lists_zipped</span>
+<span class="n">lists_zipped</span>
 </pre></div>
 
 </div>
@@ -12406,7 +12602,7 @@ Let's see the difference from using NumPy and not using NumPy in Python when we 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[1, 2, 3, 1, 2, 3]</pre>
+<pre>&lt;zip at 0x1157c5708&gt;</pre>
 </div>
 
 </div>
@@ -12419,8 +12615,7 @@ Let's see the difference from using NumPy and not using NumPy in Python when we 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From the example above, we are not using NumPy array. What happened is, the addition symbol just paste the two lists together.</p>
-<p>Let's see what happened when we use NumPy array.</p>
+<p>Note that it does not return the value as expected. So, let's unpacked this using <code>list()</code>.</p>
 
 </div>
 </div>
@@ -12430,35 +12625,11 @@ Let's see the difference from using NumPy and not using NumPy in Python when we 
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create NumPy array</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-
-<span class="c1"># Addition</span>
-<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Unpack values using list</span>
+<span class="n">unpacked_zipped</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">lists_zipped</span><span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[10]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([2, 4, 6])</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -12467,9 +12638,7 @@ Let's see the difference from using NumPy and not using NumPy in Python when we 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, the elements are added element-wise. This is also true for subtraction.</p>
-<p>The next operation that I want to describe is multiplication <code>*</code>.
-Let's create two NumPy arrays to demonstrate this.</p>
+<p>Once we have unpacked the values, we will use the <code>dict()</code> function to create a dictionary called mini_echo. Then, we will use <code>pd.DataFrame()</code> to transform the dictionary into a data frame.</p>
 
 </div>
 </div>
@@ -12479,14 +12648,14 @@ Let's create two NumPy arrays to demonstrate this.</p>
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create NumPy arrays</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-              <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
-<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
-              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create dictionary</span>
+<span class="n">mini_echo</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">unpacked_zipped</span><span class="p">)</span>
 
-<span class="c1"># Element-wise multiplication </span>
-<span class="n">c</span><span class="o">*</span><span class="n">d</span>
+<span class="c1"># Create data frame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">mini_echo</span><span class="p">)</span>
+
+<span class="c1"># View head</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12503,10 +12672,83 @@ Let's create two NumPy arrays to demonstrate this.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 5, 12],
-       [21, 32]])</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>survival</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71.0</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>72.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>55.0</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>57.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>68.0</td>
+      <td>26.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>62.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>60.0</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>46.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>54.0</td>
+      <td>25.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12519,8 +12761,7 @@ Let's create two NumPy arrays to demonstrate this.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As mentioned earlier, this is how we expect NumPy to behave, but what if instead of element-wise, we want a matrix product?
-We can do that using <code>dot</code>. <code>dot</code> is a function and also a method. For that reason, we can use <code>dot</code> in two ways.</p>
+<h1 id="Naming-and-Re-naming-Columns-">Naming and Re-naming Columns <a class="anchor" id="seventh-bullet" /><a class="anchor-link" href="#Naming-and-Re-naming-Columns-">&#182;</a></h1><p>Let's use the data frame that we have created above. Instead of using age and survival, I want to re-name it to age and surv. We can use <code>.rename()</code> function.</p>
 
 </div>
 </div>
@@ -12530,8 +12771,11 @@ We can do that using <code>dot</code>. <code>dot</code> is a function and also a
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using dot as a method to get matrix product </span>
-<span class="n">c</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Renaming a column</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;survival&#39;</span><span class="p">:</span><span class="s1">&#39;surv&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># View head</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12548,10 +12792,83 @@ We can do that using <code>dot</code>. <code>dot</code> is a function and also a
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[19, 22],
-       [43, 50]])</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>surv</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71.0</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>72.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>55.0</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>57.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>68.0</td>
+      <td>26.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>62.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>60.0</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>46.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>54.0</td>
+      <td>25.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12559,14 +12876,27 @@ We can do that using <code>dot</code>. <code>dot</code> is a function and also a
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The column name for survival is now updated to surv. Note that by specifying <code>inplace=True</code>, no copy of the data frame will be created and that changes are implemented in the original data frame.</p>
+<p>I'm going to change the column names into a and b. This is to demonstrate a situation where you have a data frame but it has no meaningful column names.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using dot as a function to get matrix product </span>
-<span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rename column into a and b</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;surv&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># View head </span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12583,10 +12913,83 @@ We can do that using <code>dot</code>. <code>dot</code> is a function and also a
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[19, 22],
-       [43, 50]])</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71.0</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>72.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>55.0</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>57.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>68.0</td>
+      <td>26.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>62.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>60.0</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>46.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>54.0</td>
+      <td>25.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12599,17 +13002,7 @@ We can do that using <code>dot</code>. <code>dot</code> is a function and also a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see that we have the same results, eventhough we tell Python in a slightly different manner.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Unary operations are operations that produce a single output. Many of these operations are implemented as methods, which means you need to put a parentheses like this <code>example.method()</code>.
-Let's use our x.</p>
+<p>We create a list of column names and then assign it to <code>df.columns</code>.</p>
 
 </div>
 </div>
@@ -12619,8 +13012,11 @@ Let's use our x.</p>
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get sum of x</span>
-<span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Name columns</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;survival&#39;</span><span class="p">]</span>
+
+<span class="c1"># View head </span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12637,9 +13033,58 @@ Let's use our x.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>105</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>survival</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71.0</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>72.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>55.0</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>57.0</td>
+      <td>19.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12647,37 +13092,27 @@ Let's use our x.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Delete-or-Remove-Columns-">Delete or Remove Columns <a class="anchor" id="eighth-bullet" /><a class="anchor-link" href="#Delete-or-Remove-Columns-">&#182;</a></h1><p>We have gathered from the description of this dataset that some of the columns are not useful and can be removed. We are going to remove these columns: wall-motion-score, mult, name and group.</p>
+<p>For this purpose, we will use <code>.drop()</code> and instead of column names, we will specify the column numbers.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the maximum number in x</span>
-<span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove columns </span>
+<span class="n">echo</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">echo</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[15]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>14</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -12687,8 +13122,8 @@ Let's use our x.</p>
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the minimum number in x</span>
-<span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View head</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12705,9 +13140,100 @@ Let's use our x.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>survival</th>
+      <th>alive</th>
+      <th>age</th>
+      <th>pericardialeffusion</th>
+      <th>fractionalshortening</th>
+      <th>epss</th>
+      <th>lvdd</th>
+      <th>wallmotion-index</th>
+      <th>aliveat1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>71.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>9.000</td>
+      <td>4.600</td>
+      <td>1.00</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>72.0</td>
+      <td>0.0</td>
+      <td>0.380</td>
+      <td>6.000</td>
+      <td>4.100</td>
+      <td>1.70</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16.0</td>
+      <td>0.0</td>
+      <td>55.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>4.000</td>
+      <td>3.420</td>
+      <td>1.00</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>60.0</td>
+      <td>0.0</td>
+      <td>0.253</td>
+      <td>12.062</td>
+      <td>4.603</td>
+      <td>1.45</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19.0</td>
+      <td>1.0</td>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>0.160</td>
+      <td>22.000</td>
+      <td>5.750</td>
+      <td>2.25</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12720,7 +13246,8 @@ Let's use our x.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also do operations across rows and columns in NumPy. Let's have a look at x again.</p>
+<h1 id="Re-arrange-Columns-">Re-arrange Columns <a class="anchor" id="ninth-bullet" /><a class="anchor-link" href="#Re-arrange-Columns-">&#182;</a></h1><p>Th survival, alive and aliveat 1 are highly relevant to each other. It will be easier to have these columns located next to each other. Currently aliveat1 is the last column in the dataset.</p>
+<p>We can get the list of the columns first and then re-arrange it to make it easy for data analysis and your understanding.</p>
 
 </div>
 </div>
@@ -12730,8 +13257,8 @@ Let's use our x.</p>
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View x</span>
-<span class="n">x</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get list of columns</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">echo</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12750,9 +13277,15 @@ Let's use our x.</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2,  3,  4],
-       [ 5,  6,  7,  8,  9],
-       [10, 11, 12, 13, 14]], dtype=int16)</pre>
+<pre>[&#39;survival&#39;,
+ &#39;alive&#39;,
+ &#39;age&#39;,
+ &#39;pericardialeffusion&#39;,
+ &#39;fractionalshortening&#39;,
+ &#39;epss&#39;,
+ &#39;lvdd&#39;,
+ &#39;wallmotion-index&#39;,
+ &#39;aliveat1&#39;]</pre>
 </div>
 
 </div>
@@ -12760,23 +13293,25 @@ Let's use our x.</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To do this we need to specify the axis parameter.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sum of each columns, axis=0</span>
-<span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rearrange columns </span>
+<span class="n">echo</span> <span class="o">=</span> <span class="n">echo</span><span class="p">[[</span><span class="s1">&#39;survival&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;alive&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;aliveat1&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;age&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;pericardialeffusion&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;fractionalshortening&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;epss&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lvdd&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;wallmotion-index&#39;</span><span class="p">]]</span>
+
+<span class="c1"># View head</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12793,9 +13328,160 @@ Let's use our x.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([15, 18, 21, 24, 27])</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>survival</th>
+      <th>alive</th>
+      <th>aliveat1</th>
+      <th>age</th>
+      <th>pericardialeffusion</th>
+      <th>fractionalshortening</th>
+      <th>epss</th>
+      <th>lvdd</th>
+      <th>wallmotion-index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>71.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>9.000</td>
+      <td>4.600</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>72.0</td>
+      <td>0.0</td>
+      <td>0.380</td>
+      <td>6.000</td>
+      <td>4.100</td>
+      <td>1.700</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>55.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>4.000</td>
+      <td>3.420</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>60.0</td>
+      <td>0.0</td>
+      <td>0.253</td>
+      <td>12.062</td>
+      <td>4.603</td>
+      <td>1.450</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>0.160</td>
+      <td>22.000</td>
+      <td>5.750</td>
+      <td>2.250</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>26.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>68.0</td>
+      <td>0.0</td>
+      <td>0.260</td>
+      <td>5.000</td>
+      <td>4.310</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>62.0</td>
+      <td>0.0</td>
+      <td>0.230</td>
+      <td>31.000</td>
+      <td>5.430</td>
+      <td>1.875</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>50.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>60.0</td>
+      <td>0.0</td>
+      <td>0.330</td>
+      <td>8.000</td>
+      <td>5.250</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>46.0</td>
+      <td>0.0</td>
+      <td>0.340</td>
+      <td>0.000</td>
+      <td>5.090</td>
+      <td>1.140</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>54.0</td>
+      <td>0.0</td>
+      <td>0.140</td>
+      <td>13.000</td>
+      <td>4.490</td>
+      <td>1.190</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12803,14 +13489,29 @@ Let's use our x.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Slicing-using-loc-and-iloc-">Slicing using loc and iloc <a class="anchor" id="tenth-bullet" /><a class="anchor-link" href="#Slicing-using-loc-and-iloc-">&#182;</a></h1><p>Let's learn how to select some elements using loc and iloc.</p>
+<ul>
+<li>loc is label-based selection</li>
+<li>iloc is position-based selection (using integer)</li>
+</ul>
+<p>To select elements in a data frame, we need to specify the row and column of the data frame. We will look at the difference between these two methods.
+We would like to select the 1st to 11th rows, only with survival, alive and epss columns.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sum of each rows, axis=1</span>
-<span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting using loc</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;survival&#39;</span><span class="p">,</span> <span class="s1">&#39;alive&#39;</span><span class="p">,</span> <span class="s1">&#39;epss&#39;</span><span class="p">]]</span>
 </pre></div>
 
 </div>
@@ -12827,9 +13528,100 @@ Let's use our x.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([10, 35, 60])</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>survival</th>
+      <th>alive</th>
+      <th>epss</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>9.000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>6.000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16.0</td>
+      <td>0.0</td>
+      <td>4.000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>12.062</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19.0</td>
+      <td>1.0</td>
+      <td>22.000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>26.0</td>
+      <td>0.0</td>
+      <td>5.000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>31.000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>50.0</td>
+      <td>0.0</td>
+      <td>8.000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>13.000</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10.0</td>
+      <td>1.0</td>
+      <td>16.000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12843,8 +13635,8 @@ Let's use our x.</p>
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cumulative sum across columns</span>
-<span class="n">x</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting using iloc</span>
+<span class="n">echo</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">11</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
 </pre></div>
 
 </div>
@@ -12861,47 +13653,100 @@ Let's use our x.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2,  3,  4],
-       [ 5,  7,  9, 11, 13],
-       [15, 18, 21, 24, 27]])</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>survival</th>
+      <th>alive</th>
+      <th>epss</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>9.000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>6.000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16.0</td>
+      <td>0.0</td>
+      <td>4.000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>57.0</td>
+      <td>0.0</td>
+      <td>12.062</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19.0</td>
+      <td>1.0</td>
+      <td>22.000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>26.0</td>
+      <td>0.0</td>
+      <td>5.000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>31.000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>50.0</td>
+      <td>0.0</td>
+      <td>8.000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>13.000</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10.0</td>
+      <td>1.0</td>
+      <td>16.000</td>
+    </tr>
+  </tbody>
+</table>
 </div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cumulative sum across rows</span>
-<span class="n">x</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  3,  6, 10],
-       [ 5, 11, 18, 26, 35],
-       [10, 21, 33, 46, 60]])</pre>
 </div>
 
 </div>
@@ -12914,618 +13759,15 @@ Let's use our x.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Indexing-and-Slicing-in-NumPy-">Indexing and Slicing in NumPy <a class="anchor" id="fifth-bullet" /><a class="anchor-link" href="#Indexing-and-Slicing-in-NumPy-">&#182;</a></h1><p>We can use bracket to index and slice NumPy arrays. Let's look at some examples for 1-dimensional array and multidimensional array.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Indexing one-dimensional array </span>
-<span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-
-<span class="c1"># Get the third element from e</span>
-<span class="n">e</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[22]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>6</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get the 1st to 3rd elements</span>
-<span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[23]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([2, 4, 6])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s use our x</span>
-<span class="n">x</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[24]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2,  3,  4],
-       [ 5,  6,  7,  8,  9],
-       [10, 11, 12, 13, 14]], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get element in the 2nd row, 4th column</span>
-<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[25]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>8</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get elements in the 3rd row, 2nd to 4th columns</span>
-<span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[26]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([11, 12, 13], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get all elements in the 1st row </span>
-<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[27]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([0, 1, 2, 3, 4], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get all elements in the 2nd column </span>
-<span class="n">x</span><span class="p">[</span> <span class="p">:</span> <span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[28]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 1,  6, 11], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Manipulating-NumPy-Shape-">Manipulating NumPy Shape <a class="anchor" id="sixth-bullet" /><a class="anchor-link" href="#Manipulating-NumPy-Shape-">&#182;</a></h1><p>We will go through a few commands in manipulating shape in NumPy.</p>
-<h2 id="Changing-Array-Shape-">Changing Array Shape <a class="anchor" id="sixth-one-bullet" /><a class="anchor-link" href="#Changing-Array-Shape-">&#182;</a></h2><p>The following three commands will return a modified array but they do not change the original array. I will demonstrate this in the examples. We will use our x.</p>
-<p><code>ndarray.ravel()</code> - it will return a flattened array</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View x</span>
-<span class="n">x</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[29]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2,  3,  4],
-       [ 5,  6,  7,  8,  9],
-       [10, 11, 12, 13, 14]], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flattened x</span>
-<span class="n">x</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[30]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>ndarray.reshape()</code> - it will return an array with a different shape as specified</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Change shape of x from (3, 5) to (5, 3)</span>
-<span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[31]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2],
-       [ 3,  4,  5],
-       [ 6,  7,  8],
-       [ 9, 10, 11],
-       [12, 13, 14]], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>ndarray.T</code> - it will return a transposed array, meaning each row and column are interchanged correspondingly</p>
-<p>Note that there is no parentheses for <code>ndarray.T</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Transpose</span>
-<span class="n">x</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[32]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  5, 10],
-       [ 1,  6, 11],
-       [ 2,  7, 12],
-       [ 3,  8, 13],
-       [ 4,  9, 14]], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's checked our x again and see if we have actually changed the original array.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View x</span>
-<span class="n">x</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[34]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2,  3,  4],
-       [ 5,  6,  7,  8,  9],
-       [10, 11, 12, 13, 14]], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Nope, we haven't! We still have the original array intact.
-The next method however will change the original array.</p>
-<p><code>ndarray.resize()</code> - it will return a modified array with the original array changed</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Resize array</span>
-<span class="n">x</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-
-<span class="c1"># View updated x</span>
-<span class="n">x</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[38]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 0,  1,  2],
-       [ 3,  4,  5],
-       [ 6,  7,  8],
-       [ 9, 10, 11],
-       [12, 13, 14]], dtype=int16)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Stacking-Arrays-">Stacking Arrays <a class="anchor" id="sixth-two-bullet" /><a class="anchor-link" href="#Stacking-Arrays-">&#182;</a></h2><p>We can stack arrays together in NumPy along different axes.</p>
-<p>Let's create new array to demonstrate this.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create arrays</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]])</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">],</span> <span class="p">[</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">]])</span>
-
-<span class="c1"># Stack vertically</span>
-<span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[41]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[10, 20],
-       [30, 40],
-       [50, 60],
-       [70, 80]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Stack horizontally</span>
-<span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[42]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[10, 20, 50, 60],
-       [30, 40, 70, 80]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In the next post of this series, we will have a look at pandas. It is a package that helps you deal with data frames.</p>
+<p>The index of this data frame is made of integers, starting from 0.</p>
+<p>Notice the difference between the two methods:</p>
+<ol>
+<li>In loc, we specify 0:10, and in iloc, we specify 0:11. This is because loc is label-based, so the label for the 11th row in this data frame is 10. In iloc, it is position-based, remember that <strong>[start:end(not inclusive)]</strong>, so we specify 11 (the 12th row which is not included in the slicing method).</li>
+<li>For loc, the column names are specified, but for iloc, the index of the columns are specified.</li>
+</ol>
+<p>This section will conclude this part.</p>
+<p>At this stage, we have done some cleaning in the Echocardiogram data set. However, we have not dealt with the missing values in the data set.
+Missing values are really common. The next part in this Data Science with Python, we will learn a few strategies on how to deal with missing values.</p>
 
 </div>
 </div>
@@ -13537,235 +13779,4 @@ The next method however will change the original array.</p>
 
 
 
-</html>
-
-
-  <!-- Social media shares -->
-  <footer>
-<div class="share-buttons">
-<ul class="share-buttons">
-	
-	<li>
-		<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2018/05/25/datscipypt2.html&quote=Data Science with Python, Part 2&#58; NumPy%20%7C%20Azmir Fakkri" target="_blank" title="Share on Facebook">
-			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Share on Facebook</span>
-		</a>
-	</li>
-	
-
-	
-	<li>
-		<a href="https://twitter.com/intent/tweet?source=http://localhost:4000/2018/05/25/datscipypt2.html&text=Data Science with Python, Part 2&#58; NumPy%20%7C%20Azmir Fakkri:%20http://localhost:4000/2018/05/25/datscipypt2.html" target="_blank" title="Tweet">
-			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Tweet</span>
-		</a>
-	</li>
-	
-
-	
-	<li>
-		<a href="https://plus.google.com/share?url=http://localhost:4000/2018/05/25/datscipypt2.html" target="_blank" title="Share on Google+">
-			<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Share on Google+</span>
-		</a>
-	</li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	<li>
-		<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2018/05/25/datscipypt2.html&title=Data Science with Python, Part 2&#58; NumPy%20%7C%20Azmir Fakkri&summary=&source=http://localhost:4000/2018/05/25/datscipypt2.html" target="_blank" title="Share on LinkedIn">
-			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Share on LinkedIn</span>
-		</a>
-	</li>
-	
-
-	
-
-	
-	<li>
-		<a href="mailto:?subject=Data Science with Python, Part 2&#58; NumPy%20%7C%20Azmir Fakkri&body=:%20http://localhost:4000/2018/05/25/datscipypt2.html" target="_blank" title="Email">
-			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
-			<span class="sr-only">Email</span>
-		</a>
-	</li>
-	
-</ul>
-</div>
-</footer>
-
-
-   <!-- Tag list -->
-  
-  
-
-
-<footer>
-  <div class="tag-list">
-    
-      <div class="meta">Tags</div>
-    
-
-    
-    <a class="button" href="/tags#Data Science with Python">
-      <p><i class="fa fa-tag fa-fw"></i> Data Science with Python</p>
-    </a>
-    
-    <a class="button" href="/tags#NumPy">
-      <p><i class="fa fa-tag fa-fw"></i> NumPy</p>
-    </a>
-    
-    <a class="button" href="/tags#Python">
-      <p><i class="fa fa-tag fa-fw"></i> Python</p>
-    </a>
-    
-  </div>
-</footer>
-
-
-<!-- Disqus -->
-
-<div class="comments">
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-	var disqus_shortname = 'datsci';
-	(function() {
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
-</script>
-<noscript>Please enable JavaScript to view comments.</noscript>
-
-</div>
-
-
-<!-- Post navigation -->
-
-  <div id="post-nav">
-  
-  <div id="previous-post" class="post-nav-post">
-      <p>Previous post</p>
-      <a href="/2018/05/22/datscipypt1.html">
-        Data Science with Python, Part 1&#58; Introduction to Basics
-      </a>
-  </div>
-  
-  
-  <div id="next-post" class="post-nav-post">
-      <p>Next post</p>
-      <a href="/2018/06/18/datscipypt3.html">
-        Data Science with Python, Part 3&#58; pandas
-      </a>
-  </div>
-  
-</div>
-
-
-    </div>
-    
-<footer class="site-footer">
-    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
-</p>
-            <div class="footer-icons">
-                <ul>
-                <!-- Social icons from Font Awesome, if enabled -->
-                
-<li>
-	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-<li>
-	<a href="mailto:azmirfakkri@gmail.com" title="Email">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://github.com/azmirfakkri" title="Follow on GitHub">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://www.linkedin.com/in/azmirfakkri/" title="Follow on LinkedIn">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </ul>
-            </div>
-</footer>
-
-
-
-
-  </body>
 </html>
